@@ -1,4 +1,4 @@
-# 🚀 PySpark Financial Analytics Dashboard
+ PySpark Financial Analytics Dashboard
 
 A full-stack big data analytics application that processes multi-departmental financial data using Apache Spark and visualizes insights through an interactive web dashboard.
 
@@ -6,30 +6,30 @@ A full-stack big data analytics application that processes multi-departmental fi
 ![PySpark](https://img.shields.io/badge/PySpark-4.1.1-orange)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.128.0-green)
 
-## 📊 Features
+ Features
 
-- ✅ Real-time profit/loss calculation across multiple departments
-- 📈 Interactive data visualizations (Bar charts, Pie charts)
-- 🔄 Auto-refresh functionality (60-second intervals)
-- 📁 Multi-format data ingestion (CSV, JSON)
-- 🏢 Department-wise performance tracking (Sales, HR, Finance, Production)
-- 📄 PDF export functionality
-- ⚡ Fast REST API with sub-second response times
+-   Real-time profit/loss calculation across multiple departments
+-   Interactive data visualizations (Bar charts, Pie charts)
+-   Auto-refresh functionality (60-second intervals)
+-   Multi-format data ingestion (CSV, JSON)
+-   Department-wise performance tracking (Sales, HR, Finance, Production)
+-   PDF export functionality
+-   Fast REST API with sub-second response times
 
-## 🛠️ Tech Stack
+   Tech Stack
 
-**Backend:**
+ Backend: 
 - Apache Spark (PySpark 4.1.1)
 - FastAPI 0.128.0
 - Python 3.10
 - Uvicorn 0.40.0
 
-**Frontend:**
+ Frontend: 
 - HTML5, CSS3, JavaScript (ES6+)
 - Chart.js
 
-## 📁 Project Structure
-```
+   Project Structure
+
 bigdataproj/
 ├── api/
 │   └── main.py                    # FastAPI REST API
@@ -49,45 +49,36 @@ bigdataproj/
 └── README.md                       # Documentation
 ```
 
-## 🚀 Installation & Setup
+   Installation & Setup
 
-### Prerequisites
+  Prerequisites
 - Python 3.10+
 - pip
 
-### Steps
+  Steps
 
-1. **Clone the repository**
-```bash
+1.  Clone the repository 
+  
 git clone https://github.com/YOUR_USERNAME/pyspark-financial-dashboard.git
 cd pyspark-financial-dashboard
-```
-
-2. **Install dependencies**
-```bash
+ 
+2.  Install dependencies 
+ 
 pip install -r requirements.txt
-```
+ 
 
-3. **Run the API server**
-```bash
+3. Run the API server 
+ 
 python api/main.py
-```
+ 
 
-4. **Open the dashboard**
+4. Open the dashboard 
 - Double-click `combined_dashboard.html`
 - Or visit: http://localhost:8000/docs for API documentation
+ 
 
-## 📊 API Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/summary` | GET | Overall profit/loss summary |
-| `/api/department-breakdown` | GET | Department-wise breakdown |
-| `/api/stats` | GET | Detailed statistics |
-| `/api/refresh` | POST | Reload data from files |
-
-## 💡 Usage Example
-```python
+ Usage Example
+ 
 import requests
 
 response = requests.get('http://localhost:8000/api/summary')
@@ -95,20 +86,18 @@ data = response.json()
 
 print(f"Total Income: ${data['total_income']}")
 print(f"Profit/Loss: ${data['profit_loss']}")
-```
+ 
 
-**Sample Output:**
-```json
+Sample Output: 
+ 
 {
   "total_income": 310000.0,
   "total_expenses": 48000.0,
   "profit_loss": 262000.0,
   "status": "Profit"
 }
-```
-
-## 🎯 System Architecture
-```
+  System Architecture
+ 
 Data Files (CSV/JSON)
         ↓
 Apache Spark (ETL Pipeline)
@@ -116,9 +105,9 @@ Apache Spark (ETL Pipeline)
 FastAPI (REST API - Port 8000)
         ↓
 Web Dashboard (Charts & Visualization)
-```
+ 
 
-## 📈 Key Results
+Key Results
 
 - Processes 100+ financial transactions
 - Real-time profit/loss calculation
@@ -126,20 +115,20 @@ Web Dashboard (Charts & Visualization)
 - Auto-refresh every 60 seconds
 - Interactive charts with Chart.js
 
-## 🤝 Contributing
+  Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
 
-## 📝 License
+  License
 
 MIT License - see [LICENSE](LICENSE) file for details
 
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
+  Author
+ 
+Chandra K
+- GitHub: [@Chandra20052025(https://github.com/Chandra20052025)
 - LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
 
----
+
 
 ⭐ If you found this helpful, please star this repository!
