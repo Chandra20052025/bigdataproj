@@ -1,8 +1,2032 @@
-
-order_id,amount,month
-1,50000,2025-11
-2,45000,2025-12
-3,60000,2026-01
-4,55000,2025-11
-5,48000,2025-12
-6,52000,2026-01
+id,date,department,month,region,product,quantity,amount,customer,sales_person
+1,2026-04-17,Sales,2026-04,East,Phone,15,59326,"Luna, Stout and Harrington",Julia Vaughan
+2,2026-04-06,Sales,2026-04,South,Phone,7,57502,Roberts LLC,Jennifer Pollard
+3,2026-05-02,Sales,2026-05,South,Monitor,8,111338,Hardy PLC,Ashley Orozco
+4,2026-04-22,Sales,2026-04,East,Phone,2,20401,"Williams, Ellis and Hernandez",Richard Ramirez
+5,2026-03-29,Sales,2026-03,East,Server,4,85223,Humphrey-Hawkins,Maria Turner
+6,2026-05-13,Sales,2026-05,East,Tablet,19,48511,Hurley-Miller,Alicia Snow
+7,2026-05-07,Sales,2026-05,East,Server,5,41375,"Haynes, Moore and Farmer",Alec Hansen
+8,2026-04-25,Sales,2026-04,North,Phone,16,112924,Becker LLC,Kimberly Jackson
+9,2026-03-26,Sales,2026-03,West,Tablet,17,23115,Willis-Hopkins,Frederick Bender
+10,2026-03-13,Sales,2026-03,East,Server,12,59910,Barnes-Powell,Scott Charles
+11,2026-03-26,Sales,2026-03,South,Tablet,11,22991,"Johnson, Pineda and Figueroa",Ryan Waters
+12,2026-04-14,Sales,2026-04,South,Phone,13,106704,Barrera LLC,Isaiah Hawkins
+13,2026-04-08,Sales,2026-04,South,Phone,1,42719,Vargas Group,Alexis Wright
+14,2026-05-16,Sales,2026-05,North,Laptop,10,35238,Coffey-Young,Elijah Salas
+15,2026-04-16,Sales,2026-04,South,Phone,18,36790,Porter-Smith,Ashley Coleman
+16,2026-03-25,Sales,2026-03,West,Tablet,19,21445,Nichols PLC,Samuel Daniels
+17,2026-04-01,Sales,2026-04,North,Laptop,15,32274,"Parker, King and Wang",Kyle Christensen
+18,2026-04-07,Sales,2026-04,South,Monitor,9,17588,Saunders LLC,Kimberly Sellers
+19,2026-03-31,Sales,2026-03,West,Server,2,25383,Smith LLC,Paula Case
+20,2026-04-07,Sales,2026-04,North,Phone,11,14076,Johnson Group,Julia Wilkinson
+21,2026-04-15,Sales,2026-04,East,Monitor,12,104340,Good Ltd,Ryan Pham
+22,2026-02-23,Sales,2026-02,South,Laptop,4,119995,"Clayton, Schmidt and Bell",Dawn Roy
+23,2026-04-09,Sales,2026-04,West,Monitor,19,61224,"Guzman, Burns and Martinez",Scott Stephens
+24,2026-03-25,Sales,2026-03,West,Phone,19,101890,Holmes-Glass,Garrett Holloway
+25,2026-04-23,Sales,2026-04,South,Laptop,17,105927,Rodriguez-Stephens,Steven Shaw
+26,2026-05-12,Sales,2026-05,North,Server,7,99249,Weaver Ltd,Joshua Sims
+27,2026-04-28,Sales,2026-04,North,Phone,8,117986,"Ramirez, Moore and Jones",Chelsea Collins
+28,2026-03-18,Sales,2026-03,West,Tablet,2,93346,Bishop-Espinoza,Ryan Wood
+29,2026-04-08,Sales,2026-04,East,Monitor,7,63908,"Hernandez, Castillo and Anderson",Elizabeth Oliver
+30,2026-02-22,Sales,2026-02,South,Tablet,15,29894,Robinson-Lowe,Yolanda Lee
+31,2026-04-06,Sales,2026-04,North,Phone,14,108602,Rogers-Richards,John Richard
+32,2026-04-28,Sales,2026-04,East,Monitor,10,63561,Barrera Group,Shane Waters
+33,2026-02-27,Sales,2026-02,South,Monitor,12,41765,"Howard, Miller and Watson",Debra Garza
+34,2026-05-03,Sales,2026-05,West,Laptop,12,106020,Elliott Ltd,Katherine Stone PhD
+35,2026-04-06,Sales,2026-04,South,Phone,10,21099,"Henderson, Lambert and Rodriguez",Crystal Diaz
+36,2026-04-26,Sales,2026-04,North,Monitor,4,112359,Green-Hicks,Derek Ryan
+37,2026-04-08,Sales,2026-04,West,Server,20,72032,Sparks Group,Dale Powell
+38,2026-03-01,Sales,2026-03,North,Laptop,16,112761,"Luna, Mitchell and Hawkins",Laura Gay
+39,2026-05-17,Sales,2026-05,South,Laptop,17,46080,"Jones, Becker and Walker",Veronica Reid
+40,2026-04-19,Sales,2026-04,South,Server,18,88326,Ball Ltd,Jennifer Jimenez
+41,2026-05-12,Sales,2026-05,North,Tablet,12,102016,Roy-Brown,Jamie Humphrey
+42,2026-03-21,Sales,2026-03,East,Monitor,1,78811,"Reed, Merritt and Williamson",Jennifer Parker
+43,2026-03-19,Sales,2026-03,East,Monitor,19,43570,Alexander Group,Michelle Lopez
+44,2026-02-21,Sales,2026-02,East,Phone,10,13942,Martinez Inc,Lisa Wise
+45,2026-05-16,Sales,2026-05,North,Monitor,6,72025,Bowman-Green,Sandra Henry
+46,2026-05-16,Sales,2026-05,South,Tablet,17,38428,"Friedman, Williams and Sexton",Kristin Pearson
+47,2026-05-06,Sales,2026-05,North,Server,9,46009,Hernandez LLC,Timothy Freeman
+48,2026-05-01,Sales,2026-05,West,Server,3,69627,Dickerson Inc,Cindy Romero
+49,2026-03-24,Sales,2026-03,West,Laptop,16,43271,"Lewis, Fuentes and Pugh",Nicholas Morris
+50,2026-05-06,Sales,2026-05,South,Monitor,2,50184,Mckenzie-Valencia,Luis Huynh
+51,2026-04-01,Sales,2026-04,West,Phone,16,57903,Powell PLC,Sean King
+52,2026-04-22,Sales,2026-04,West,Server,7,68669,Rodriguez-Ramirez,Amanda Graham
+53,2026-03-09,Sales,2026-03,West,Phone,9,51597,Anderson PLC,Casey Huynh
+54,2026-03-16,Sales,2026-03,North,Server,6,118475,Perez Inc,Karen Johnson
+55,2026-03-16,Sales,2026-03,West,Phone,2,24462,Horton-Gilmore,Kenneth Moore
+56,2026-04-21,Sales,2026-04,North,Server,5,21166,Carpenter Group,Alfred Davis
+57,2026-03-17,Sales,2026-03,South,Server,15,81429,Fuentes LLC,John Morris
+58,2026-04-22,Sales,2026-04,East,Laptop,19,35893,Newman and Sons,Christopher Sanchez
+59,2026-05-02,Sales,2026-05,West,Laptop,7,86842,Rivera-Richardson,Theresa Brown
+60,2026-04-16,Sales,2026-04,North,Tablet,4,113032,Miller Ltd,Patricia Anderson
+61,2026-05-04,Sales,2026-05,East,Laptop,12,93608,"Johnson, Dixon and Hayes",Angela Brown
+62,2026-05-15,Sales,2026-05,South,Monitor,7,62498,Francis and Sons,Brooke Jensen
+63,2026-03-09,Sales,2026-03,East,Phone,10,102456,Baker-Rollins,Diana Snyder
+64,2026-04-23,Sales,2026-04,East,Laptop,7,28702,Allen-Kaufman,Kimberly Nash
+65,2026-03-18,Sales,2026-03,South,Monitor,4,98414,Gonzalez Group,Paul Brown
+66,2026-03-28,Sales,2026-03,South,Server,2,84334,"Williams, Lewis and Patrick",Mark Atkinson
+67,2026-03-01,Sales,2026-03,North,Tablet,6,118707,"Mcbride, Miller and Smith",Lisa Rodriguez
+68,2026-03-20,Sales,2026-03,South,Laptop,4,103424,Brown-Mcgee,Peter Gonzalez
+69,2026-03-28,Sales,2026-03,West,Server,4,47485,Weaver Inc,Samantha Anderson
+70,2026-02-20,Sales,2026-02,South,Tablet,3,45939,Mills-Barron,Terry Estrada
+71,2026-03-27,Sales,2026-03,North,Monitor,5,45178,Hall Ltd,Elizabeth Baker
+72,2026-05-20,Sales,2026-05,East,Phone,19,32356,Gates-Fields,Jason Wagner
+73,2026-02-27,Sales,2026-02,East,Server,2,48228,Wilson-Roberts,Rodney May
+74,2026-03-29,Sales,2026-03,South,Monitor,12,99454,Castro-Payne,Rachel Foster
+75,2026-03-06,Sales,2026-03,West,Server,4,112953,Harris-Rosales,Brandon Villa
+76,2026-02-20,Sales,2026-02,West,Monitor,1,45723,Mullins-Hubbard,Kenneth Rios
+77,2026-04-26,Sales,2026-04,West,Monitor,7,107613,Parker and Sons,Robin Roberts
+78,2026-03-28,Sales,2026-03,South,Phone,17,39055,"Torres, Jensen and Mayer",Bernard Dawson
+79,2026-03-05,Sales,2026-03,South,Server,3,95298,Austin-Park,Katherine Davis
+80,2026-02-26,Sales,2026-02,East,Server,19,68165,Estes-Martin,Chad Gordon
+81,2026-05-17,Sales,2026-05,West,Phone,2,20045,"Pittman, Cisneros and Powell",Jennifer Moore
+82,2026-03-04,Sales,2026-03,East,Laptop,7,104703,"Marshall, Horton and Cooper",Jeremy Miller
+83,2026-04-19,Sales,2026-04,South,Tablet,14,34786,Cooper-Benson,Tanya Park
+84,2026-04-10,Sales,2026-04,West,Monitor,9,32227,Donovan Inc,Joshua Rodgers
+85,2026-05-14,Sales,2026-05,South,Laptop,18,79652,Zhang LLC,Benjamin Gallegos
+86,2026-04-18,Sales,2026-04,South,Server,5,63570,"Vaughn, Blake and Lawson",Renee Thompson
+87,2026-02-26,Sales,2026-02,West,Server,1,14376,Jackson-Chen,Brandon Fletcher
+88,2026-03-02,Sales,2026-03,East,Tablet,17,80598,Doyle Inc,Troy Thompson
+89,2026-05-03,Sales,2026-05,East,Laptop,16,82011,"Morton, Richardson and Macdonald",James Goodwin
+90,2026-04-09,Sales,2026-04,North,Monitor,8,41441,Hill Inc,Katie Chapman
+91,2026-03-13,Sales,2026-03,South,Tablet,9,12234,"Hansen, Acosta and Lewis",Christina Vasquez
+92,2026-05-04,Sales,2026-05,East,Laptop,6,37192,"Allison, Christian and Kelley",Elizabeth Haley
+93,2026-03-28,Sales,2026-03,West,Laptop,11,73724,"Ramirez, Jones and Peck",Patricia Brown
+94,2026-03-01,Sales,2026-03,North,Tablet,20,85922,"Solis, Hopkins and Sullivan",Anthony May
+95,2026-03-14,Sales,2026-03,South,Laptop,10,96829,Howard Ltd,George Mahoney
+96,2026-03-15,Sales,2026-03,West,Server,3,74819,"Lewis, Blake and Williams",Katie Patterson
+97,2026-03-30,Sales,2026-03,East,Monitor,5,41968,"Anderson, Morris and Franklin",John Peterson
+98,2026-03-17,Sales,2026-03,West,Monitor,5,82428,Rowe Ltd,Shelby Osborne
+99,2026-05-02,Sales,2026-05,North,Phone,8,70748,"Cross, Garcia and Jones",Kristina Taylor
+100,2026-04-06,Sales,2026-04,East,Monitor,4,34416,Mills-Wallace,Monica Adams
+101,2026-02-19,Sales,2026-02,West,Laptop,9,29629,Lin-Dennis,Noah Pacheco
+102,2026-04-11,Sales,2026-04,North,Server,2,101282,Wise LLC,Jerry Reilly
+103,2026-02-25,Sales,2026-02,West,Monitor,5,49075,"Horton, Miller and Diaz",Steven Smith
+104,2026-04-10,Sales,2026-04,North,Monitor,12,114834,Payne-Underwood,Kathleen Russell
+105,2026-04-25,Sales,2026-04,East,Tablet,1,56695,"Fox, Davis and Yates",Shannon Chapman
+106,2026-03-19,Sales,2026-03,South,Laptop,1,51130,Berry-Gutierrez,Beth Ayala
+107,2026-02-22,Sales,2026-02,North,Tablet,3,63349,"Pittman, Woodward and Nelson",Kayla Gonzalez MD
+108,2026-03-07,Sales,2026-03,East,Tablet,11,58076,"Holmes, Jackson and Ramos",Rebekah Becker
+109,2026-04-19,Sales,2026-04,West,Phone,8,107714,Butler and Sons,Joshua Vargas
+110,2026-03-08,Sales,2026-03,South,Tablet,5,12622,Smith-Sawyer,Martin Jones
+111,2026-04-21,Sales,2026-04,West,Monitor,14,82869,"Hines, Moore and Erickson",James Hernandez
+112,2026-03-11,Sales,2026-03,East,Laptop,7,94463,Turner LLC,Daniel Fernandez
+113,2026-03-17,Sales,2026-03,North,Laptop,7,69795,Fisher-Mills,Jerry Yang
+114,2026-05-03,Sales,2026-05,North,Tablet,3,57482,Miller Ltd,Brandi Chang
+115,2026-04-26,Sales,2026-04,South,Tablet,4,37596,Robertson and Sons,Jonathan Smith
+116,2026-05-17,Sales,2026-05,South,Server,13,68112,Shepherd-Keller,Sharon Francis
+117,2026-02-21,Sales,2026-02,West,Phone,2,23784,Brewer Group,Jill Taylor
+118,2026-04-23,Sales,2026-04,West,Phone,10,57820,"Jones, Johnston and Williams",Anthony Butler
+119,2026-05-09,Sales,2026-05,South,Monitor,14,68392,"Davis, Proctor and Wilson",Matthew Marsh
+120,2026-03-05,Sales,2026-03,East,Phone,4,11094,Nicholson Ltd,Jessica Zavala
+121,2026-03-12,Sales,2026-03,West,Phone,14,67743,Baker LLC,Morgan Garcia DVM
+122,2026-05-09,Sales,2026-05,East,Monitor,7,62631,Kennedy LLC,Dr. Amanda Ashley
+123,2026-05-10,Sales,2026-05,North,Monitor,12,49775,Steele-Hill,Dylan Mejia
+124,2026-04-13,Sales,2026-04,North,Laptop,19,114675,Acevedo-Morales,Kimberly Snyder
+125,2026-04-17,Sales,2026-04,East,Server,5,118537,Vazquez-White,Brianna David
+126,2026-05-09,Sales,2026-05,East,Server,13,106321,"Leon, Morgan and Turner",Samantha Butler
+127,2026-04-28,Sales,2026-04,East,Laptop,17,102531,Porter LLC,Kim Gill DDS
+128,2026-04-17,Sales,2026-04,East,Tablet,20,92567,Robinson Inc,Jessica Mclean
+129,2026-03-12,Sales,2026-03,North,Monitor,1,21122,"Murphy, Brady and Jones",Claudia Estes
+130,2026-04-09,Sales,2026-04,South,Monitor,19,17812,"Haas, Salazar and Banks",Allison Price
+131,2026-04-08,Sales,2026-04,South,Tablet,10,21627,Hooper Group,Carrie Vincent
+132,2026-05-20,Sales,2026-05,West,Server,14,101837,"Foster, Clayton and Mccarthy",Leslie Moran
+133,2026-04-17,Sales,2026-04,West,Tablet,17,98490,Flynn PLC,Spencer Santana
+134,2026-03-05,Sales,2026-03,North,Tablet,20,110103,Arnold PLC,Douglas Ponce
+135,2026-02-23,Sales,2026-02,East,Monitor,4,36525,Carter-Lewis,Mark Bailey
+136,2026-05-04,Sales,2026-05,East,Laptop,9,118291,Ross-Powers,Amanda Lopez
+137,2026-05-18,Sales,2026-05,East,Tablet,2,12318,Beard-Stout,Brandon Sexton
+138,2026-03-02,Sales,2026-03,North,Monitor,7,35698,Gutierrez-Hines,Christina Bennett
+139,2026-03-22,Sales,2026-03,East,Laptop,11,34360,Blackwell-Washington,Andrew Ford
+140,2026-03-12,Sales,2026-03,South,Phone,5,107684,Nguyen-Booth,Christopher Gomez
+141,2026-02-24,Sales,2026-02,East,Monitor,19,113066,"Lambert, Brown and Whitehead",Jamie Farrell
+142,2026-04-13,Sales,2026-04,East,Tablet,18,37187,Graham LLC,Nancy Wilson
+143,2026-04-14,Sales,2026-04,East,Laptop,16,105755,"Santos, Price and Davis",Gregory Robertson
+144,2026-05-13,Sales,2026-05,East,Laptop,15,106813,"Cuevas, Cuevas and Howard",Robert Benson
+145,2026-03-20,Sales,2026-03,South,Server,17,92191,Thompson and Sons,Brenda Burke
+146,2026-04-23,Sales,2026-04,North,Phone,15,41970,"Simon, Ponce and Martinez",Ryan Cowan
+147,2026-04-07,Sales,2026-04,North,Monitor,4,60194,Garcia-Martinez,Andrea West
+148,2026-03-09,Sales,2026-03,East,Phone,10,31567,Davis and Sons,Shawn Christian
+149,2026-05-04,Sales,2026-05,East,Phone,17,88877,"Lam, Griffin and Burch",Renee Carpenter
+150,2026-04-01,Sales,2026-04,West,Laptop,9,55087,Fitzpatrick Group,Angela Cook
+151,2026-04-08,Sales,2026-04,West,Tablet,12,23891,Hanna PLC,Angela Wilson
+152,2026-04-05,Sales,2026-04,North,Monitor,4,77625,"Harrison, Ayers and Sullivan",Marco Foley
+153,2026-04-16,Sales,2026-04,South,Monitor,3,101381,Butler and Sons,Daniel Moore
+154,2026-04-18,Sales,2026-04,South,Tablet,4,37291,Sanders and Sons,Shane Shea
+155,2026-02-21,Sales,2026-02,North,Server,7,73055,Ferguson Inc,Mr. Joseph Mills MD
+156,2026-03-19,Sales,2026-03,North,Tablet,4,54484,Knight PLC,James Sanchez
+157,2026-03-20,Sales,2026-03,North,Phone,14,23255,Everett-Spencer,Maria Vang
+158,2026-05-01,Sales,2026-05,West,Server,1,115830,"Clark, Saunders and Scott",Jeremy Barnes
+159,2026-04-27,Sales,2026-04,South,Laptop,10,50883,"Miles, Doyle and White",Christine Wright
+160,2026-04-10,Sales,2026-04,North,Phone,4,49017,Wilson Inc,Christine Petersen
+161,2026-02-26,Sales,2026-02,West,Server,18,66036,"Alvarez, Smith and Roberts",Kari Johnson
+162,2026-05-01,Sales,2026-05,East,Server,14,26917,"Riggs, Perez and Williamson",Angela Short
+163,2026-05-16,Sales,2026-05,North,Server,8,117523,Morris-Brown,Lisa Roberts
+164,2026-04-01,Sales,2026-04,South,Server,18,37730,Allen LLC,Karla Butler
+165,2026-02-23,Sales,2026-02,East,Tablet,15,37800,"Brooks, Montes and James",Tammy Lee
+166,2026-04-09,Sales,2026-04,North,Tablet,18,26522,Barber-Duncan,Timothy Simpson
+167,2026-04-24,Sales,2026-04,North,Monitor,3,53037,"Johnson, Cooley and Gray",Adrian Hayes
+168,2026-05-01,Sales,2026-05,West,Laptop,8,85566,Hill PLC,William Webb
+169,2026-04-25,Sales,2026-04,East,Tablet,5,40232,"Lewis, Nguyen and Oliver",Connie Brown
+170,2026-04-11,Sales,2026-04,South,Laptop,6,108466,Townsend-Andrews,Matthew Cooper
+171,2026-03-28,Sales,2026-03,North,Laptop,14,65580,"Miller, Brown and Martinez",Chelsea Zimmerman
+172,2026-03-01,Sales,2026-03,North,Laptop,5,14520,Murphy Ltd,Michael Chan Jr.
+173,2026-03-01,Sales,2026-03,North,Laptop,9,37777,Cole Inc,Jason Brown
+174,2026-03-16,Sales,2026-03,South,Tablet,12,118239,Rodriguez-Wood,Cody Butler
+175,2026-03-07,Sales,2026-03,West,Phone,6,106382,Best and Sons,Kristine Kim
+176,2026-04-21,Sales,2026-04,North,Server,2,70091,Chavez Ltd,Jason Fitzgerald
+177,2026-03-13,Sales,2026-03,South,Server,7,81876,Howard LLC,Anthony Diaz
+178,2026-02-19,Sales,2026-02,West,Phone,15,62493,"Martinez, Christensen and Salas",Cheyenne Ramirez
+179,2026-04-25,Sales,2026-04,West,Server,6,95951,"Pitts, Parker and Lopez",Philip French
+180,2026-04-10,Sales,2026-04,West,Phone,5,51865,Collins Group,Ryan Gamble
+181,2026-04-30,Sales,2026-04,East,Tablet,8,35000,Harris-Mann,Christopher Alvarado
+182,2026-04-25,Sales,2026-04,North,Server,13,23961,"Hernandez, Campbell and Moore",Kristopher Roberts
+183,2026-04-03,Sales,2026-04,South,Monitor,18,46717,Garza Inc,Jeremy Brown
+184,2026-03-07,Sales,2026-03,North,Server,6,51640,Wilson-Arias,Beverly Osborne
+185,2026-02-26,Sales,2026-02,South,Phone,14,81334,Cooke PLC,Michael Hunt
+186,2026-03-13,Sales,2026-03,South,Laptop,20,27109,Terry-Contreras,Tara Norman
+187,2026-04-08,Sales,2026-04,West,Tablet,2,15361,Hicks-Torres,Cynthia Rosales
+188,2026-03-17,Sales,2026-03,West,Monitor,16,88634,Moore-Johnson,Jeffery Anderson
+189,2026-02-28,Sales,2026-02,West,Phone,11,23077,Perry Group,Michael Anderson
+190,2026-04-03,Sales,2026-04,North,Laptop,8,88567,Garcia-Williams,Gabrielle Davis
+191,2026-03-08,Sales,2026-03,East,Phone,17,50687,Nichols-Doyle,Cindy Gonzalez
+192,2026-03-10,Sales,2026-03,North,Phone,5,40175,Cross-Floyd,Brianna Peterson
+193,2026-03-20,Sales,2026-03,North,Tablet,8,13820,"Stout, Sanchez and Davis",Megan Marquez
+194,2026-04-25,Sales,2026-04,North,Server,17,17731,"Ramos, Lewis and Jones",Kristi Woods
+195,2026-04-15,Sales,2026-04,East,Laptop,6,58643,Madden-Adams,Lee Martin
+196,2026-05-12,Sales,2026-05,North,Phone,15,106518,Adams Ltd,Ashley Randall
+197,2026-03-08,Sales,2026-03,South,Laptop,16,113758,"Jackson, Oconnell and Wood",Sara Burch
+198,2026-05-07,Sales,2026-05,North,Tablet,2,107255,"Carey, Cruz and Smith",Timothy Allison
+199,2026-03-19,Sales,2026-03,East,Laptop,16,45653,Mcintyre Ltd,John Scott
+200,2026-05-08,Sales,2026-05,East,Phone,18,87622,Anthony-Byrd,Todd Owen
+201,2026-02-25,Sales,2026-02,South,Tablet,15,79357,Elliott Group,Robert Shannon
+202,2026-03-17,Sales,2026-03,West,Monitor,8,47178,"Moyer, Sanchez and Noble",Kevin Young
+203,2026-03-24,Sales,2026-03,South,Server,20,89159,Harvey LLC,Robin Wilson
+204,2026-03-19,Sales,2026-03,West,Laptop,11,117261,Green LLC,Alicia Costa
+205,2026-04-13,Sales,2026-04,South,Tablet,20,28057,Hawkins PLC,Lisa Scott
+206,2026-03-26,Sales,2026-03,North,Laptop,20,100011,"Brown, Roberts and Richmond",Derek Davies
+207,2026-03-24,Sales,2026-03,South,Laptop,17,90734,Dillon Inc,Antonio Brown IV
+208,2026-03-19,Sales,2026-03,South,Phone,2,51255,Brown LLC,Christopher Davidson
+209,2026-03-23,Sales,2026-03,West,Laptop,7,17433,"Ray, Reed and West",Eric Carrillo
+210,2026-03-17,Sales,2026-03,East,Tablet,1,68471,Dawson-Williams,Andrew Moran
+211,2026-02-26,Sales,2026-02,West,Laptop,6,74371,Smith LLC,James Mcgee
+212,2026-03-02,Sales,2026-03,South,Laptop,18,23072,Ford Ltd,Lynn Lee
+213,2026-05-18,Sales,2026-05,West,Laptop,20,104522,"Brown, Smith and Soto",Kevin Mcbride
+214,2026-02-22,Sales,2026-02,East,Server,12,85665,Maxwell-Gray,Natasha Caldwell
+215,2026-03-13,Sales,2026-03,East,Monitor,11,115713,Boyer-Garrison,Kaitlyn Patrick
+216,2026-03-29,Sales,2026-03,North,Server,3,109658,Harding and Sons,Aaron Schmidt
+217,2026-03-21,Sales,2026-03,East,Monitor,5,24914,"Weaver, Williams and Kirk",Brittany Davis
+218,2026-05-07,Sales,2026-05,West,Laptop,15,10216,Lee PLC,Angela Cummings
+219,2026-03-09,Sales,2026-03,South,Server,10,48075,James-Contreras,Melanie Peterson
+220,2026-04-21,Sales,2026-04,North,Phone,5,22418,Richardson-Saunders,Lori Smith
+221,2026-04-23,Sales,2026-04,South,Phone,20,54086,Hubbard PLC,Alexis Hogan
+222,2026-03-12,Sales,2026-03,East,Monitor,10,114012,Mendez Inc,Norma Cummings
+223,2026-04-03,Sales,2026-04,North,Tablet,9,118566,Newman-Young,Vanessa Martinez
+224,2026-03-12,Sales,2026-03,East,Phone,11,90948,Norris Group,Laurie Shepherd
+225,2026-03-29,Sales,2026-03,North,Tablet,8,93100,Knox Ltd,Jason Allen
+226,2026-02-19,Sales,2026-02,West,Tablet,19,22958,Dixon Ltd,Eugene Hall
+227,2026-04-06,Sales,2026-04,West,Tablet,10,66962,King-Park,David Richmond
+228,2026-05-15,Sales,2026-05,South,Laptop,3,57516,"Green, Singleton and Wade",Paul Buchanan
+229,2026-04-10,Sales,2026-04,West,Phone,14,13856,Brown-Clark,Paul Cummings
+230,2026-05-02,Sales,2026-05,North,Tablet,18,69855,Silva-Moody,Colton Martin
+231,2026-05-10,Sales,2026-05,East,Phone,1,88197,"Robinson, Lewis and Roberts",Sarah Delgado
+232,2026-04-27,Sales,2026-04,North,Laptop,20,115057,Hamilton and Sons,Dr. William Jones
+233,2026-04-18,Sales,2026-04,East,Tablet,15,108692,Perez LLC,Samantha Hunter
+234,2026-02-25,Sales,2026-02,South,Laptop,9,72401,Parsons-Logan,Anthony Fisher
+235,2026-04-15,Sales,2026-04,East,Tablet,19,21597,"Leon, Mcdonald and Terry",Eric Kelley
+236,2026-05-05,Sales,2026-05,North,Laptop,10,111914,Merritt Group,Joanna White
+237,2026-05-03,Sales,2026-05,North,Monitor,2,82798,"Burton, White and Smith",Barbara Shaffer
+238,2026-02-24,Sales,2026-02,North,Tablet,1,20378,Pacheco-Alvarez,Carly Perez
+239,2026-04-27,Sales,2026-04,North,Server,6,68239,"Howard, Malone and Nixon",Amy Spencer
+240,2026-02-23,Sales,2026-02,East,Tablet,2,105861,"Burton, Perez and Garza",Catherine Hart
+241,2026-04-19,Sales,2026-04,South,Server,14,102123,"Schmitt, Rangel and Jackson",Brian Griffin
+242,2026-04-05,Sales,2026-04,East,Server,4,90559,Summers-Lewis,Ryan Frank
+243,2026-05-11,Sales,2026-05,West,Monitor,16,13933,Rios PLC,John Brady
+244,2026-05-10,Sales,2026-05,West,Laptop,2,30892,"Beasley, Johnson and Russell",Dominic Hayden
+245,2026-05-12,Sales,2026-05,North,Phone,8,109006,Lewis-Smith,Kimberly Ware
+246,2026-04-12,Sales,2026-04,East,Server,11,83422,Grant Ltd,Christina Johnston
+247,2026-04-21,Sales,2026-04,South,Phone,10,94178,May Inc,Tamara Howard MD
+248,2026-05-17,Sales,2026-05,West,Tablet,10,41270,Mckinney LLC,Tonya Knox
+249,2026-03-23,Sales,2026-03,West,Phone,9,118645,Jackson-Greene,Brian Johnston
+250,2026-02-27,Sales,2026-02,North,Server,5,33115,"Cannon, Martin and Roberson",Alicia Shepherd DDS
+251,2026-03-04,Sales,2026-03,East,Phone,9,34545,"Edwards, Coleman and Johnson",Breanna Jackson
+252,2026-03-07,Sales,2026-03,North,Monitor,10,110330,"Garcia, Porter and Cabrera",Mr. Scott Parker
+253,2026-03-08,Sales,2026-03,South,Monitor,2,117126,Elliott and Sons,Kelly Reid
+254,2026-04-19,Sales,2026-04,North,Server,14,100944,"Blankenship, Harrison and Hancock",Denise Dominguez
+255,2026-05-20,Sales,2026-05,South,Server,19,85970,Williams-Winters,Robert Lawrence
+256,2026-03-05,Sales,2026-03,North,Phone,16,10992,Jensen LLC,Douglas Morris
+257,2026-05-11,Sales,2026-05,South,Laptop,11,12823,Ingram Group,Melissa Nelson
+258,2026-03-21,Sales,2026-03,East,Server,13,48024,Jacobson-Gutierrez,Carrie Torres
+259,2026-03-18,Sales,2026-03,West,Tablet,11,15689,Durham PLC,Jessica Robertson
+260,2026-03-31,Sales,2026-03,South,Phone,3,78925,King Inc,Julie Nelson
+261,2026-03-26,Sales,2026-03,South,Server,2,117179,Stafford Group,Valerie Mcdowell
+262,2026-04-20,Sales,2026-04,East,Phone,16,88555,Collins Group,Kristin Foster
+263,2026-04-12,Sales,2026-04,East,Phone,6,109674,Orr Inc,Daniel Reid
+264,2026-02-21,Sales,2026-02,North,Server,15,24985,"Sanchez, Foster and Simpson",David Willis
+265,2026-03-12,Sales,2026-03,North,Server,13,21570,"Shepherd, Pugh and Morales",Shirley Clark
+266,2026-04-05,Sales,2026-04,West,Tablet,19,19649,Cunningham-King,Nicole Williams
+267,2026-05-05,Sales,2026-05,West,Phone,17,108517,"Mcdonald, Smith and Martinez",Ann Stewart
+268,2026-03-14,Sales,2026-03,North,Monitor,15,108523,Ferguson-Lang,Jacob Burnett DDS
+269,2026-03-23,Sales,2026-03,East,Tablet,16,19685,Hernandez-Murillo,Tammy Fuentes
+270,2026-05-07,Sales,2026-05,North,Server,14,101486,"Hunter, Christensen and Hamilton",William Turner
+271,2026-04-01,Sales,2026-04,East,Laptop,6,26293,Jackson Ltd,Jeffrey Jones
+272,2026-05-05,Sales,2026-05,East,Server,19,117364,Bradley-Gill,Alex Hunter
+273,2026-03-05,Sales,2026-03,North,Monitor,9,64734,Perez Ltd,Melissa Davis
+274,2026-05-07,Sales,2026-05,North,Server,16,50576,Evans-Gross,Shannon Jones
+275,2026-05-02,Sales,2026-05,West,Monitor,13,69424,Martinez Inc,Brandi Werner
+276,2026-04-17,Sales,2026-04,North,Laptop,15,87529,Turner-Kim,Holly Aguirre
+277,2026-04-18,Sales,2026-04,West,Tablet,20,90641,White Ltd,Kristina Todd
+278,2026-02-25,Sales,2026-02,South,Tablet,13,14831,"Floyd, Brown and Rowe",Cheryl Dean
+279,2026-05-18,Sales,2026-05,East,Tablet,18,59286,"Alexander, Wolfe and Jones",Douglas Beck
+280,2026-04-16,Sales,2026-04,South,Laptop,9,21953,"Williams, Frye and Banks",Dustin Clarke
+281,2026-05-18,Sales,2026-05,West,Tablet,17,109972,Bell-Cruz,Kathryn Navarro
+282,2026-04-25,Sales,2026-04,West,Monitor,16,93757,Perez-Young,Christina Chapman
+283,2026-05-06,Sales,2026-05,West,Server,9,32862,Edwards and Sons,Jacqueline Mitchell
+284,2026-03-26,Sales,2026-03,East,Phone,18,104665,"Garrett, Smith and Branch",Carolyn Chan
+285,2026-04-02,Sales,2026-04,East,Tablet,14,106014,Gonzalez LLC,Sara Bradley
+286,2026-03-22,Sales,2026-03,South,Laptop,9,50545,Orr LLC,Kelly Cochran
+287,2026-04-27,Sales,2026-04,South,Laptop,16,62420,"Myers, Lopez and Pham",Jacob Frank
+288,2026-03-29,Sales,2026-03,West,Tablet,13,40216,West Ltd,Lisa Santos
+289,2026-02-24,Sales,2026-02,West,Tablet,19,73248,Young-Morris,Amber Lawson
+290,2026-04-26,Sales,2026-04,South,Phone,14,87616,Garcia and Sons,Rebecca Thompson
+291,2026-05-13,Sales,2026-05,North,Tablet,9,15462,"Wilson, Garza and Murray",Susan Wilson
+292,2026-04-11,Sales,2026-04,East,Phone,6,108875,Johnson-Smith,Patrick Mcgrath
+293,2026-02-24,Sales,2026-02,North,Server,1,51398,Kerr-Fisher,Vanessa Wilson
+294,2026-04-01,Sales,2026-04,South,Phone,15,28889,Richardson Ltd,Claire Holden
+295,2026-03-06,Sales,2026-03,East,Monitor,12,51934,"Ware, Meyer and Morton",Katherine Frey
+296,2026-05-14,Sales,2026-05,North,Monitor,3,88074,Webb-Wilkinson,Monica Jones
+297,2026-04-06,Sales,2026-04,North,Monitor,4,22070,Chaney and Sons,Taylor Wilson
+298,2026-05-13,Sales,2026-05,South,Server,12,27639,"Arias, Beck and James",Yolanda Peterson
+299,2026-05-04,Sales,2026-05,South,Server,15,89968,"Hicks, Lozano and Walsh",Tracy Cohen
+300,2026-02-28,Sales,2026-02,North,Phone,18,102748,Blackwell and Sons,Mary Nelson
+301,2026-03-21,Sales,2026-03,North,Server,9,76441,"Clark, Anderson and Goodman",Keith Russo
+302,2026-04-26,Sales,2026-04,North,Laptop,19,57453,"Miller, Smith and Reed",Marcus Byrd
+303,2026-04-17,Sales,2026-04,South,Tablet,4,84186,Ruiz-Rodriguez,Amanda Mullen
+304,2026-02-25,Sales,2026-02,West,Monitor,1,54882,Valentine-Brown,Kenneth Pierce
+305,2026-04-16,Sales,2026-04,East,Monitor,2,48145,Davis-Robbins,Mark Daniels
+306,2026-03-31,Sales,2026-03,South,Phone,11,58718,"Bush, Price and Harvey",Susan Montgomery
+307,2026-03-24,Sales,2026-03,South,Tablet,16,35622,Zimmerman-Martin,Shannon Richardson
+308,2026-04-10,Sales,2026-04,West,Server,18,24201,Thomas-Hudson,Kerry Patterson
+309,2026-03-28,Sales,2026-03,North,Phone,10,78933,Rojas-West,Charles Johnson
+310,2026-03-06,Sales,2026-03,East,Phone,16,71258,"Morris, Hunt and Wallace",Melissa Ball
+311,2026-03-21,Sales,2026-03,North,Server,12,18464,Griffin Inc,Nicholas Mendoza
+312,2026-05-04,Sales,2026-05,South,Server,10,44746,Barrett Inc,Darren Mendoza
+313,2026-05-14,Sales,2026-05,East,Tablet,5,20553,Jackson-Tucker,Hunter Farley
+314,2026-04-06,Sales,2026-04,North,Phone,7,107315,Olson Inc,Brian Smith
+315,2026-02-27,Sales,2026-02,West,Phone,12,88291,Kennedy-Mckee,David Huff
+316,2026-04-27,Sales,2026-04,North,Monitor,20,46625,Diaz-Hawkins,Stephen Garcia
+317,2026-02-26,Sales,2026-02,West,Tablet,2,13415,"Young, Collins and Montgomery",Vanessa Saunders
+318,2026-04-27,Sales,2026-04,West,Tablet,5,62356,Stone LLC,Diane Nguyen
+319,2026-04-22,Sales,2026-04,West,Server,14,61681,Reed-Bush,William Mckenzie
+320,2026-03-06,Sales,2026-03,East,Laptop,12,46856,Newman Inc,Eduardo Gonzalez
+321,2026-02-28,Sales,2026-02,East,Phone,7,106894,"Morse, Roach and West",Patricia Oneal
+322,2026-04-04,Sales,2026-04,North,Monitor,4,24109,Stephens-Nelson,Laurie Harris
+323,2026-04-01,Sales,2026-04,North,Phone,3,10970,Hoover Group,Beverly Riddle
+324,2026-03-13,Sales,2026-03,West,Laptop,12,32303,"Fisher, Howard and Conner",James Garcia
+325,2026-02-21,Sales,2026-02,West,Server,12,22720,Hicks-Hudson,Joshua Moore
+326,2026-03-27,Sales,2026-03,East,Monitor,8,74065,Reed-King,Damon Ashley
+327,2026-04-12,Sales,2026-04,South,Phone,2,76131,"Walker, Anderson and Hayes",John Gardner
+328,2026-04-21,Sales,2026-04,East,Tablet,8,44657,Munoz and Sons,Amber Powell MD
+329,2026-05-14,Sales,2026-05,West,Monitor,3,59927,French-Long,Jennifer Lopez
+330,2026-03-12,Sales,2026-03,South,Tablet,2,85284,Graves Group,Christopher Holt
+331,2026-04-26,Sales,2026-04,South,Laptop,20,85282,"Wyatt, Brennan and Thomas",Claudia Davis
+332,2026-03-09,Sales,2026-03,South,Laptop,3,64025,"Nelson, Fields and Lynch",Jordan Salazar
+333,2026-03-28,Sales,2026-03,East,Phone,20,29077,Mayer and Sons,Bonnie Flores
+334,2026-03-31,Sales,2026-03,South,Laptop,5,65108,Williams PLC,Richard Herring
+335,2026-03-18,Sales,2026-03,East,Phone,4,76342,Johnson-Ross,Adam Warren
+336,2026-03-27,Sales,2026-03,East,Server,17,110959,Brown Ltd,Donna Robinson
+337,2026-04-20,Sales,2026-04,West,Monitor,6,71501,Wolf LLC,Tyler Kirk
+338,2026-04-24,Sales,2026-04,East,Tablet,7,26311,"Rowland, Brown and Cross",Brittany Mckee
+339,2026-05-09,Sales,2026-05,West,Laptop,16,118917,"Faulkner, Lopez and Greene",Robert Lane
+340,2026-05-09,Sales,2026-05,North,Server,19,75660,Herman LLC,Chelsea Chandler
+341,2026-03-20,Sales,2026-03,East,Tablet,20,15873,"Young, Anderson and Turner",Michael Koch
+342,2026-04-01,Sales,2026-04,East,Monitor,6,73191,Tate Ltd,Tanya Schmidt
+343,2026-04-06,Sales,2026-04,East,Tablet,4,34602,Ferrell-Estrada,Kimberly Peterson
+344,2026-02-27,Sales,2026-02,West,Tablet,1,14250,Schwartz Ltd,Frances Allison
+345,2026-05-15,Sales,2026-05,South,Laptop,3,39565,Anderson-Woodward,Kevin Burch
+346,2026-03-31,Sales,2026-03,South,Phone,2,46094,Higgins LLC,Amy Marshall
+347,2026-02-23,Sales,2026-02,East,Tablet,5,36963,Stafford Group,Allen Miller
+348,2026-03-12,Sales,2026-03,North,Server,3,49731,"Hernandez, Jones and Cox",Casey Nelson
+349,2026-03-15,Sales,2026-03,South,Phone,3,100639,"Collier, Fields and Haynes",Jessica Garza
+350,2026-03-28,Sales,2026-03,West,Phone,5,46722,Walker-Wall,Michael Newman
+351,2026-02-22,Sales,2026-02,South,Phone,11,45218,"Graves, Jones and Green",Nicholas Fernandez
+352,2026-03-01,Sales,2026-03,East,Monitor,11,61692,"Gutierrez, Massey and Johnson",Ms. Laura Olsen MD
+353,2026-02-21,Sales,2026-02,West,Laptop,4,95860,Jones Group,Jeffrey Montgomery
+354,2026-03-08,Sales,2026-03,East,Server,7,52588,Johnson Inc,Carol Walker
+355,2026-03-07,Sales,2026-03,North,Laptop,14,57337,Garcia and Sons,Donna White
+356,2026-03-26,Sales,2026-03,West,Laptop,13,102068,Bowen-Turner,David Leon
+357,2026-04-27,Sales,2026-04,East,Server,8,86759,Gonzalez-Peterson,Kevin Frazier
+358,2026-05-06,Sales,2026-05,South,Server,16,18608,Booth Group,Raymond Burgess
+359,2026-04-24,Sales,2026-04,South,Laptop,13,67075,White-Martin,Anthony Graves
+360,2026-04-16,Sales,2026-04,East,Phone,15,107412,Arnold LLC,Danielle Wilson
+361,2026-02-23,Sales,2026-02,East,Tablet,13,99375,"Anderson, Donovan and Johnson",Daniel Taylor
+362,2026-05-07,Sales,2026-05,North,Tablet,20,34126,Smith-Sandoval,Michael Campos
+363,2026-04-12,Sales,2026-04,West,Server,19,95608,Gonzalez PLC,Christina Ayala
+364,2026-04-13,Sales,2026-04,North,Monitor,7,20463,Davila-Baldwin,Lynn Downs
+365,2026-03-23,Sales,2026-03,South,Server,13,70031,"Hall, Kirk and Bradshaw",Shane Caldwell
+366,2026-04-03,Sales,2026-04,East,Monitor,12,99852,Williams-Johnson,Deborah Hammond
+367,2026-05-07,Sales,2026-05,West,Phone,7,76973,Thomas-Morris,Larry Smith
+368,2026-04-13,Sales,2026-04,North,Laptop,6,34919,Delgado Inc,James Diaz
+369,2026-04-08,Sales,2026-04,South,Monitor,9,40963,Robbins-Lindsey,Angela Phillips
+370,2026-05-08,Sales,2026-05,East,Tablet,1,110989,Jarvis Ltd,Shannon Holland
+371,2026-03-20,Sales,2026-03,North,Phone,15,84777,Shaw-Russell,Andrew Allen
+372,2026-03-09,Sales,2026-03,South,Server,16,93300,"Rivera, Graham and Foster",Michele Velasquez
+373,2026-04-07,Sales,2026-04,West,Monitor,20,103367,Graham and Sons,Trevor Phillips
+374,2026-04-27,Sales,2026-04,North,Phone,5,59846,Estrada LLC,William Fisher
+375,2026-05-04,Sales,2026-05,West,Monitor,11,72130,Brown Group,Brandi Jacobs
+376,2026-05-12,Sales,2026-05,East,Laptop,1,79178,"Hall, Sanchez and Strong",Isabella Hart
+377,2026-05-17,Sales,2026-05,East,Server,5,80203,Smith-Chapman,Sheena Mendoza
+378,2026-05-05,Sales,2026-05,West,Monitor,2,39745,Wang-Lewis,Brandy Brown
+379,2026-03-20,Sales,2026-03,South,Monitor,6,104246,Davis LLC,Nicole Evans
+380,2026-04-18,Sales,2026-04,South,Laptop,16,70150,Kennedy-Sanchez,Michele Norton
+381,2026-04-17,Sales,2026-04,South,Monitor,9,57917,Mckenzie-Compton,Meghan James
+382,2026-04-24,Sales,2026-04,South,Phone,2,43589,"Guerrero, Orr and Jones",Lisa Simpson
+383,2026-05-16,Sales,2026-05,East,Laptop,6,104504,"Spencer, Martin and Walter",Sandra Moore
+384,2026-03-15,Sales,2026-03,South,Monitor,18,112577,Chung-Patel,Michaela Gentry
+385,2026-05-19,Sales,2026-05,South,Server,2,95127,Green-Mccall,Aaron Nelson II
+386,2026-03-30,Sales,2026-03,East,Laptop,14,46454,"Terry, Knox and Goodwin",Jesse Fleming
+387,2026-04-13,Sales,2026-04,West,Laptop,14,40180,Boyer LLC,Aaron Brown DDS
+388,2026-05-03,Sales,2026-05,East,Monitor,4,86487,Adams PLC,Martin Patterson
+389,2026-04-04,Sales,2026-04,East,Tablet,15,100239,Hammond-Edwards,Todd Woods
+390,2026-03-30,Sales,2026-03,East,Monitor,1,69279,"Hancock, Flores and Smith",Denise Duffy
+391,2026-04-14,Sales,2026-04,East,Monitor,20,52196,Gilbert-Rodriguez,David Lowe
+392,2026-04-26,Sales,2026-04,North,Laptop,13,17720,"Becker, Taylor and Bell",Brian Roberts
+393,2026-03-03,Sales,2026-03,West,Phone,5,109185,Jones Inc,Lindsay Nichols
+394,2026-02-25,Sales,2026-02,East,Laptop,1,108981,"Patel, Harper and Hernandez",Ronnie Parrish
+395,2026-03-06,Sales,2026-03,North,Tablet,7,57306,"Garza, Powers and Glover",Mrs. Nicole Coleman
+396,2026-05-15,Sales,2026-05,South,Server,19,95878,Dickson PLC,Casey Russell
+397,2026-05-09,Sales,2026-05,South,Phone,6,117148,Castro-Schroeder,Pamela Nelson
+398,2026-03-30,Sales,2026-03,West,Monitor,13,19139,"Clark, Wallace and Griffin",Scott Jacobs
+399,2026-03-23,Sales,2026-03,South,Tablet,14,10628,Campbell LLC,Joseph Clark
+400,2026-03-12,Sales,2026-03,South,Monitor,11,108504,"Burke, Johnson and Hill",Mark Schaefer
+401,2026-03-11,Sales,2026-03,North,Laptop,2,20677,Grant-Anderson,Jonathan Holloway
+402,2026-02-24,Sales,2026-02,North,Monitor,9,48605,"Cruz, Flores and Robbins",Jesse Hughes
+403,2026-03-20,Sales,2026-03,North,Phone,3,54975,"Weeks, Arias and Tate",Joseph Branch
+404,2026-03-29,Sales,2026-03,North,Laptop,3,18168,Hernandez LLC,Nicholas Smith
+405,2026-05-01,Sales,2026-05,South,Server,16,111021,"James, Huang and Knight",Sean Austin
+406,2026-04-27,Sales,2026-04,North,Phone,13,92337,"Cox, Ward and Payne",Charles Nelson
+407,2026-02-23,Sales,2026-02,West,Laptop,3,38126,Harris LLC,Thomas Brewer
+408,2026-04-29,Sales,2026-04,West,Tablet,7,69832,Miller-Jackson,Clinton Jackson
+409,2026-04-02,Sales,2026-04,North,Server,10,115319,Bauer Ltd,Lisa Willis
+410,2026-03-27,Sales,2026-03,North,Tablet,7,67854,Thompson-Williams,Thomas Knapp
+411,2026-02-21,Sales,2026-02,East,Tablet,20,110744,Kim Group,Jessica Underwood
+412,2026-05-20,Sales,2026-05,South,Tablet,14,94918,"Martin, Campbell and Gonzalez",Russell Harrington
+413,2026-04-22,Sales,2026-04,South,Phone,3,109455,"Torres, Martinez and Jimenez",Yvonne Larson
+414,2026-05-01,Sales,2026-05,North,Server,9,70473,Morales-Lowe,Dustin Reed
+415,2026-04-20,Sales,2026-04,West,Server,10,31985,Reynolds-Harvey,Clayton Gray
+416,2026-04-16,Sales,2026-04,West,Monitor,15,72228,Ochoa-Haynes,Jennifer Blevins
+417,2026-05-04,Sales,2026-05,North,Server,4,11006,"Wallace, Johnson and Henderson",Jesus Hill
+418,2026-04-26,Sales,2026-04,South,Tablet,9,37259,Martin PLC,Justin Phillips
+419,2026-05-09,Sales,2026-05,West,Server,13,72731,Mcintyre-Petersen,Jamie Mayo
+420,2026-04-21,Sales,2026-04,West,Monitor,6,45434,"Gonzales, Mayer and Meadows",Allison Davidson
+421,2026-03-15,Sales,2026-03,North,Monitor,9,98837,Sanders-Murphy,Charles Lawrence
+422,2026-05-15,Sales,2026-05,North,Monitor,4,93493,Fry-Cobb,Michael Davis
+423,2026-02-28,Sales,2026-02,North,Tablet,2,29108,Perez-Brown,Frances Walters
+424,2026-02-20,Sales,2026-02,West,Laptop,9,74914,Moss-Barnes,Anita Lee
+425,2026-04-02,Sales,2026-04,West,Tablet,18,30152,White PLC,William Bryant
+426,2026-02-24,Sales,2026-02,East,Tablet,2,101972,Evans-Hubbard,Brendan Villarreal
+427,2026-05-18,Sales,2026-05,East,Laptop,6,57487,Simmons-Spencer,Anne Robinson
+428,2026-04-25,Sales,2026-04,South,Server,14,87666,Cain-Frost,Christopher Newman
+429,2026-02-20,Sales,2026-02,South,Server,1,24010,Rivera Ltd,Stephen Ramirez
+430,2026-05-18,Sales,2026-05,West,Monitor,1,62994,Hall Group,Patrick Mahoney
+431,2026-03-06,Sales,2026-03,East,Tablet,14,70130,Ortiz PLC,Carolyn Jackson
+432,2026-03-04,Sales,2026-03,South,Phone,1,32522,Sanchez Group,Marcus Thompson
+433,2026-03-27,Sales,2026-03,East,Server,13,96639,"Campbell, Swanson and Dodson",Michael Gutierrez
+434,2026-04-03,Sales,2026-04,East,Laptop,15,40509,Monroe-Hill,Bill Carson
+435,2026-03-25,Sales,2026-03,South,Monitor,11,75903,Ward and Sons,Samantha Fisher
+436,2026-03-20,Sales,2026-03,West,Monitor,2,81113,Short Inc,Elizabeth Pierce
+437,2026-03-15,Sales,2026-03,South,Laptop,10,26867,Hernandez Ltd,Brandon Cortez
+438,2026-04-06,Sales,2026-04,East,Phone,2,81825,Vasquez and Sons,Melissa Owen
+439,2026-03-06,Sales,2026-03,West,Phone,17,59876,"Stone, Williams and Rhodes",Dawn Nicholson
+440,2026-05-07,Sales,2026-05,South,Tablet,12,76826,Moore-Pineda,Cody Jones
+441,2026-03-02,Sales,2026-03,East,Server,5,84466,Dickerson Group,Scott Mccormick
+442,2026-04-22,Sales,2026-04,North,Monitor,17,58562,Johnson-Webb,Alyssa Wilkins
+443,2026-04-13,Sales,2026-04,North,Laptop,20,101956,Schwartz Group,Elizabeth Smith
+444,2026-05-01,Sales,2026-05,North,Phone,7,113290,Bowman PLC,Tina Ellis
+445,2026-03-04,Sales,2026-03,South,Tablet,17,89579,"Adams, Shannon and Wright",Barry Anderson
+446,2026-05-18,Sales,2026-05,East,Monitor,1,22562,Duncan-Mason,Norma Jennings
+447,2026-04-29,Sales,2026-04,East,Laptop,12,117245,Pierce LLC,Joyce Savage
+448,2026-04-09,Sales,2026-04,South,Phone,8,62926,Wilkins-Howe,Timothy Brown
+449,2026-02-26,Sales,2026-02,South,Tablet,19,118225,"Sampson, Hill and Best",Max Bridges
+450,2026-03-14,Sales,2026-03,West,Phone,3,79163,Sanders-Johnson,Kimberly Eaton
+451,2026-04-25,Sales,2026-04,East,Server,10,110301,Walton and Sons,Cathy Ritter
+452,2026-05-09,Sales,2026-05,North,Monitor,8,20527,Garcia-Brown,Brandon King
+453,2026-02-23,Sales,2026-02,South,Phone,10,43266,Holmes-Webster,Scott Taylor
+454,2026-04-20,Sales,2026-04,North,Monitor,3,92785,"Lowe, Forbes and Jackson",Dr. William Wright MD
+455,2026-04-06,Sales,2026-04,South,Phone,15,60204,Hill-Lee,April Nelson
+456,2026-05-13,Sales,2026-05,West,Tablet,6,82646,"Thomas, Moore and Torres",Brandy Waller
+457,2026-03-07,Sales,2026-03,North,Monitor,10,51246,Taylor Inc,Nicole Hatfield
+458,2026-03-07,Sales,2026-03,East,Server,8,53294,Howard-Moore,Pamela Conner MD
+459,2026-02-26,Sales,2026-02,South,Monitor,20,104010,"Smith, Griffith and Norton",Kevin Jones
+460,2026-05-03,Sales,2026-05,East,Server,20,64907,Hanson Ltd,Stephanie Henderson
+461,2026-05-10,Sales,2026-05,East,Tablet,5,59497,Phelps Ltd,Jonathan Zuniga
+462,2026-05-04,Sales,2026-05,East,Laptop,9,93136,Kennedy LLC,Brenda Joseph
+463,2026-03-23,Sales,2026-03,West,Phone,10,32743,"Rogers, Smith and Richards",Jonathan Morales
+464,2026-03-28,Sales,2026-03,West,Phone,18,106635,Peterson LLC,Joshua Nguyen
+465,2026-03-12,Sales,2026-03,South,Phone,6,57555,Werner-Brady,Jennifer Swanson
+466,2026-05-11,Sales,2026-05,West,Laptop,2,67798,"Harris, Daniels and Chambers",Joseph Valencia
+467,2026-04-17,Sales,2026-04,South,Laptop,13,44122,Strong-Lee,Robin Chambers
+468,2026-04-12,Sales,2026-04,West,Monitor,10,110119,Williamson Ltd,Christopher Diaz
+469,2026-03-25,Sales,2026-03,East,Laptop,2,119860,Curry-Mays,Shannon Davis
+470,2026-05-14,Sales,2026-05,South,Tablet,12,45653,Charles-Montes,Amber Byrd
+471,2026-03-11,Sales,2026-03,East,Monitor,19,36775,Johnson-Bray,Joshua Hardin
+472,2026-04-01,Sales,2026-04,West,Monitor,13,54335,Dorsey-Liu,Raymond Hampton
+473,2026-04-04,Sales,2026-04,West,Phone,14,15845,"Bell, Miller and Silva",Bradley Maldonado
+474,2026-03-31,Sales,2026-03,West,Monitor,12,84828,Santiago-Price,Danny Williams
+475,2026-02-27,Sales,2026-02,West,Server,7,105233,Rodriguez-Hughes,Lisa Mcmahon
+476,2026-04-07,Sales,2026-04,South,Server,15,82322,Cochran LLC,Daniel Taylor
+477,2026-03-27,Sales,2026-03,West,Phone,9,47204,"Palmer, Garcia and Bright",Karen Smith
+478,2026-05-12,Sales,2026-05,North,Server,14,77035,Fitzpatrick-Yu,Donald Miller
+479,2026-04-14,Sales,2026-04,West,Tablet,15,46105,Miller Ltd,Laura Ross
+480,2026-04-12,Sales,2026-04,North,Phone,19,18023,Walker Group,Janice Dean
+481,2026-04-23,Sales,2026-04,East,Phone,20,115727,"Hurst, Brooks and Snyder",Denise Herrera
+482,2026-02-20,Sales,2026-02,North,Tablet,9,21092,"Jackson, Fisher and Martin",Dawn Howard
+483,2026-03-15,Sales,2026-03,West,Monitor,8,112778,Brown-Barnes,April Walker
+484,2026-03-19,Sales,2026-03,West,Server,20,48314,Gonzalez-Armstrong,James Pennington
+485,2026-04-13,Sales,2026-04,North,Tablet,12,12130,Lewis-Vasquez,Stacey Wade
+486,2026-05-07,Sales,2026-05,North,Monitor,18,119207,Johnson-Hill,Annette Yoder
+487,2026-03-07,Sales,2026-03,South,Tablet,18,30167,"Jones, Hall and Hunter",Brian Walsh
+488,2026-03-02,Sales,2026-03,North,Phone,4,13830,Estes LLC,Craig Rice
+489,2026-05-16,Sales,2026-05,North,Server,18,114573,Young Inc,Trevor Johnson
+490,2026-02-20,Sales,2026-02,South,Monitor,10,47746,"Todd, Maldonado and Krause",Brian Marshall
+491,2026-04-28,Sales,2026-04,East,Phone,1,106946,"Phillips, Pennington and Freeman",Emily Scott
+492,2026-03-20,Sales,2026-03,South,Phone,20,117027,"Taylor, Ortega and Mccall",Monica Johnson
+493,2026-05-01,Sales,2026-05,West,Laptop,1,68987,"Knapp, Davies and Crawford",Michelle Howard
+494,2026-03-06,Sales,2026-03,East,Monitor,1,79263,Henson-Cordova,Mary Silva
+495,2026-04-23,Sales,2026-04,East,Phone,11,50759,Rose Group,Russell Powell
+496,2026-02-20,Sales,2026-02,West,Phone,12,107465,Ray-Macdonald,Johnathan Summers
+497,2026-03-24,Sales,2026-03,North,Laptop,20,87575,Blanchard Ltd,Heather Torres
+498,2026-05-01,Sales,2026-05,South,Server,18,50225,"Ward, Hoffman and Bowman",Diane Wolf
+499,2026-05-12,Sales,2026-05,North,Phone,20,71677,Hickman Group,James Schmidt
+500,2026-04-06,Sales,2026-04,East,Tablet,10,22996,"Davis, Macias and Smith",Mark Nixon
+501,2026-03-14,Sales,2026-03,West,Monitor,13,73150,"Walker, Gutierrez and Roman",Timothy Walker
+502,2026-04-08,Sales,2026-04,East,Phone,7,97894,Lee PLC,Laura Friedman
+503,2026-03-04,Sales,2026-03,North,Server,18,56418,Young LLC,Tony Rose
+504,2026-02-23,Sales,2026-02,North,Monitor,8,16151,"Gomez, Evans and Russell",Megan Flores
+505,2026-03-05,Sales,2026-03,West,Server,14,112740,"Ellison, Long and Roberts",Kimberly Hansen
+506,2026-04-24,Sales,2026-04,East,Tablet,7,54029,Beck PLC,Catherine Peterson
+507,2026-03-08,Sales,2026-03,North,Laptop,20,30851,Gonzales-Beard,Jesse Carpenter
+508,2026-05-09,Sales,2026-05,East,Monitor,15,83100,Moore Group,Madison Young
+509,2026-03-26,Sales,2026-03,North,Phone,14,110285,"Farmer, Jordan and Brown",James Moore
+510,2026-03-26,Sales,2026-03,North,Monitor,15,118268,"Barrett, Potts and Campbell",Matthew Wright
+511,2026-04-12,Sales,2026-04,North,Phone,1,32155,"Miller, Perry and Garcia",Erin Owens DDS
+512,2026-03-29,Sales,2026-03,North,Tablet,1,12463,"Wagner, Kramer and Cox",David Charles
+513,2026-03-22,Sales,2026-03,East,Server,16,20418,"Rivas, Smith and Nguyen",Gabriel Ford
+514,2026-05-05,Sales,2026-05,East,Tablet,7,30923,Bright and Sons,Daniel Cole
+515,2026-02-24,Sales,2026-02,South,Monitor,5,81084,Bush and Sons,Alexander Farmer
+516,2026-04-13,Sales,2026-04,West,Tablet,12,109189,"Lee, Reynolds and Nelson",Michael Sanchez
+517,2026-04-27,Sales,2026-04,West,Server,4,57192,Pope PLC,Clinton Schroeder
+518,2026-03-07,Sales,2026-03,West,Server,20,32409,"Reyes, Barnes and Martin",Heather Flores
+519,2026-05-01,Sales,2026-05,South,Laptop,2,57275,Mills-Lindsey,Robert Jimenez
+520,2026-04-12,Sales,2026-04,North,Monitor,3,88274,Lyons-Davis,Timothy White
+521,2026-03-14,Sales,2026-03,East,Phone,6,105409,Adams-Johnson,Daniel Ramos
+522,2026-05-03,Sales,2026-05,West,Server,20,97550,Cole Inc,Albert Shaffer
+523,2026-05-12,Sales,2026-05,West,Phone,18,31140,"Brooks, Logan and Simpson",Mrs. Amanda Higgins
+524,2026-03-26,Sales,2026-03,North,Server,1,113230,Mann-Mccarthy,Taylor Valencia
+525,2026-04-24,Sales,2026-04,West,Tablet,12,48613,"Martin, Perry and Brady",Karen Cain
+526,2026-02-24,Sales,2026-02,North,Tablet,5,68231,Tucker-Rich,Barbara Deleon
+527,2026-05-10,Sales,2026-05,North,Tablet,19,41346,Mcclure-Boyd,David Grimes
+528,2026-04-13,Sales,2026-04,South,Phone,8,22235,"Cruz, Higgins and Price",David Eaton
+529,2026-03-31,Sales,2026-03,North,Laptop,15,51013,Lowe LLC,Nancy Gonzalez
+530,2026-03-30,Sales,2026-03,East,Laptop,10,55453,Guzman PLC,Tyler Lewis
+531,2026-03-12,Sales,2026-03,South,Monitor,7,13260,Vazquez-Yates,Erin Taylor
+532,2026-05-06,Sales,2026-05,North,Server,6,30137,Gutierrez-Williamson,Joshua Allen
+533,2026-05-03,Sales,2026-05,South,Server,10,117426,"Anderson, Nguyen and Price",David Mitchell
+534,2026-02-20,Sales,2026-02,East,Laptop,14,105306,Stewart-Santos,Robert Hughes
+535,2026-03-29,Sales,2026-03,South,Phone,8,71905,Shaw and Sons,Natalie Richard
+536,2026-02-24,Sales,2026-02,North,Phone,19,24076,"Jones, Jackson and Wade",Amanda Hill
+537,2026-03-08,Sales,2026-03,West,Phone,4,18991,"Santana, Jones and Williams",Alex Hayden
+538,2026-03-21,Sales,2026-03,East,Monitor,5,73994,Greene PLC,Courtney Mccormick
+539,2026-04-03,Sales,2026-04,South,Monitor,3,18001,Lynch Inc,Catherine Burch
+540,2026-05-20,Sales,2026-05,South,Monitor,12,57772,Byrd and Sons,Christina Evans
+541,2026-03-22,Sales,2026-03,North,Monitor,20,12177,Frost-Young,Kayla Barton
+542,2026-04-19,Sales,2026-04,West,Server,4,15259,Jackson PLC,Jacob King DDS
+543,2026-05-14,Sales,2026-05,North,Monitor,16,55749,Johnston Ltd,Ryan Khan
+544,2026-04-22,Sales,2026-04,North,Laptop,7,36931,Foley-Mcgee,Mr. Austin Bryant
+545,2026-04-12,Sales,2026-04,East,Tablet,6,29493,"Quinn, Alvarez and Adams",Eric Reese
+546,2026-04-10,Sales,2026-04,North,Phone,16,34959,Lane-Haynes,Gregory Morris
+547,2026-05-16,Sales,2026-05,South,Laptop,3,31038,"Wells, Douglas and Singleton",Jeffrey Spence DDS
+548,2026-04-15,Sales,2026-04,East,Tablet,10,33199,West-Berger,Jessica Wolf
+549,2026-05-01,Sales,2026-05,North,Laptop,5,77205,Cruz-Taylor,Ashley Medina
+550,2026-03-07,Sales,2026-03,South,Tablet,2,54220,"Jones, Noble and Thompson",Anthony Gregory
+551,2026-05-07,Sales,2026-05,West,Tablet,1,57746,Wilson LLC,Lindsey Schneider
+552,2026-03-21,Sales,2026-03,North,Monitor,20,18135,Stafford LLC,James Miller
+553,2026-03-24,Sales,2026-03,West,Phone,18,117953,"Bailey, Castillo and Rodriguez",Bruce Anderson
+554,2026-03-18,Sales,2026-03,North,Laptop,19,30604,Smith-Romero,Stephanie Robles
+555,2026-03-24,Sales,2026-03,North,Tablet,3,111297,"Curtis, Johnson and Choi",Shelly Thomas
+556,2026-04-23,Sales,2026-04,West,Server,12,37513,Byrd-Lawrence,Debra Moore
+557,2026-03-11,Sales,2026-03,West,Monitor,4,23489,Reilly-Gross,Daniel Frey
+558,2026-03-30,Sales,2026-03,South,Phone,17,78265,Taylor PLC,Taylor Lopez
+559,2026-03-10,Sales,2026-03,East,Tablet,1,109482,Campbell Group,Stephanie Williams
+560,2026-04-28,Sales,2026-04,North,Tablet,11,99307,Schmidt-Lucas,Jonathan Sanchez
+561,2026-04-27,Sales,2026-04,West,Server,4,53599,Randall-Gutierrez,Stacy Nichols
+562,2026-04-05,Sales,2026-04,South,Tablet,11,53294,Gregory-Salinas,Kathy Allen
+563,2026-05-10,Sales,2026-05,West,Phone,18,24981,Santana-Padilla,Edward Waters
+564,2026-03-01,Sales,2026-03,South,Phone,7,66153,"Cox, Castillo and Pearson",Michelle Newman PhD
+565,2026-05-03,Sales,2026-05,West,Laptop,11,59519,"Gonzales, Wilson and Vasquez",Micheal Wilkins
+566,2026-05-15,Sales,2026-05,South,Tablet,17,59183,Andrews-Garcia,David Williams
+567,2026-05-08,Sales,2026-05,North,Phone,6,83174,Taylor-Stewart,Nicholas Kim
+568,2026-04-19,Sales,2026-04,West,Tablet,20,58398,Tucker-Williams,Mark Fernandez
+569,2026-03-25,Sales,2026-03,North,Laptop,8,104048,Meyers-Diaz,Carol Lee
+570,2026-03-18,Sales,2026-03,West,Tablet,5,27959,Phillips Inc,Michaela Ross
+571,2026-03-28,Sales,2026-03,West,Laptop,3,110308,"Hull, Suarez and Todd",Sean Coleman
+572,2026-03-30,Sales,2026-03,North,Server,6,86011,Garcia-Johnson,Lisa Johnson
+573,2026-03-05,Sales,2026-03,South,Tablet,11,77419,Jacobs-Lane,Brandon Page
+574,2026-05-19,Sales,2026-05,North,Phone,2,85589,Lambert-Johnson,Stephanie Ruiz
+575,2026-03-14,Sales,2026-03,North,Laptop,4,49038,"Ramirez, Walker and Hurst",Alexander Ellis
+576,2026-05-04,Sales,2026-05,North,Tablet,6,53570,"Powers, Taylor and Reynolds",Kristina Johnson
+577,2026-05-11,Sales,2026-05,East,Phone,4,96925,Brooks-Johnson,Stephen Hawkins
+578,2026-05-08,Sales,2026-05,South,Tablet,19,117937,Brown-Kemp,Susan Cunningham
+579,2026-03-26,Sales,2026-03,North,Tablet,13,108211,Swanson-Lynch,Jacob Zhang
+580,2026-05-07,Sales,2026-05,North,Phone,6,46180,"Henry, Wells and Turner",Zachary Mitchell
+581,2026-03-25,Sales,2026-03,South,Tablet,20,36270,Clark-Keith,Sheila Jensen
+582,2026-05-03,Sales,2026-05,North,Phone,20,44521,"Patrick, Lucero and Boone",Elizabeth Young
+583,2026-04-19,Sales,2026-04,North,Laptop,15,68503,Gonzalez PLC,Duane Lloyd
+584,2026-04-12,Sales,2026-04,East,Tablet,4,54340,"Ramirez, Watkins and Patterson",Louis Russo
+585,2026-05-11,Sales,2026-05,South,Server,6,110040,"Watson, Lopez and Snyder",Brandon Nicholson
+586,2026-05-09,Sales,2026-05,South,Laptop,10,47373,Deleon Group,Michael Mcmillan
+587,2026-04-27,Sales,2026-04,South,Monitor,18,13110,"Villanueva, Johns and Brooks",Mr. Scott Campos DDS
+588,2026-03-18,Sales,2026-03,East,Tablet,2,18551,Hayden Group,Michelle Shaw
+589,2026-05-06,Sales,2026-05,North,Tablet,8,35314,"Henderson, Shaw and White",Angel Flynn
+590,2026-04-26,Sales,2026-04,South,Tablet,3,97233,Robinson Ltd,Lauren Kemp
+591,2026-04-06,Sales,2026-04,East,Monitor,8,103979,"Anderson, Lucas and Turner",Kimberly Johnson
+592,2026-04-23,Sales,2026-04,West,Laptop,10,89228,Wood-Frank,Katherine Oconnell
+593,2026-05-06,Sales,2026-05,East,Monitor,18,33124,Santos-Harrison,Sarah Jones
+594,2026-03-20,Sales,2026-03,East,Laptop,14,119185,Nichols PLC,Jessica Gonzalez
+595,2026-05-10,Sales,2026-05,West,Monitor,17,106903,Willis-Holloway,Keith Stephens
+596,2026-04-07,Sales,2026-04,West,Monitor,18,21536,Foster-Rowe,Catherine Miller
+597,2026-05-20,Sales,2026-05,West,Phone,1,98296,Jones-Jensen,Yolanda Nelson
+598,2026-04-02,Sales,2026-04,South,Tablet,9,109220,Carney-Raymond,Scott Lambert
+599,2026-05-14,Sales,2026-05,West,Phone,14,54985,"Turner, Ramirez and Zhang",Bridget Miller
+600,2026-04-09,Sales,2026-04,West,Server,3,67461,Perez Ltd,Christopher Bell
+601,2026-03-12,Sales,2026-03,South,Monitor,12,73209,"Delgado, Morrow and Miranda",Heather Mendez
+602,2026-05-01,Sales,2026-05,South,Phone,5,10837,"Christensen, Brewer and Gonzalez",Tammy Morgan
+603,2026-03-27,Sales,2026-03,North,Laptop,13,70788,Garcia-Allen,Renee Mahoney
+604,2026-03-02,Sales,2026-03,East,Phone,11,101763,Velazquez-Grant,Teresa Johnson
+605,2026-02-22,Sales,2026-02,North,Server,19,34630,Byrd Inc,Courtney Bentley
+606,2026-03-16,Sales,2026-03,West,Phone,7,84066,Graves Inc,Dr. Lindsey Johnson
+607,2026-04-25,Sales,2026-04,West,Laptop,20,108918,Barker-Davis,Robert Booth
+608,2026-04-25,Sales,2026-04,West,Tablet,17,82190,Dalton-Olsen,Craig Bolton
+609,2026-05-05,Sales,2026-05,North,Laptop,20,21801,Yang-Ramirez,Amanda Stone
+610,2026-05-01,Sales,2026-05,North,Laptop,10,78565,"Smith, Lane and Walls",Jessica Allen MD
+611,2026-04-01,Sales,2026-04,East,Tablet,9,12111,"Davidson, Mcdowell and Hays",Miranda Welch
+612,2026-05-09,Sales,2026-05,North,Tablet,7,41837,"Rollins, Jones and Moran",Walter Torres
+613,2026-04-05,Sales,2026-04,West,Phone,8,106345,Montoya Inc,Tracy Mccann
+614,2026-04-18,Sales,2026-04,South,Monitor,5,111521,Curtis Ltd,Timothy Cervantes
+615,2026-02-26,Sales,2026-02,North,Laptop,1,26944,"Thomas, Hall and Carter",Cody Mcguire
+616,2026-04-01,Sales,2026-04,East,Monitor,10,27136,Mills-Jordan,Charles Cortez
+617,2026-04-20,Sales,2026-04,North,Monitor,2,86530,"Dunn, Schwartz and Willis",Corey Graham
+618,2026-04-26,Sales,2026-04,North,Laptop,19,23426,"Davis, Guzman and Baker",Krista Hawkins
+619,2026-04-20,Sales,2026-04,East,Phone,18,101037,Rodriguez-Sanders,Robert Murray
+620,2026-04-19,Sales,2026-04,South,Monitor,2,82576,Berry and Sons,Patricia Stone
+621,2026-02-22,Sales,2026-02,South,Laptop,1,46615,"Freeman, Torres and Dunn",Richard Smith
+622,2026-03-25,Sales,2026-03,North,Server,9,49524,Fritz-Johnson,Jason Galvan
+623,2026-05-10,Sales,2026-05,East,Monitor,20,62830,Arroyo LLC,Glenn Montgomery
+624,2026-03-17,Sales,2026-03,North,Laptop,4,96158,Jones-Contreras,Kelly Ramirez
+625,2026-02-27,Sales,2026-02,East,Phone,7,76156,Sharp-Grimes,Madeline Garza
+626,2026-03-09,Sales,2026-03,West,Phone,17,79452,Guerrero-Snyder,Kelli Collins
+627,2026-04-22,Sales,2026-04,South,Phone,20,102296,"Hernandez, Wilson and Coleman",Douglas Perez
+628,2026-03-12,Sales,2026-03,South,Tablet,2,102196,Avery and Sons,Melanie Bailey
+629,2026-05-02,Sales,2026-05,South,Tablet,17,33819,"Vaughan, Fisher and Stone",Samantha Turner
+630,2026-05-14,Sales,2026-05,East,Tablet,16,97815,Jones-Baxter,Melissa Mora
+631,2026-05-04,Sales,2026-05,West,Server,20,62479,Gray and Sons,Barbara Allen
+632,2026-03-01,Sales,2026-03,North,Laptop,20,88176,"Ramsey, Fischer and Hernandez",Dean Smith
+633,2026-04-20,Sales,2026-04,West,Server,2,50332,Kim-Turner,Douglas Osborne
+634,2026-05-14,Sales,2026-05,East,Laptop,11,51362,"Lewis, Johnson and Hunt",Abigail Evans
+635,2026-03-26,Sales,2026-03,East,Phone,14,57722,"Garcia, Choi and Mcdowell",Felicia Gray
+636,2026-04-29,Sales,2026-04,East,Phone,5,32370,Perez Ltd,Philip Mccall
+637,2026-02-19,Sales,2026-02,West,Server,17,93866,Malone-Brennan,Martha Smith
+638,2026-05-01,Sales,2026-05,West,Laptop,1,29711,Davis-Klein,Yvonne White
+639,2026-04-24,Sales,2026-04,North,Monitor,11,114405,Phillips-Gonzalez,Theresa Johnson
+640,2026-04-11,Sales,2026-04,South,Laptop,14,93936,"Monroe, Nielsen and Ruiz",Robert Parsons
+641,2026-02-27,Sales,2026-02,South,Monitor,20,66894,Stewart Group,Marissa Boyer
+642,2026-03-17,Sales,2026-03,East,Server,10,90879,"Roberts, Chung and Frazier",Christopher Reeves
+643,2026-04-16,Sales,2026-04,East,Server,13,111010,Price-Murphy,Angel Miles
+644,2026-04-25,Sales,2026-04,West,Monitor,17,91009,Jones-Wilson,Sara West
+645,2026-05-04,Sales,2026-05,East,Tablet,11,53644,Massey and Sons,Kevin Ryan
+646,2026-03-25,Sales,2026-03,East,Laptop,6,26513,Gregory-Goodman,Michael Bailey
+647,2026-04-26,Sales,2026-04,North,Server,2,29254,Watkins PLC,Joshua Harris
+648,2026-04-11,Sales,2026-04,West,Tablet,17,54790,"Hunt, Roberts and Parrish",Jerry Turner
+649,2026-03-18,Sales,2026-03,South,Tablet,4,80835,"Page, Lawson and Jensen",Jeremy Crane
+650,2026-03-30,Sales,2026-03,East,Laptop,12,99237,"Chen, Butler and George",Alfred Barber
+651,2026-03-01,Sales,2026-03,West,Tablet,13,11928,Hardin Inc,Dylan Young
+652,2026-02-19,Sales,2026-02,South,Monitor,4,45570,"Dunlap, Thompson and Townsend",Tiffany Smith
+653,2026-04-15,Sales,2026-04,West,Monitor,1,40510,Palmer-Freeman,Brian Phillips
+654,2026-05-14,Sales,2026-05,East,Tablet,9,108277,Stout Inc,Amber Phillips
+655,2026-04-11,Sales,2026-04,East,Monitor,15,33617,"Joyce, Brady and Wilson",Megan Martinez PhD
+656,2026-05-03,Sales,2026-05,South,Phone,17,71035,Thompson-Rosales,Cynthia Hall
+657,2026-04-13,Sales,2026-04,South,Laptop,7,10221,Bennett and Sons,Brianna Baker
+658,2026-02-22,Sales,2026-02,East,Server,12,81888,"Pace, Myers and Smith",Reginald Roberts
+659,2026-05-19,Sales,2026-05,North,Phone,18,100071,"Blake, Andrews and Archer",Zachary Moss
+660,2026-03-01,Sales,2026-03,East,Tablet,17,64596,Ramos PLC,Alicia Ho
+661,2026-04-21,Sales,2026-04,West,Monitor,17,45825,Buck-Young,Christopher English
+662,2026-03-16,Sales,2026-03,South,Monitor,10,95712,Christensen Group,Eric Garcia
+663,2026-05-07,Sales,2026-05,South,Laptop,2,64064,"Chandler, Hancock and King",Amy Duran
+664,2026-05-07,Sales,2026-05,West,Server,11,26166,"Barnes, Gonzales and Vasquez",Benjamin Carroll
+665,2026-02-19,Sales,2026-02,West,Phone,20,59754,Dalton Ltd,Richard Mcdonald
+666,2026-02-21,Sales,2026-02,East,Monitor,9,27010,Ramos-Brown,Jason Hill
+667,2026-04-21,Sales,2026-04,North,Tablet,10,29635,Goodwin-Thompson,Joshua Wilson
+668,2026-02-28,Sales,2026-02,West,Laptop,15,26111,Oliver Group,Valerie Lyons
+669,2026-04-05,Sales,2026-04,East,Tablet,17,31416,Patterson and Sons,Mrs. Jackie Logan
+670,2026-05-18,Sales,2026-05,East,Laptop,20,73669,"Lester, Farmer and Maldonado",Albert Scott DVM
+671,2026-02-26,Sales,2026-02,West,Monitor,12,78084,"Taylor, Jones and Graham",Heather Rios
+672,2026-04-19,Sales,2026-04,West,Phone,14,95151,Simon-Richard,Travis Turner
+673,2026-03-22,Sales,2026-03,East,Laptop,1,10297,"Carr, Brown and Hart",Dakota Nelson
+674,2026-04-25,Sales,2026-04,North,Monitor,8,68832,Ross-Hunt,Patricia Gonzalez
+675,2026-04-13,Sales,2026-04,East,Laptop,16,52009,"Welch, Mcpherson and Turner",Shane Brown
+676,2026-05-10,Sales,2026-05,North,Server,20,76042,Shelton-Smith,Philip Rodriguez
+677,2026-04-08,Sales,2026-04,North,Laptop,7,90999,Gonzalez-Johnson,Kimberly Bowen
+678,2026-02-20,Sales,2026-02,South,Tablet,9,90707,"Hernandez, Blevins and Smith",Lydia Young
+679,2026-05-10,Sales,2026-05,West,Server,8,54570,"Phillips, Evans and Collins",Perry Stewart
+680,2026-03-01,Sales,2026-03,North,Tablet,18,33701,"White, Lewis and Kim",Sandra Oconnell
+681,2026-03-21,Sales,2026-03,South,Monitor,4,67140,"Cannon, Stevens and Davis",Joel Evans
+682,2026-05-03,Sales,2026-05,East,Tablet,7,90489,Jenkins-Gutierrez,Christine Alvarez
+683,2026-04-22,Sales,2026-04,North,Tablet,20,66631,"Walker, Moreno and Curry",Michelle Richardson
+684,2026-04-05,Sales,2026-04,South,Server,16,92733,Dalton-Kelley,Jason Nash
+685,2026-05-13,Sales,2026-05,North,Server,8,116122,Brown Group,Michelle Reynolds
+686,2026-04-01,Sales,2026-04,North,Server,7,96743,Henderson LLC,Christina Robinson
+687,2026-04-12,Sales,2026-04,North,Laptop,10,45971,Meadows-Brown,Anthony Mcclure
+688,2026-02-27,Sales,2026-02,East,Phone,6,22226,Shields-Rivers,Amy Young
+689,2026-04-08,Sales,2026-04,East,Monitor,20,105487,"Meza, Wang and Mendez",Daniel Gallegos
+690,2026-04-25,Sales,2026-04,South,Monitor,15,94983,"Simpson, Morris and Patton",Shannon Schwartz
+691,2026-04-04,Sales,2026-04,West,Tablet,4,61353,Cannon Ltd,Kelly Richardson
+692,2026-03-02,Sales,2026-03,South,Laptop,20,34745,Davis-Smith,Carolyn Horn
+693,2026-04-25,Sales,2026-04,North,Laptop,3,64628,"Richardson, Dawson and Garza",Trevor Bernard
+694,2026-03-19,Sales,2026-03,South,Monitor,11,73817,Nguyen-Mcguire,Felicia Robertson
+695,2026-03-17,Sales,2026-03,West,Tablet,15,23572,Diaz-Glover,David Edwards
+696,2026-03-10,Sales,2026-03,South,Laptop,8,64362,Nichols-Werner,Lynn Moore
+697,2026-04-05,Sales,2026-04,South,Tablet,2,71237,"Logan, Martinez and Mitchell",Justin Mendez
+698,2026-04-16,Sales,2026-04,South,Server,13,103967,Paul PLC,Jason Jackson
+699,2026-02-25,Sales,2026-02,South,Phone,13,69830,Hall-Warren,Michael Ramirez
+700,2026-05-12,Sales,2026-05,South,Monitor,8,31815,"Crawford, Cochran and Mclean",Amber Sanders
+701,2026-02-25,Sales,2026-02,East,Server,2,63251,Parker-Davies,Justin Bruce
+702,2026-04-09,Sales,2026-04,South,Server,2,80077,"Woods, Johnson and Mcknight",Brittany Carson
+703,2026-05-15,Sales,2026-05,North,Phone,2,65783,"Hall, Mcdowell and Owens",Vickie Carpenter
+704,2026-05-16,Sales,2026-05,North,Phone,9,23300,Schwartz Inc,Michele Booth
+705,2026-04-26,Sales,2026-04,East,Server,12,25791,Harris Group,Meredith Parker
+706,2026-04-15,Sales,2026-04,South,Laptop,4,46913,Cochran PLC,Joshua Tran
+707,2026-03-26,Sales,2026-03,East,Monitor,18,35445,"Gaines, Shannon and Rodriguez",Mary Ryan
+708,2026-03-06,Sales,2026-03,North,Laptop,6,40662,Gray-Garcia,Adrian Day
+709,2026-04-28,Sales,2026-04,West,Tablet,6,38316,Cruz PLC,Cathy Miller
+710,2026-03-18,Sales,2026-03,West,Server,1,15279,"Mann, Blackwell and Carter",Riley Daniels
+711,2026-05-12,Sales,2026-05,East,Tablet,20,25164,Adams LLC,Richard Burgess
+712,2026-03-07,Sales,2026-03,East,Phone,14,38392,Brown LLC,Christine Bates
+713,2026-05-11,Sales,2026-05,North,Server,17,106612,Walker Ltd,Jennifer Waters MD
+714,2026-04-01,Sales,2026-04,East,Tablet,14,76822,Smith PLC,Robert Lawrence Jr.
+715,2026-04-30,Sales,2026-04,North,Monitor,10,20573,Atkins-Jones,Jeffrey Fleming
+716,2026-05-17,Sales,2026-05,North,Phone,14,62473,"Duran, Howell and Molina",Ryan Ferguson
+717,2026-02-20,Sales,2026-02,West,Tablet,10,14865,Jones-Lawrence,Susan Griffin
+718,2026-02-21,Sales,2026-02,East,Tablet,19,118130,"Anderson, Howell and Rivera",Andrew Jackson
+719,2026-03-23,Sales,2026-03,South,Monitor,17,114778,Peters Inc,Charles Silva
+720,2026-05-13,Sales,2026-05,North,Tablet,9,53429,Woods-Zimmerman,Charles Carroll
+721,2026-03-25,Sales,2026-03,East,Laptop,7,46363,"Crawford, West and Rivers",Wendy Rivera
+722,2026-02-25,Sales,2026-02,West,Server,8,73960,"Martinez, Lara and Taylor",Mr. Bradley Arias DDS
+723,2026-03-22,Sales,2026-03,South,Laptop,15,12196,Stone-Reyes,Hannah Wheeler
+724,2026-05-07,Sales,2026-05,West,Phone,6,47493,Barron LLC,Barbara Mitchell
+725,2026-03-04,Sales,2026-03,North,Monitor,14,40419,"Trevino, Kirk and Montoya",Bryan Riley
+726,2026-03-19,Sales,2026-03,East,Monitor,16,63181,Williams Ltd,Kelly Travis
+727,2026-04-15,Sales,2026-04,West,Phone,14,92557,Bartlett Inc,Mckenzie Marshall
+728,2026-05-04,Sales,2026-05,West,Laptop,16,98127,Mann and Sons,Robert Tran
+729,2026-04-02,Sales,2026-04,South,Server,12,72154,"Hopkins, King and White",Mr. Carlos Nguyen
+730,2026-05-15,Sales,2026-05,South,Server,8,59808,"Ford, Blanchard and Jarvis",Andrew Anderson
+731,2026-03-19,Sales,2026-03,East,Server,17,49258,"Russell, Wade and Burgess",Derek Sosa
+732,2026-05-01,Sales,2026-05,North,Phone,8,103741,Freeman PLC,Joseph Wilson
+733,2026-04-20,Sales,2026-04,North,Monitor,12,46411,"Harris, Myers and Cabrera",Rachel Villa
+734,2026-03-23,Sales,2026-03,West,Server,4,35585,"Frank, Allen and Wilson",Julie Vega
+735,2026-03-18,Sales,2026-03,East,Server,10,35551,Barrera PLC,Jane Johnson
+736,2026-04-05,Sales,2026-04,North,Tablet,14,14056,"Edwards, Hester and Soto",Patricia Mcdaniel
+737,2026-04-30,Sales,2026-04,North,Server,10,96962,"Bird, Golden and Hill",Beth Williams
+738,2026-04-06,Sales,2026-04,West,Phone,5,62268,"Rice, Bean and Howell",Valerie Richmond
+739,2026-04-18,Sales,2026-04,East,Monitor,5,43135,Lawrence Inc,Jeanne Bass
+740,2026-05-06,Sales,2026-05,West,Server,4,60354,Calhoun-Harrell,Lacey Maynard
+741,2026-03-03,Sales,2026-03,West,Tablet,15,23195,Sanford and Sons,Susan Harrison
+742,2026-02-23,Sales,2026-02,East,Laptop,16,105599,Haynes-Klein,John Hill
+743,2026-05-11,Sales,2026-05,West,Server,6,45476,Mendoza-Barrett,Brittney Reynolds
+744,2026-02-25,Sales,2026-02,West,Phone,15,28705,Ingram-Harris,Phillip Stout
+745,2026-04-20,Sales,2026-04,West,Tablet,17,64638,Cook-Murray,Noah Davis
+746,2026-04-01,Sales,2026-04,West,Monitor,8,41633,Lewis Ltd,Roger West PhD
+747,2026-03-12,Sales,2026-03,West,Tablet,16,104334,Adams Inc,Phillip Clark
+748,2026-04-02,Sales,2026-04,East,Monitor,14,106764,Hall Group,Cory Garcia
+749,2026-03-22,Sales,2026-03,North,Monitor,6,49576,Hicks Group,Vicki Combs
+750,2026-02-26,Sales,2026-02,North,Monitor,3,111549,Maynard and Sons,Michael Brown
+751,2026-02-28,Sales,2026-02,North,Tablet,7,56208,"Glover, Phillips and Edwards",Alexandra Williamson
+752,2026-04-29,Sales,2026-04,West,Tablet,19,70655,Soto-Robinson,Michael Steele
+753,2026-03-23,Sales,2026-03,East,Phone,6,64612,Nelson Inc,Krista Wells
+754,2026-03-03,Sales,2026-03,South,Phone,8,12923,"Thomas, Martinez and Jones",Melissa Kelley
+755,2026-03-18,Sales,2026-03,East,Phone,1,31301,Parker Group,Julie Morrow
+756,2026-03-26,Sales,2026-03,North,Tablet,6,119742,"Herrera, Carlson and Ward",Ms. Dorothy Parrish
+757,2026-03-30,Sales,2026-03,West,Laptop,9,71494,"Jones, Wallace and Williams",Carla Kelly
+758,2026-04-30,Sales,2026-04,North,Tablet,19,73330,Vazquez LLC,Mitchell Fisher
+759,2026-02-21,Sales,2026-02,North,Server,12,36268,"George, Lopez and Hill",Cheyenne Boone
+760,2026-05-08,Sales,2026-05,North,Phone,16,113232,Rodriguez Group,Patrick Sampson
+761,2026-04-29,Sales,2026-04,West,Laptop,4,99230,Jensen PLC,Brian Fleming
+762,2026-03-01,Sales,2026-03,East,Tablet,17,115456,Flores Ltd,Jennifer Smith
+763,2026-04-03,Sales,2026-04,North,Monitor,15,27792,Miller-Dunn,Donald Knapp
+764,2026-02-21,Sales,2026-02,South,Phone,7,48342,Guzman PLC,Robert Jones
+765,2026-03-14,Sales,2026-03,North,Server,13,84284,"Knapp, Blake and Ruiz",Janice Lang
+766,2026-05-17,Sales,2026-05,South,Tablet,13,15466,"Jackson, Morris and Jensen",Danielle Alexander
+767,2026-03-07,Sales,2026-03,North,Phone,4,118971,Wood-Lowe,Wendy Duran
+768,2026-04-06,Sales,2026-04,West,Laptop,8,115195,Hampton-Moyer,Julie Sellers
+769,2026-03-12,Sales,2026-03,East,Phone,6,68073,Lucero-Callahan,Stephanie Cortez
+770,2026-03-01,Sales,2026-03,East,Laptop,14,110519,Bell-Lambert,Mary Ho
+771,2026-04-07,Sales,2026-04,North,Monitor,9,30800,Peterson PLC,Joseph Sanders
+772,2026-04-19,Sales,2026-04,North,Phone,6,58977,Romero Ltd,Heather Alvarez
+773,2026-05-07,Sales,2026-05,South,Phone,17,103382,Henry PLC,Martin Erickson
+774,2026-02-27,Sales,2026-02,North,Phone,6,32849,Scott-Rojas,Daniel Paul
+775,2026-04-04,Sales,2026-04,South,Laptop,13,14157,"Williamson, Buckley and Keller",Brent Lambert
+776,2026-03-22,Sales,2026-03,East,Server,7,98484,"Johnson, Rowe and Wilson",Meghan Ward
+777,2026-05-11,Sales,2026-05,North,Laptop,9,53241,Stewart-Hernandez,Cheryl Ray
+778,2026-05-16,Sales,2026-05,West,Server,2,84265,Warner-Watson,Derek Garner Jr.
+779,2026-03-21,Sales,2026-03,West,Tablet,11,100784,"Waters, Marshall and Perkins",Jordan Munoz
+780,2026-03-11,Sales,2026-03,North,Tablet,11,117533,Taylor-Murray,Amy Travis
+781,2026-04-24,Sales,2026-04,North,Monitor,20,29888,Martin Ltd,Kelsey Wallace
+782,2026-04-03,Sales,2026-04,East,Monitor,15,26401,"Green, Schmidt and Gray",James Frye
+783,2026-04-25,Sales,2026-04,East,Server,6,40243,Fields-Rodriguez,Adrian Garcia
+784,2026-04-12,Sales,2026-04,North,Phone,8,14550,"Ramirez, Brown and Padilla",Shannon Clark
+785,2026-04-11,Sales,2026-04,North,Tablet,10,56926,Krueger-Allen,Laura Walker
+786,2026-02-21,Sales,2026-02,South,Tablet,8,101509,"Martinez, Young and Keller",Alexis Kennedy
+787,2026-05-12,Sales,2026-05,West,Monitor,12,13039,Butler LLC,Anthony Carlson MD
+788,2026-03-25,Sales,2026-03,North,Laptop,17,81876,Aguilar Ltd,James House PhD
+789,2026-04-28,Sales,2026-04,East,Monitor,7,74694,Wallace-Hunt,Rachel Freeman
+790,2026-05-03,Sales,2026-05,South,Tablet,18,118170,Brown LLC,Carlos Morton
+791,2026-03-15,Sales,2026-03,East,Monitor,11,78050,"Johnson, Moore and Kelly",Laura Allen
+792,2026-04-08,Sales,2026-04,West,Server,20,71971,Parks LLC,Austin Henderson
+793,2026-05-19,Sales,2026-05,South,Server,19,89975,Reed PLC,Rebecca Hernandez
+794,2026-02-25,Sales,2026-02,East,Tablet,16,89767,"Ingram, Gross and Beasley",Kayla Martinez
+795,2026-04-22,Sales,2026-04,North,Laptop,11,69580,Burgess-Knight,Steven Snow
+796,2026-05-14,Sales,2026-05,East,Phone,15,43902,Porter-Christian,Danielle Figueroa
+797,2026-04-29,Sales,2026-04,East,Server,14,33391,Ryan-Smith,Matthew Flynn
+798,2026-03-08,Sales,2026-03,East,Phone,7,90631,Bartlett PLC,Daniel Harding
+799,2026-05-16,Sales,2026-05,South,Monitor,8,108229,Gutierrez Ltd,Russell Nichols
+800,2026-04-08,Sales,2026-04,South,Laptop,19,97736,Smith LLC,Dustin Jordan
+801,2026-03-08,Sales,2026-03,East,Monitor,5,53216,"Dixon, Brady and Johnson",Robert Wolfe
+802,2026-04-08,Sales,2026-04,East,Server,18,15898,Jennings and Sons,Nicole Livingston
+803,2026-04-13,Sales,2026-04,North,Phone,14,113023,Jackson-Collins,Brandy Murray
+804,2026-05-17,Sales,2026-05,West,Server,18,55654,Thompson LLC,Hunter Browning
+805,2026-04-03,Sales,2026-04,West,Monitor,9,16023,"Parks, Jones and Roach",Katrina Walker
+806,2026-03-21,Sales,2026-03,North,Phone,17,46210,Hoffman PLC,Caleb Humphrey
+807,2026-03-18,Sales,2026-03,North,Monitor,16,98393,Cabrera-Lang,Brian Garcia
+808,2026-03-21,Sales,2026-03,South,Monitor,20,68092,King-Hernandez,Krista Mendez
+809,2026-03-10,Sales,2026-03,North,Phone,18,64820,"Moyer, Patrick and Thomas",Joe Douglas
+810,2026-02-28,Sales,2026-02,East,Tablet,10,29534,Howard-Lopez,Kathryn Smith
+811,2026-04-09,Sales,2026-04,South,Laptop,4,44432,Clark and Sons,Thomas Williams III
+812,2026-05-14,Sales,2026-05,North,Tablet,13,74065,"Lang, Barton and Frazier",Glenda Jones
+813,2026-02-27,Sales,2026-02,North,Tablet,3,63104,Anderson Group,Dustin Lee
+814,2026-03-19,Sales,2026-03,East,Phone,3,112416,"Anderson, Jones and Thompson",Dustin Smith
+815,2026-03-20,Sales,2026-03,West,Laptop,8,88611,Hawkins Inc,Megan Vaughn
+816,2026-03-17,Sales,2026-03,South,Laptop,4,60056,Krause Ltd,David Richardson
+817,2026-03-22,Sales,2026-03,North,Phone,16,12391,Potter Group,Michael Romero
+818,2026-04-05,Sales,2026-04,West,Monitor,11,86086,Smith-Hayes,Christopher Patel
+819,2026-05-11,Sales,2026-05,North,Tablet,1,40344,Davis-Martinez,Erica Stein
+820,2026-05-02,Sales,2026-05,North,Tablet,4,73949,Martin Ltd,Savannah Knight
+821,2026-03-27,Sales,2026-03,South,Laptop,16,114997,"Porter, Small and Austin",Michael Whitney
+822,2026-03-23,Sales,2026-03,West,Tablet,11,39448,"Smith, May and Freeman",Danielle Ellis
+823,2026-05-20,Sales,2026-05,East,Phone,6,47513,Ortiz LLC,Joel Owen
+824,2026-04-06,Sales,2026-04,South,Server,7,31982,Foster LLC,Rachel Hunt
+825,2026-05-04,Sales,2026-05,South,Server,16,39726,"Frazier, Mcdonald and Quinn",Peter Thompson
+826,2026-02-25,Sales,2026-02,West,Laptop,16,48451,"Lee, Tucker and Weeks",Joshua Peters
+827,2026-04-21,Sales,2026-04,North,Tablet,6,12068,"Bell, Myers and Nelson",Jesus Wright
+828,2026-03-02,Sales,2026-03,West,Phone,14,44800,Simon-Horn,Ashley Beard
+829,2026-03-24,Sales,2026-03,East,Laptop,5,12705,Huff Group,Philip Thompson
+830,2026-03-01,Sales,2026-03,South,Laptop,18,27035,"Matthews, Cummings and Snyder",Terri Walker
+831,2026-03-01,Sales,2026-03,South,Tablet,13,37904,Richards-Miles,Ryan Harris
+832,2026-03-23,Sales,2026-03,North,Phone,14,29769,"Peterson, Murray and Novak",Alejandro Lowery
+833,2026-04-01,Sales,2026-04,East,Tablet,6,114401,Mendez-Chen,Frederick Allison
+834,2026-03-05,Sales,2026-03,West,Monitor,3,71229,Carroll-Jimenez,David Li
+835,2026-05-15,Sales,2026-05,East,Phone,10,51990,"Jones, Martinez and Robinson",Sarah Hall
+836,2026-05-03,Sales,2026-05,South,Monitor,20,13585,"Carey, Henderson and Wilson",Dr. Cheryl Day
+837,2026-03-30,Sales,2026-03,East,Laptop,11,76145,Erickson PLC,David Watts
+838,2026-03-30,Sales,2026-03,North,Server,15,113197,Bruce-Rowe,Jennifer Patel
+839,2026-05-11,Sales,2026-05,North,Tablet,9,66072,"Martinez, Shaw and Olson",Brenda Mccormick
+840,2026-03-05,Sales,2026-03,East,Server,7,112632,Jones-Lee,Rickey Byrd
+841,2026-02-24,Sales,2026-02,West,Monitor,20,60676,Chandler and Sons,Jackie Watson
+842,2026-05-19,Sales,2026-05,East,Laptop,6,88386,Hansen-Duncan,Gabriella Rangel
+843,2026-03-31,Sales,2026-03,South,Phone,12,57347,Morales-Briggs,Jason Hines
+844,2026-03-13,Sales,2026-03,South,Tablet,5,29130,"Park, Martinez and Williams",Kristen Wallace
+845,2026-04-02,Sales,2026-04,West,Phone,1,11539,"Allison, Obrien and Lane",Gregory Porter
+846,2026-03-26,Sales,2026-03,North,Monitor,4,16378,Horn PLC,Dr. Jenna Moore DVM
+847,2026-04-30,Sales,2026-04,East,Server,13,107690,Dunn-Hill,Madison Anderson
+848,2026-04-02,Sales,2026-04,North,Monitor,20,73100,"Gutierrez, Marsh and Williams",Daniel Wilson
+849,2026-04-18,Sales,2026-04,South,Server,7,76897,"Copeland, Riley and Mclaughlin",Richard Krueger
+850,2026-03-10,Sales,2026-03,West,Server,16,73746,Chavez-Black,Erica Jones
+851,2026-04-26,Sales,2026-04,South,Laptop,10,79244,Arellano Ltd,Michael Kennedy
+852,2026-03-12,Sales,2026-03,South,Monitor,20,97611,Gardner LLC,Sarah Walsh
+853,2026-02-23,Sales,2026-02,West,Server,19,26396,Rice-Dickerson,Nicholas Clark
+854,2026-03-20,Sales,2026-03,North,Laptop,20,86220,"Smith, Harrison and Krause",Zachary Houston
+855,2026-05-20,Sales,2026-05,East,Laptop,2,93748,"Rodriguez, Reynolds and Carlson",Caitlin Phillips
+856,2026-05-11,Sales,2026-05,North,Tablet,1,41083,"Duarte, Lawrence and Tucker",Kirsten Kim
+857,2026-02-21,Sales,2026-02,West,Tablet,8,62454,"Santos, Rivera and Miranda",David Snyder
+858,2026-04-27,Sales,2026-04,West,Laptop,19,80025,Dixon PLC,Troy Nicholson
+859,2026-04-25,Sales,2026-04,East,Server,1,114188,"Massey, Wolfe and Santiago",Sarah Barrett
+860,2026-04-11,Sales,2026-04,South,Phone,5,113981,Hernandez-Rich,Kimberly Ortega
+861,2026-05-20,Sales,2026-05,South,Tablet,15,112478,Johnson PLC,William Davis
+862,2026-04-24,Sales,2026-04,West,Laptop,5,71064,Palmer-Stanley,Rebecca Cummings
+863,2026-04-13,Sales,2026-04,South,Server,15,89809,Preston-Madden,Chad Serrano
+864,2026-04-29,Sales,2026-04,East,Laptop,20,102886,Kelly and Sons,Desiree Wilson
+865,2026-03-08,Sales,2026-03,West,Tablet,6,43096,"Lee, Alexander and Wood",Veronica Salazar
+866,2026-03-20,Sales,2026-03,South,Tablet,13,98588,"Moreno, Vang and Barton",Penny Nelson
+867,2026-04-06,Sales,2026-04,West,Monitor,9,87369,Espinoza Ltd,Bruce Edwards
+868,2026-05-01,Sales,2026-05,South,Server,16,81755,Avery-Tran,Diane Clark
+869,2026-03-23,Sales,2026-03,East,Phone,3,16692,Bailey-Gray,Nancy Giles
+870,2026-05-12,Sales,2026-05,East,Server,5,75551,Williams-Andrews,Edward Vasquez
+871,2026-03-31,Sales,2026-03,South,Laptop,19,31782,Moore-Rollins,Ashlee Snyder
+872,2026-03-26,Sales,2026-03,North,Monitor,7,64803,Park Group,Michael Mays
+873,2026-04-02,Sales,2026-04,North,Tablet,11,98512,Branch Group,Joel Brown
+874,2026-04-13,Sales,2026-04,South,Phone,18,47040,"Escobar, Tran and Berg",Manuel Wiggins
+875,2026-03-31,Sales,2026-03,West,Tablet,18,24176,"Brooks, Doyle and Allen",Mr. Christopher Anderson DDS
+876,2026-04-02,Sales,2026-04,East,Monitor,5,13793,"Lewis, Rivera and Bowman",Adam Reed
+877,2026-03-24,Sales,2026-03,East,Laptop,13,82881,"Salazar, Walter and Fleming",Taylor Ray
+878,2026-05-13,Sales,2026-05,West,Tablet,1,10188,Rogers Group,Connie Jackson
+879,2026-04-05,Sales,2026-04,West,Monitor,1,18588,Thompson and Sons,Christopher Martin
+880,2026-05-12,Sales,2026-05,East,Phone,10,96414,Schmidt LLC,Jason Cortez
+881,2026-02-24,Sales,2026-02,East,Phone,7,54967,Mcmahon-Wright,Jaime Murphy
+882,2026-04-07,Sales,2026-04,West,Laptop,4,59576,Colon LLC,Monica Vaughn
+883,2026-04-17,Sales,2026-04,East,Phone,14,71528,Price-Riley,Melissa Russell
+884,2026-02-24,Sales,2026-02,South,Monitor,16,85397,Rodriguez-Scott,Mariah Padilla
+885,2026-05-19,Sales,2026-05,North,Phone,19,10167,"Harris, Peterson and Morales",Tamara Guerrero
+886,2026-03-19,Sales,2026-03,South,Server,18,91000,Forbes-Montoya,Katrina Summers
+887,2026-05-13,Sales,2026-05,West,Laptop,8,102158,Morris-Hart,Philip Robles
+888,2026-04-07,Sales,2026-04,East,Phone,9,28855,Robinson Group,Erin Fisher
+889,2026-04-21,Sales,2026-04,North,Laptop,6,103545,Meyer Ltd,Joseph Gonzales MD
+890,2026-04-05,Sales,2026-04,South,Laptop,7,27975,Jones Ltd,Jonathan Kelley
+891,2026-05-17,Sales,2026-05,South,Phone,2,100303,Bender LLC,Kenneth Castro
+892,2026-04-21,Sales,2026-04,South,Tablet,7,93089,Wade-Johnson,Juan Lopez
+893,2026-04-19,Sales,2026-04,West,Phone,1,92810,"Baker, Castillo and Moore",Jeffrey Knapp
+894,2026-04-05,Sales,2026-04,North,Tablet,10,83142,Martinez Ltd,Michael Rhodes
+895,2026-05-08,Sales,2026-05,West,Laptop,8,10029,Walters-Johnson,Danielle Daugherty
+896,2026-05-03,Sales,2026-05,North,Server,1,116019,"Obrien, Cruz and Davis",Christian Fields
+897,2026-03-27,Sales,2026-03,West,Server,3,39216,Lewis-Moreno,Chloe Olson
+898,2026-05-09,Sales,2026-05,South,Tablet,14,49708,Perez-Pitts,Patricia Holmes
+899,2026-04-19,Sales,2026-04,North,Phone,1,32303,"Cook, Davis and Clark",Christina Kelly
+900,2026-03-14,Sales,2026-03,South,Server,8,16545,"Flores, Green and Pena",Nicholas Carter
+901,2026-03-15,Sales,2026-03,South,Monitor,13,74149,Cameron Group,James Whitaker Jr.
+902,2026-05-19,Sales,2026-05,East,Tablet,16,75412,Taylor-Meza,Catherine Williams
+903,2026-04-10,Sales,2026-04,East,Laptop,1,119379,Kennedy Inc,Rebecca Church
+904,2026-04-30,Sales,2026-04,North,Server,20,29879,Thomas-Hawkins,Victor Martinez
+905,2026-03-12,Sales,2026-03,East,Tablet,6,75835,Edwards Group,David Smith
+906,2026-02-20,Sales,2026-02,East,Laptop,19,48607,Smith-Morris,Sarah Robbins
+907,2026-03-31,Sales,2026-03,East,Tablet,1,62223,Martinez Ltd,Karen Ramirez
+908,2026-03-14,Sales,2026-03,South,Monitor,6,108651,Martinez Ltd,Kelly Fleming
+909,2026-05-01,Sales,2026-05,North,Monitor,1,115279,Wong Group,Lisa Tate
+910,2026-04-23,Sales,2026-04,East,Laptop,2,65537,"Fleming, Wagner and Skinner",Meagan Lowe
+911,2026-05-01,Sales,2026-05,West,Server,2,39717,"Keller, Rosales and White",Jasmine Jenkins
+912,2026-02-19,Sales,2026-02,North,Laptop,18,82632,Ferguson-Garcia,Kevin Vasquez
+913,2026-04-03,Sales,2026-04,North,Tablet,7,41975,Day Ltd,Julie Cole
+914,2026-05-20,Sales,2026-05,West,Monitor,20,24653,"Hardy, Castro and Gardner",Angela Holmes
+915,2026-05-09,Sales,2026-05,North,Phone,2,41545,"Robles, Little and Hansen",Claudia Martinez
+916,2026-03-01,Sales,2026-03,East,Tablet,6,89948,Nelson-Sanford,Thomas Kent
+917,2026-03-03,Sales,2026-03,South,Server,9,118819,"Sanchez, Lambert and Carlson",Justin Contreras
+918,2026-04-09,Sales,2026-04,West,Server,14,51817,Davis-Cook,Laura Wallace
+919,2026-04-29,Sales,2026-04,West,Tablet,18,75387,"Weaver, Lane and Soto",Stacy Fuller
+920,2026-03-25,Sales,2026-03,West,Phone,7,45117,Mitchell Ltd,Sharon Reyes
+921,2026-02-23,Sales,2026-02,South,Laptop,4,69325,"Perez, Jensen and Ramos",Troy Short
+922,2026-05-12,Sales,2026-05,North,Monitor,6,45964,Pham-Phelps,Jackson Fritz
+923,2026-04-14,Sales,2026-04,North,Tablet,6,57018,"Davis, Hopkins and Lawrence",Debra Ferrell
+924,2026-04-04,Sales,2026-04,South,Monitor,7,86778,"Martin, West and Figueroa",Veronica Martin
+925,2026-05-05,Sales,2026-05,East,Server,5,107500,Miller and Sons,Jesse Lopez
+926,2026-03-05,Sales,2026-03,West,Monitor,11,108790,"Collins, Garcia and Jones",Melinda Barnett
+927,2026-05-06,Sales,2026-05,West,Server,13,81346,Hanson Group,Brian Smith
+928,2026-04-16,Sales,2026-04,East,Monitor,2,28137,"Keller, Hensley and Sloan",Deborah Small
+929,2026-03-15,Sales,2026-03,South,Phone,20,16398,"Rodriguez, Webster and Clarke",Brian Diaz
+930,2026-04-16,Sales,2026-04,North,Laptop,2,119609,"Fields, Martin and White",Russell Graham
+931,2026-04-23,Sales,2026-04,South,Phone,12,34764,Allen-Ponce,James Key
+932,2026-05-08,Sales,2026-05,South,Monitor,3,77800,Martinez Ltd,Craig Bates
+933,2026-05-09,Sales,2026-05,South,Monitor,15,39098,Young-Patrick,Sheila White
+934,2026-04-02,Sales,2026-04,North,Phone,2,54419,Harvey-Harrison,Terri Allen
+935,2026-03-24,Sales,2026-03,East,Tablet,2,73464,Smith Ltd,Mark Cortez
+936,2026-04-09,Sales,2026-04,West,Tablet,4,90855,Hartman PLC,Robert Adams
+937,2026-04-17,Sales,2026-04,West,Server,9,47374,Cline PLC,Robert Cordova
+938,2026-04-25,Sales,2026-04,South,Monitor,10,28280,Hill-Nunez,Cynthia Donovan
+939,2026-04-12,Sales,2026-04,West,Phone,15,78450,Sanford-Padilla,Ronald Morgan
+940,2026-03-20,Sales,2026-03,North,Phone,3,29284,Lee Group,Virginia Zimmerman
+941,2026-05-08,Sales,2026-05,North,Monitor,14,43291,Martinez-Morris,Whitney Cook
+942,2026-04-20,Sales,2026-04,East,Phone,13,86152,Berg LLC,Christine Price
+943,2026-05-20,Sales,2026-05,South,Tablet,11,100970,Drake PLC,Lisa Dunn
+944,2026-03-25,Sales,2026-03,East,Tablet,14,71482,"Reed, Nichols and Burton",Gerald Peters
+945,2026-03-08,Sales,2026-03,East,Tablet,8,28582,Cooper-Waters,Brittany Lopez
+946,2026-04-14,Sales,2026-04,North,Monitor,8,80022,Johnson-Irwin,Christina Rogers
+947,2026-04-03,Sales,2026-04,North,Server,17,98135,Smith Ltd,Michael Murray
+948,2026-03-01,Sales,2026-03,South,Phone,9,111270,Vasquez-Wood,Kyle Mcdonald
+949,2026-03-22,Sales,2026-03,East,Server,6,104559,Smith and Sons,Benjamin Curtis
+950,2026-03-06,Sales,2026-03,North,Laptop,10,52372,"Sandoval, Reyes and Hernandez",Martin Pierce
+951,2026-03-07,Sales,2026-03,West,Phone,19,87706,Mitchell-Davis,Michelle Montoya
+952,2026-03-06,Sales,2026-03,West,Phone,18,64889,Morales-Gibson,John Carter
+953,2026-03-03,Sales,2026-03,West,Server,20,119932,"Ward, Green and Sanchez",Sharon Steele
+954,2026-04-12,Sales,2026-04,North,Monitor,17,105898,Palmer-Carroll,Brett Hensley
+955,2026-05-08,Sales,2026-05,West,Phone,3,74217,"Gibson, Lopez and Horton",Angela Gonzalez
+956,2026-03-05,Sales,2026-03,West,Server,12,105343,Bailey-Hawkins,Steven Jones
+957,2026-05-03,Sales,2026-05,West,Tablet,3,21648,"Winters, Webster and Kramer",Theresa Nichols
+958,2026-05-11,Sales,2026-05,East,Server,11,24227,"Hancock, Kim and Smith",Gina Davis
+959,2026-04-06,Sales,2026-04,West,Phone,10,37507,West-Lowery,David Watson
+960,2026-03-05,Sales,2026-03,South,Laptop,5,81365,Young-Estrada,John Whitaker
+961,2026-05-11,Sales,2026-05,South,Laptop,14,17952,Warner Inc,Pamela Adams
+962,2026-05-08,Sales,2026-05,West,Laptop,17,89079,Reilly Group,Daniel Calderon
+963,2026-03-07,Sales,2026-03,South,Tablet,16,113337,"Richardson, Cardenas and Wilson",Matthew Smith
+964,2026-05-17,Sales,2026-05,South,Server,19,87067,Huff-Frey,Karl Knight
+965,2026-04-19,Sales,2026-04,North,Tablet,2,30789,"Hamilton, Adams and Perry",Brent Cooper
+966,2026-04-02,Sales,2026-04,North,Server,9,70139,White Group,Lisa Kemp
+967,2026-02-24,Sales,2026-02,East,Phone,15,49298,Woodward Ltd,Derrick Rasmussen
+968,2026-05-10,Sales,2026-05,East,Laptop,5,88824,Madden Group,Martha Young
+969,2026-04-22,Sales,2026-04,South,Monitor,1,72561,Lopez and Sons,Nathaniel Castro
+970,2026-03-07,Sales,2026-03,West,Server,18,85299,Williams Ltd,James Hicks
+971,2026-04-19,Sales,2026-04,East,Phone,3,90505,"Gomez, Christensen and Burns",Sarah Nelson
+972,2026-04-19,Sales,2026-04,West,Monitor,17,93339,"Boyd, Chavez and Cruz",Jason Terrell
+973,2026-04-08,Sales,2026-04,North,Tablet,17,85947,Harrison-Montgomery,Charlene Larson
+974,2026-05-12,Sales,2026-05,North,Tablet,19,96755,Gonzalez-Phelps,Jessica Berry
+975,2026-04-07,Sales,2026-04,West,Server,8,93877,Olsen Group,Renee Mills
+976,2026-05-18,Sales,2026-05,South,Monitor,6,39454,Palmer-Berger,Christopher Fox
+977,2026-02-27,Sales,2026-02,South,Laptop,9,86898,"Atkins, Blair and Shelton",Paula Hobbs
+978,2026-04-10,Sales,2026-04,North,Monitor,13,48584,Crawford-Ford,James Harris
+979,2026-05-19,Sales,2026-05,East,Laptop,18,39028,Hahn Group,Barbara Floyd
+980,2026-03-30,Sales,2026-03,West,Monitor,2,70996,"Warren, Johnson and Mahoney",Hannah Moore
+981,2026-05-17,Sales,2026-05,West,Monitor,17,77502,Martinez-Wilson,Victoria Rodriguez
+982,2026-03-06,Sales,2026-03,South,Server,19,40854,Dominguez PLC,Veronica Johnson
+983,2026-03-14,Sales,2026-03,West,Monitor,4,14028,Sandoval PLC,William Sims
+984,2026-03-22,Sales,2026-03,West,Laptop,1,91921,"Gardner, Lopez and Taylor",Mr. John Garcia
+985,2026-02-28,Sales,2026-02,East,Server,2,44816,"Singleton, Spence and James",Pamela Sherman
+986,2026-05-07,Sales,2026-05,South,Phone,6,29267,"Monroe, Sanders and Li",Sarah Wolfe
+987,2026-05-19,Sales,2026-05,North,Laptop,15,50139,"Wilcox, Gonzalez and Dougherty",Felicia Tucker
+988,2026-03-26,Sales,2026-03,South,Server,13,56782,Kane-Everett,Kelly Russell
+989,2026-03-20,Sales,2026-03,East,Tablet,11,10100,"Gonzalez, Jones and Carlson",Deborah Crawford
+990,2026-04-10,Sales,2026-04,East,Server,12,113936,Wright PLC,Robin Lin
+991,2026-03-31,Sales,2026-03,East,Phone,9,13366,Duncan and Sons,Colleen Morris
+992,2026-04-29,Sales,2026-04,North,Monitor,7,54891,"Hines, Dalton and Willis",Kevin Bishop
+993,2026-05-04,Sales,2026-05,North,Laptop,1,97482,"Garza, Flores and Smith",Larry Cook
+994,2026-03-13,Sales,2026-03,South,Phone,20,12384,"Copeland, Baldwin and Reeves",Jennifer Barr
+995,2026-03-04,Sales,2026-03,East,Tablet,10,49556,Jones and Sons,Mrs. Katherine Chavez
+996,2026-03-06,Sales,2026-03,West,Server,19,16618,Munoz Ltd,Kelly Chapman
+997,2026-02-23,Sales,2026-02,South,Monitor,1,25712,"King, Wilson and Gutierrez",Keith Castro
+998,2026-03-11,Sales,2026-03,East,Phone,2,98431,Hernandez Group,James Ramirez
+999,2026-03-08,Sales,2026-03,North,Phone,13,109816,Alvarado-Olsen,Douglas Davis
+1000,2026-03-23,Sales,2026-03,North,Laptop,18,63375,Adams Ltd,Vickie Miller
+1001,2026-02-28,Sales,2026-02,North,Phone,7,114828,Mann-Schmidt,Leon Davis
+1002,2026-03-18,Sales,2026-03,West,Server,12,19204,Young and Sons,Stephen Townsend
+1003,2026-04-17,Sales,2026-04,North,Monitor,8,12395,Mcmillan Group,Selena Andrade
+1004,2026-03-12,Sales,2026-03,East,Tablet,19,31603,Anderson-Smith,Dustin Evans
+1005,2026-03-19,Sales,2026-03,North,Monitor,3,56974,"Ho, Downs and Schmidt",Nicholas Hill
+1006,2026-04-11,Sales,2026-04,South,Phone,2,118738,"Mendoza, Preston and Hardy",Mary Barrera
+1007,2026-05-03,Sales,2026-05,North,Tablet,9,101086,Craig Ltd,Michelle Tran
+1008,2026-05-03,Sales,2026-05,East,Tablet,14,116032,Adams Group,Justin Johnson
+1009,2026-05-05,Sales,2026-05,East,Server,18,109898,Mcguire-Sanders,Sara Carroll
+1010,2026-04-30,Sales,2026-04,East,Monitor,10,37333,Lynch-Anthony,Chris Hendricks
+1011,2026-05-06,Sales,2026-05,West,Phone,18,103122,Miller-Harris,Jason Sellers
+1012,2026-04-21,Sales,2026-04,North,Phone,15,79862,Lang-Vargas,Mark Ward
+1013,2026-05-20,Sales,2026-05,South,Server,12,54481,Parker-Davis,Nicholas Miller
+1014,2026-02-23,Sales,2026-02,East,Monitor,13,68762,"Conley, Mcdonald and Baird",Jonathan Underwood
+1015,2026-05-18,Sales,2026-05,East,Phone,1,87726,"Jones, Clark and Hernandez",Dennis Hall MD
+1016,2026-04-14,Sales,2026-04,South,Server,10,65334,"Parker, Stark and Lee",Jacob Diaz
+1017,2026-03-02,Sales,2026-03,North,Phone,18,29654,"Cooper, Gonzalez and Palmer",Justin Simmons
+1018,2026-04-05,Sales,2026-04,North,Monitor,19,38193,Baker-Larson,Brian Copeland
+1019,2026-03-05,Sales,2026-03,North,Phone,10,13451,Knight-Daniels,Melody Martin
+1020,2026-05-02,Sales,2026-05,East,Monitor,15,35990,Lopez Inc,Donald Gomez
+1021,2026-04-11,Sales,2026-04,West,Phone,7,91983,"Garza, Edwards and Richardson",Mr. James Ramirez
+1022,2026-02-28,Sales,2026-02,North,Phone,6,111121,Walker-Mason,Alan Sandoval
+1023,2026-04-12,Sales,2026-04,West,Tablet,4,14472,Garcia Group,Jennifer Yoder
+1024,2026-04-10,Sales,2026-04,East,Server,2,11042,Carlson and Sons,Paige Perez
+1025,2026-03-01,Sales,2026-03,North,Tablet,15,62048,Bryant-Best,Lisa Harris
+1026,2026-03-19,Sales,2026-03,South,Monitor,18,19066,Hawkins Group,Jessica Klein
+1027,2026-04-08,Sales,2026-04,South,Laptop,17,65221,"Prince, Freeman and Villegas",Susan Garcia
+1028,2026-04-30,Sales,2026-04,West,Laptop,20,56312,Martinez Group,Andrew Hicks
+1029,2026-03-04,Sales,2026-03,North,Phone,6,109814,"Maxwell, Gonzalez and Bell",Leah Rivers
+1030,2026-04-15,Sales,2026-04,South,Server,20,38553,"Morris, Pierce and French",Alan Lewis
+1031,2026-04-27,Sales,2026-04,South,Phone,18,75894,Walter-Smith,Bonnie Alexander
+1032,2026-04-09,Sales,2026-04,North,Server,3,98635,Hull Ltd,Mr. Jerome Peterson
+1033,2026-05-17,Sales,2026-05,West,Laptop,3,26737,Johns-Leach,Martin Thompson
+1034,2026-03-12,Sales,2026-03,North,Tablet,11,99121,"Ballard, Beck and Patrick",Brian Salazar
+1035,2026-03-25,Sales,2026-03,North,Laptop,17,16681,"Robbins, Roberts and Guerrero",Carolyn Morris
+1036,2026-02-21,Sales,2026-02,North,Laptop,7,81467,Reynolds-Schroeder,Kyle Cox
+1037,2026-02-28,Sales,2026-02,North,Tablet,6,79521,Fields Group,Stephen Hunt Jr.
+1038,2026-03-22,Sales,2026-03,South,Tablet,13,104020,Wilson-Sandoval,Jerome Brown
+1039,2026-02-24,Sales,2026-02,North,Monitor,5,33345,Harper-Jones,Sharon Flores
+1040,2026-03-02,Sales,2026-03,West,Monitor,6,18545,Martinez and Sons,Carly Sanchez
+1041,2026-03-25,Sales,2026-03,North,Server,10,108971,Ford PLC,James Miller
+1042,2026-04-16,Sales,2026-04,South,Tablet,20,71851,Houston Ltd,Eddie Cochran
+1043,2026-03-21,Sales,2026-03,East,Monitor,11,117266,"Rose, Bryant and Garza",Mr. Miguel King
+1044,2026-04-25,Sales,2026-04,North,Phone,2,57562,Novak Inc,Logan Gilbert
+1045,2026-05-17,Sales,2026-05,North,Laptop,2,22157,Willis Group,Nicholas Mcfarland
+1046,2026-03-31,Sales,2026-03,South,Server,6,69746,"Haynes, Gould and Martinez",Gregory Lopez
+1047,2026-04-02,Sales,2026-04,North,Tablet,11,59124,"Nelson, Bowen and Williams",Margaret Mason
+1048,2026-04-22,Sales,2026-04,South,Phone,6,70885,Fletcher-Davidson,Linda Martinez
+1049,2026-03-13,Sales,2026-03,North,Laptop,3,75968,Steele PLC,Rachel Oliver
+1050,2026-03-01,Sales,2026-03,West,Server,9,17244,"Brown, Walters and Flores",Mercedes Skinner
+1051,2026-03-26,Sales,2026-03,East,Tablet,6,68270,Williams PLC,Jacqueline Landry DDS
+1052,2026-04-21,Sales,2026-04,North,Laptop,14,66311,"Rodriguez, Taylor and Watson",Andrea Wood
+1053,2026-04-07,Sales,2026-04,South,Tablet,13,52618,"Lee, Carter and Smith",Franklin Jackson
+1054,2026-04-06,Sales,2026-04,West,Phone,17,59312,Miller-Hensley,Vanessa Griffith
+1055,2026-05-11,Sales,2026-05,South,Server,7,20787,"Martin, Rodriguez and Clark",Jade Hall
+1056,2026-04-02,Sales,2026-04,South,Tablet,12,83462,"Powers, Price and Sanders",Jessica Jackson
+1057,2026-03-31,Sales,2026-03,West,Monitor,5,55236,Holmes Inc,Courtney Oneal
+1058,2026-05-06,Sales,2026-05,East,Phone,18,62514,Lane-Rowe,Douglas Banks
+1059,2026-02-20,Sales,2026-02,North,Phone,1,88494,Simpson-Fischer,Tami Schultz
+1060,2026-04-21,Sales,2026-04,North,Laptop,7,33274,Beasley LLC,Valerie Dixon
+1061,2026-05-15,Sales,2026-05,East,Server,13,88995,Pruitt-Rose,Mr. Roger Bishop
+1062,2026-03-28,Sales,2026-03,East,Phone,19,66462,Pineda PLC,Tonya Buchanan
+1063,2026-05-10,Sales,2026-05,East,Laptop,8,97757,Foster Inc,Jessica Johnson
+1064,2026-04-26,Sales,2026-04,North,Monitor,3,90863,"Marshall, Wilson and Baker",Michael Hampton
+1065,2026-02-25,Sales,2026-02,East,Phone,19,105032,"Mckenzie, Silva and York",Jessica Wright
+1066,2026-04-26,Sales,2026-04,South,Laptop,3,91019,Vasquez PLC,Jacob Robertson
+1067,2026-04-27,Sales,2026-04,South,Laptop,20,18350,"Logan, Reed and Strickland",Joshua Cannon
+1068,2026-03-10,Sales,2026-03,North,Monitor,17,41602,Franco PLC,Kevin Massey
+1069,2026-03-04,Sales,2026-03,East,Tablet,5,78211,Robertson Ltd,Meredith Bridges
+1070,2026-03-08,Sales,2026-03,West,Server,8,69416,Martinez-Richard,Emily Gillespie
+1071,2026-03-28,Sales,2026-03,South,Tablet,13,49898,Martin-Johnson,Dustin Johnson
+1072,2026-02-26,Sales,2026-02,North,Monitor,3,43216,Jones-James,Michael Bailey
+1073,2026-04-18,Sales,2026-04,South,Server,5,92232,Bird-Figueroa,Kristie Clark
+1074,2026-03-21,Sales,2026-03,North,Phone,18,20157,"Romero, Lara and Schultz",Maria Walker
+1075,2026-05-16,Sales,2026-05,North,Laptop,3,112741,Kline and Sons,Cheryl Frost
+1076,2026-04-15,Sales,2026-04,South,Laptop,8,94960,Strickland and Sons,Veronica Harris
+1077,2026-03-22,Sales,2026-03,South,Monitor,11,90268,Wilson Inc,Matthew Reynolds
+1078,2026-05-18,Sales,2026-05,West,Server,4,36433,"Wilkins, Shaw and White",Lisa Hughes
+1079,2026-04-24,Sales,2026-04,West,Tablet,9,40403,Peterson LLC,Kyle Beltran
+1080,2026-05-02,Sales,2026-05,East,Tablet,8,53793,Harrison-Fischer,Austin Garza
+1081,2026-04-17,Sales,2026-04,West,Phone,4,119440,Carr-James,Holly Wolf
+1082,2026-04-06,Sales,2026-04,North,Server,4,21449,Rowe LLC,Lucas Watson
+1083,2026-04-19,Sales,2026-04,West,Tablet,18,24613,"Cunningham, Johnson and Walker",Molly Ross
+1084,2026-02-26,Sales,2026-02,West,Phone,3,40616,Olson-Miller,Scott Martin
+1085,2026-03-03,Sales,2026-03,West,Tablet,1,56113,"Morales, Richmond and Cruz",Blake Glover
+1086,2026-04-14,Sales,2026-04,East,Phone,19,113838,Cox Group,Karen Perry
+1087,2026-05-15,Sales,2026-05,East,Monitor,15,27070,Miller Ltd,Amanda George
+1088,2026-03-27,Sales,2026-03,North,Server,5,18068,Black-Grant,James Adkins
+1089,2026-05-20,Sales,2026-05,South,Laptop,10,101856,Wilson-Taylor,Jason Lopez
+1090,2026-04-06,Sales,2026-04,South,Laptop,3,10141,Long and Sons,Sharon Miller
+1091,2026-04-07,Sales,2026-04,South,Laptop,14,50609,"Hogan, Lopez and Ramirez",Eric Fletcher
+1092,2026-04-04,Sales,2026-04,West,Tablet,6,10214,Mcdonald-Ortega,Cynthia Miller
+1093,2026-03-16,Sales,2026-03,North,Laptop,11,39963,Ramos-Scott,Nancy Stewart
+1094,2026-05-17,Sales,2026-05,West,Phone,10,54973,"Hester, Ruiz and Klein",Matthew Lewis
+1095,2026-04-13,Sales,2026-04,North,Laptop,18,72964,"Floyd, Nelson and Griffin",Jennifer Sanchez
+1096,2026-04-21,Sales,2026-04,West,Phone,12,80325,Lee-Ford,Jesse Graham
+1097,2026-04-03,Sales,2026-04,East,Phone,12,32530,Boyd-Summers,Veronica Woods
+1098,2026-04-02,Sales,2026-04,North,Monitor,15,70835,Arroyo-Gonzales,Jordan Davis
+1099,2026-02-26,Sales,2026-02,West,Server,1,35301,"Frazier, Green and Hart",Ana Heath
+1100,2026-05-11,Sales,2026-05,East,Monitor,17,30502,Jones-Webster,Laura Harris DVM
+1101,2026-05-17,Sales,2026-05,West,Tablet,8,76946,Flores Group,Andre Franklin
+1102,2026-03-19,Sales,2026-03,South,Laptop,3,32222,Reed LLC,David Gordon
+1103,2026-05-15,Sales,2026-05,South,Laptop,2,51856,Williams-Vasquez,Heather Boone
+1104,2026-05-18,Sales,2026-05,North,Laptop,19,56004,Dawson-Allen,Sandra Mckinney
+1105,2026-04-07,Sales,2026-04,North,Monitor,4,24619,Crawford and Sons,Rita Miller
+1106,2026-04-12,Sales,2026-04,South,Phone,5,11511,Brown LLC,Barbara Adams
+1107,2026-03-28,Sales,2026-03,North,Tablet,2,100480,"Compton, Elliott and Hughes",Dawn Smith
+1108,2026-05-13,Sales,2026-05,South,Laptop,8,35184,Reed PLC,Carlos Lopez
+1109,2026-04-10,Sales,2026-04,West,Phone,9,85514,"Cox, Walker and Hayes",Alexander Padilla
+1110,2026-05-18,Sales,2026-05,South,Laptop,5,60442,May and Sons,Edwin Phillips
+1111,2026-04-09,Sales,2026-04,South,Phone,2,70243,Petty-Freeman,Tracey Cole
+1112,2026-05-08,Sales,2026-05,East,Server,12,92786,White and Sons,Joseph Martinez
+1113,2026-04-15,Sales,2026-04,South,Phone,10,77771,Hayes and Sons,Anthony Erickson
+1114,2026-04-01,Sales,2026-04,West,Phone,19,44243,Robinson-Silva,Daniel Palmer
+1115,2026-05-20,Sales,2026-05,South,Server,5,94014,"Diaz, Rhodes and Sanchez",Michael Rodriguez
+1116,2026-02-25,Sales,2026-02,East,Tablet,6,26201,"Bowen, Calderon and Ryan",Dakota Roach
+1117,2026-03-20,Sales,2026-03,East,Phone,12,30933,King-May,Michael Wilkerson
+1118,2026-05-09,Sales,2026-05,West,Tablet,14,87611,"Wright, Brown and Barton",Jesse Scott
+1119,2026-03-29,Sales,2026-03,West,Server,17,31909,"Moore, Jensen and Thompson",Sarah Cooper
+1120,2026-04-10,Sales,2026-04,East,Tablet,11,31651,Smith Group,Melissa Moore
+1121,2026-05-14,Sales,2026-05,South,Monitor,5,105826,Meyer Ltd,Thomas Montgomery
+1122,2026-04-24,Sales,2026-04,South,Laptop,9,24390,Rogers-Smith,Sean Welch
+1123,2026-05-05,Sales,2026-05,North,Server,5,94620,Fisher LLC,Jonathon Gallegos
+1124,2026-03-26,Sales,2026-03,East,Phone,17,73580,Harrison Ltd,Amber Austin
+1125,2026-04-28,Sales,2026-04,West,Phone,12,86714,Warren-Vang,Mrs. Joann Thompson
+1126,2026-04-05,Sales,2026-04,West,Phone,14,94574,"Robertson, Lopez and Smith",Kevin Hodges
+1127,2026-03-02,Sales,2026-03,North,Server,3,46356,"Bentley, Walker and Miller",Richard Medina
+1128,2026-03-27,Sales,2026-03,West,Phone,9,80442,"Bennett, Oliver and Prince",Mark Garrison
+1129,2026-03-17,Sales,2026-03,North,Phone,14,77230,Little-Nelson,Daniel Rhodes
+1130,2026-05-05,Sales,2026-05,West,Server,19,79516,"Molina, Clayton and Williamson",Sara Douglas
+1131,2026-02-24,Sales,2026-02,East,Tablet,17,66867,Peterson PLC,Nicole Wood
+1132,2026-03-12,Sales,2026-03,West,Tablet,14,22362,Bailey-Cox,Melissa Nguyen
+1133,2026-04-05,Sales,2026-04,North,Server,15,65305,Bennett-Martin,Kayla Davis
+1134,2026-04-15,Sales,2026-04,West,Server,8,71547,Patrick LLC,Andrew Ford
+1135,2026-03-04,Sales,2026-03,North,Phone,16,91083,"Jones, Griffin and Reeves",Shannon Rosales
+1136,2026-04-09,Sales,2026-04,East,Monitor,7,36257,Baker-Pierce,Timothy Lee
+1137,2026-02-26,Sales,2026-02,North,Monitor,18,34449,"Wolfe, Kramer and Mora",Kyle Richardson
+1138,2026-05-01,Sales,2026-05,South,Laptop,19,44575,Reyes Inc,Caroline Wade
+1139,2026-04-26,Sales,2026-04,East,Monitor,3,110927,Lawrence-Bray,Dr. Nathaniel Mitchell MD
+1140,2026-03-19,Sales,2026-03,East,Tablet,4,59229,Scott Inc,Amy Willis
+1141,2026-03-05,Sales,2026-03,East,Phone,11,69398,"Bryan, Miller and Chan",Michael Chang
+1142,2026-03-28,Sales,2026-03,East,Monitor,20,32812,"Brown, Garcia and Horton",Angela Cooper
+1143,2026-03-30,Sales,2026-03,South,Monitor,8,33660,Scott and Sons,David Rodriguez
+1144,2026-04-18,Sales,2026-04,North,Phone,5,80607,Baker PLC,Ashley Peters
+1145,2026-03-15,Sales,2026-03,South,Phone,7,76423,Fisher LLC,Stephen Fisher
+1146,2026-05-16,Sales,2026-05,North,Laptop,7,67611,Pacheco and Sons,Melissa Moore
+1147,2026-04-27,Sales,2026-04,North,Phone,6,86351,Scott and Sons,Kevin Williams
+1148,2026-05-09,Sales,2026-05,North,Server,9,70051,"Lewis, Le and Arnold",Jamie Collins
+1149,2026-03-27,Sales,2026-03,East,Server,7,11353,Mack-Lynch,Daniel Wilkinson
+1150,2026-03-27,Sales,2026-03,North,Phone,1,61431,Mckee Ltd,Donald Jenkins
+1151,2026-02-19,Sales,2026-02,East,Phone,4,82992,Dunlap Inc,Christopher Cook
+1152,2026-02-26,Sales,2026-02,South,Server,19,29764,Murphy-Coleman,Cynthia Black
+1153,2026-03-07,Sales,2026-03,North,Server,18,34249,Fry-Griffith,Matthew Miller
+1154,2026-03-05,Sales,2026-03,West,Laptop,3,21213,Riggs Group,Lauren Clark
+1155,2026-05-08,Sales,2026-05,East,Monitor,18,118092,Duncan-Fry,Sarah Gibson
+1156,2026-04-28,Sales,2026-04,West,Laptop,4,50718,Russell-Anderson,Jaime Frank
+1157,2026-03-12,Sales,2026-03,North,Laptop,2,56804,Smith-Wu,Christine Brown
+1158,2026-04-15,Sales,2026-04,North,Server,2,57784,"Mcdonald, Sanchez and Randolph",Riley Miller
+1159,2026-03-11,Sales,2026-03,North,Monitor,10,28669,Hurley-Jones,Kyle Reese
+1160,2026-05-12,Sales,2026-05,North,Monitor,7,35660,Thomas Ltd,Beth Nelson
+1161,2026-05-19,Sales,2026-05,East,Tablet,7,26875,Brown Ltd,Thomas Clements
+1162,2026-02-20,Sales,2026-02,North,Tablet,16,37899,Reynolds-Fletcher,Tony Wagner
+1163,2026-02-19,Sales,2026-02,East,Tablet,13,77801,Hamilton-Williams,Tanya Little
+1164,2026-02-24,Sales,2026-02,North,Tablet,5,85324,Waters-Cisneros,Michael Collier
+1165,2026-04-22,Sales,2026-04,East,Laptop,2,95736,"Bowman, Bradshaw and Avila",Rodney Ortega
+1166,2026-04-07,Sales,2026-04,East,Monitor,8,48913,West-Hays,Jennifer Green
+1167,2026-02-24,Sales,2026-02,South,Laptop,7,79956,"Rodriguez, Andrews and Maddox",Christopher Mitchell
+1168,2026-03-28,Sales,2026-03,North,Laptop,15,53264,"Martin, Wolfe and Hill",Sara Kent
+1169,2026-05-12,Sales,2026-05,South,Laptop,2,63769,Austin Ltd,Stephanie Ware
+1170,2026-04-20,Sales,2026-04,East,Tablet,6,46789,Washington-Butler,Kaylee Freeman
+1171,2026-03-16,Sales,2026-03,South,Monitor,3,63809,Griffin-Hoffman,Krista Johnson
+1172,2026-04-22,Sales,2026-04,North,Tablet,17,93250,"Medina, Clark and Cox",Wendy Reid
+1173,2026-05-13,Sales,2026-05,North,Phone,10,35713,"Banks, Crosby and Macdonald",Monica Sanchez
+1174,2026-05-12,Sales,2026-05,West,Server,1,116271,Andrews PLC,Kenneth Bennett
+1175,2026-05-17,Sales,2026-05,South,Server,13,103114,French-Mccormick,Anthony Stevens
+1176,2026-03-05,Sales,2026-03,South,Monitor,7,45312,Thompson-Rowe,Danielle Adams
+1177,2026-04-19,Sales,2026-04,South,Tablet,5,110199,Armstrong-Davis,Katie Hicks
+1178,2026-04-18,Sales,2026-04,East,Laptop,14,19711,"Ramos, Martin and Mueller",Brady Nguyen
+1179,2026-04-25,Sales,2026-04,West,Laptop,20,56880,"Combs, Rivera and Blake",Edward Lynn
+1180,2026-04-29,Sales,2026-04,West,Laptop,16,112155,Johnson and Sons,Robin Davis
+1181,2026-05-12,Sales,2026-05,South,Monitor,12,105962,Dunn and Sons,Joseph Lee
+1182,2026-04-20,Sales,2026-04,East,Tablet,1,68384,Richards-Griffin,Justin Bryant
+1183,2026-04-17,Sales,2026-04,South,Server,11,41523,"Porter, Nelson and Waters",Melissa Aguirre
+1184,2026-03-12,Sales,2026-03,East,Monitor,16,42680,Haley-Heath,Steven Arellano
+1185,2026-05-01,Sales,2026-05,North,Server,8,12924,Shepherd-Boyd,Isaac Cole
+1186,2026-05-12,Sales,2026-05,North,Phone,8,58137,"Walker, Rose and Campbell",Scott Snyder
+1187,2026-05-06,Sales,2026-05,South,Monitor,17,48947,Garcia PLC,Kathy Park
+1188,2026-03-17,Sales,2026-03,East,Tablet,1,119498,Chambers-Singleton,Kimberly Thompson
+1189,2026-04-17,Sales,2026-04,North,Server,14,32207,"Kelly, Lopez and Wood",Brandon Hendricks
+1190,2026-04-17,Sales,2026-04,South,Monitor,2,58116,Clark LLC,Michael Shaw
+1191,2026-03-06,Sales,2026-03,East,Tablet,19,67213,"Robinson, Hughes and Jones",Kevin Rodriguez
+1192,2026-04-13,Sales,2026-04,North,Server,3,90520,"Smith, Dunlap and Lewis",Laura Lloyd
+1193,2026-03-10,Sales,2026-03,East,Tablet,17,96228,Roth PLC,Jennifer Hoffman
+1194,2026-04-09,Sales,2026-04,South,Phone,4,22325,Cook-Mueller,Ashley Wright
+1195,2026-03-06,Sales,2026-03,South,Server,6,90250,Gates-Silva,Dr. Jamie Lee PhD
+1196,2026-04-28,Sales,2026-04,East,Laptop,1,99717,Evans LLC,Margaret Klein
+1197,2026-04-03,Sales,2026-04,East,Server,18,25998,"Hill, Gray and Evans",Richard Anderson
+1198,2026-03-19,Sales,2026-03,West,Server,18,66186,"Fowler, Wallace and Fowler",Jennifer Butler
+1199,2026-03-20,Sales,2026-03,West,Monitor,18,71760,Simmons PLC,Christine Johnson
+1200,2026-03-07,Sales,2026-03,North,Server,16,79746,Smith-Calderon,Catherine Bell
+1201,2026-03-09,Sales,2026-03,East,Laptop,17,48738,Duncan Group,Mike Smith
+1202,2026-04-15,Sales,2026-04,East,Monitor,13,25661,Andrews PLC,Patrick Mckay
+1203,2026-05-20,Sales,2026-05,West,Monitor,11,96074,"Phillips, Roth and Casey",Marissa Guerra
+1204,2026-05-12,Sales,2026-05,West,Laptop,19,117069,Bryant-Moss,Jessica Powell
+1205,2026-02-27,Sales,2026-02,East,Server,12,54472,Ray Group,Lauren Smith
+1206,2026-05-11,Sales,2026-05,East,Server,2,24564,Parrish-Thompson,Richard Murphy
+1207,2026-05-09,Sales,2026-05,North,Laptop,14,35861,"Barber, Young and Bailey",Victoria Odom
+1208,2026-05-16,Sales,2026-05,West,Server,7,97687,Lee-Rosales,Susan Montgomery
+1209,2026-03-02,Sales,2026-03,East,Tablet,2,71823,Ellis-Williams,Aaron Bates
+1210,2026-04-17,Sales,2026-04,West,Server,1,52427,Hubbard-Ramirez,Mary Montgomery
+1211,2026-05-04,Sales,2026-05,West,Server,8,58990,"Tyler, Harris and Harvey",Anthony Singleton
+1212,2026-03-30,Sales,2026-03,South,Laptop,10,53299,Salinas-Roach,Darren Banks
+1213,2026-05-14,Sales,2026-05,South,Monitor,3,14377,Moore-Stout,Ashley Carroll
+1214,2026-03-21,Sales,2026-03,South,Monitor,12,16836,Tucker-Horne,Nathan Torres
+1215,2026-03-22,Sales,2026-03,West,Tablet,7,41553,"Harrison, Stafford and Martinez",Christopher Contreras
+1216,2026-03-25,Sales,2026-03,West,Tablet,15,24486,"Smith, Andersen and Edwards",Emily May
+1217,2026-04-08,Sales,2026-04,South,Server,9,114112,Richmond-Fowler,Stanley Sullivan
+1218,2026-05-10,Sales,2026-05,South,Monitor,6,51712,"Jensen, Barnes and Keller",Kenneth Wilson
+1219,2026-05-11,Sales,2026-05,East,Laptop,10,10462,Holt LLC,Paul Smith
+1220,2026-03-03,Sales,2026-03,West,Phone,16,99033,Hernandez-Torres,Alicia Powell
+1221,2026-03-07,Sales,2026-03,South,Server,17,93020,"Hood, Hughes and Hayes",William Martinez
+1222,2026-04-14,Sales,2026-04,West,Server,9,47637,"Simmons, Johnson and Mullins",Amy Jackson
+1223,2026-03-02,Sales,2026-03,East,Phone,16,73954,"Campbell, Marshall and Graham",David Moreno
+1224,2026-04-04,Sales,2026-04,East,Laptop,4,16669,Garza and Sons,Patrick Patel
+1225,2026-04-13,Sales,2026-04,South,Laptop,4,49119,Rodriguez-Strickland,Tracey Petty
+1226,2026-04-18,Sales,2026-04,East,Laptop,10,112366,Salas-Stevens,Danny Boone
+1227,2026-03-06,Sales,2026-03,West,Phone,13,86176,Matthews-Bowman,Elizabeth Medina
+1228,2026-04-12,Sales,2026-04,North,Monitor,19,80180,"Martin, Hall and Nunez",Arthur Robinson
+1229,2026-03-02,Sales,2026-03,East,Phone,6,51281,"Mendez, Cline and Richards",Daniel Yoder
+1230,2026-04-24,Sales,2026-04,North,Tablet,14,66173,"Jones, Phillips and Harris",Alison Harris
+1231,2026-03-28,Sales,2026-03,North,Server,8,79134,Bowers Inc,Timothy Wilson
+1232,2026-03-25,Sales,2026-03,South,Monitor,12,73383,Haney-Miller,Kimberly Davis
+1233,2026-02-23,Sales,2026-02,West,Monitor,12,27947,"Edwards, Cervantes and Anthony",Stephanie Fleming
+1234,2026-04-01,Sales,2026-04,East,Monitor,18,38148,Harrington Ltd,Robert Myers
+1235,2026-03-22,Sales,2026-03,West,Server,12,11960,Smith-Johnson,Kristin Banks
+1236,2026-04-26,Sales,2026-04,East,Tablet,14,39962,Andrade-Spencer,Andrew Mercer
+1237,2026-05-14,Sales,2026-05,South,Phone,7,36555,Costa-Marks,Willie Greene
+1238,2026-04-11,Sales,2026-04,North,Phone,11,84376,"Morales, Odonnell and Bailey",Jennifer Flowers
+1239,2026-04-16,Sales,2026-04,West,Tablet,5,14019,"Pierce, Francis and Edwards",Whitney Benitez
+1240,2026-04-25,Sales,2026-04,North,Tablet,5,109021,Wilson-Tucker,Samantha Sharp
+1241,2026-03-28,Sales,2026-03,East,Monitor,4,66523,Thomas-Bishop,Christopher Gallagher
+1242,2026-04-12,Sales,2026-04,South,Server,2,39363,Vaughn-Carroll,Sarah Smith
+1243,2026-04-16,Sales,2026-04,South,Server,20,72916,Medina Inc,Carlos Thompson
+1244,2026-03-03,Sales,2026-03,West,Laptop,4,86575,Roy-Gillespie,Martin Stone
+1245,2026-05-11,Sales,2026-05,West,Laptop,3,67352,"Wilson, Graham and Durham",Judy Duke
+1246,2026-05-03,Sales,2026-05,North,Tablet,6,20941,Valdez-Perez,Tammy Lester
+1247,2026-04-27,Sales,2026-04,West,Monitor,14,18214,Gibbs-Taylor,Susan Davidson
+1248,2026-04-24,Sales,2026-04,East,Laptop,7,95388,Love LLC,Charles Perkins
+1249,2026-04-10,Sales,2026-04,North,Laptop,14,15222,Simpson-Santos,Derrick Robinson
+1250,2026-05-23,Sales,2026-05,South,Laptop,9,102724,Espinoza-Riley,William Powers
+1251,2026-03-02,Sales,2026-03,East,Tablet,4,60454,Miller-Garza,Karina Green
+1252,2026-05-01,Sales,2026-05,South,Server,9,54154,"Gonzalez, Mercer and Jones",Judith Walls
+1253,2026-05-01,Sales,2026-05,East,Monitor,15,57889,Williams-Jones,Melanie Dalton
+1254,2026-03-06,Sales,2026-03,East,Server,3,40491,"Myers, Hicks and Hill",Anthony Butler
+1255,2026-03-04,Sales,2026-03,South,Phone,4,15128,Wheeler Inc,Tasha Lee
+1256,2026-05-08,Sales,2026-05,South,Monitor,5,39002,Morrison-Smith,Jay Salazar
+1257,2026-04-13,Sales,2026-04,West,Phone,12,58352,Anderson PLC,Samantha Reynolds
+1258,2026-05-05,Sales,2026-05,West,Server,7,55736,Thompson-Obrien,Maurice Ford
+1259,2026-05-10,Sales,2026-05,South,Tablet,11,51821,"Garcia, Poole and Brown",Michael Oliver
+1260,2026-04-07,Sales,2026-04,South,Laptop,19,33314,"Smith, Williams and Payne",Dr. Chad Reed MD
+1261,2026-03-10,Sales,2026-03,West,Monitor,10,15202,"Baker, Price and Robinson",Scott Nunez
+1262,2026-02-27,Sales,2026-02,East,Laptop,5,105525,Taylor-Holloway,Jason Schneider
+1263,2026-05-16,Sales,2026-05,South,Tablet,16,113481,Freeman-Hall,Bradley Collins
+1264,2026-03-30,Sales,2026-03,North,Server,1,44150,"Sheppard, Smith and Wells",Theresa Thompson
+1265,2026-05-25,Sales,2026-05,North,Server,13,63659,"Moran, Rodriguez and Swanson",Kathy Porter
+1266,2026-04-17,Sales,2026-04,North,Monitor,18,67108,"Ortiz, Pennington and Potts",Cristian King
+1267,2026-05-08,Sales,2026-05,South,Laptop,2,98477,"Morris, Kim and Ramirez",Jay Burch
+1268,2026-04-24,Sales,2026-04,South,Phone,1,72454,Gordon-Peterson,Jason Mays
+1269,2026-04-06,Sales,2026-04,South,Phone,14,18444,Smith Group,Tyler Cole
+1270,2026-05-23,Sales,2026-05,North,Laptop,16,62409,Carter-Walker,Andrew Mccall
+1271,2026-03-03,Sales,2026-03,West,Monitor,8,73715,"Stokes, Boyd and Collier",Dana Nunez
+1272,2026-05-18,Sales,2026-05,South,Monitor,16,108988,"Evans, Watts and Gibbs",Karen Ward
+1273,2026-02-28,Sales,2026-02,South,Laptop,13,110408,Johnson-Montoya,Christina Swanson
+1274,2026-03-11,Sales,2026-03,South,Monitor,1,89488,Strickland LLC,Alexis Bryan
+1275,2026-03-29,Sales,2026-03,North,Server,6,41536,"Williams, Webster and Ramirez",Nancy Garcia
+1276,2026-03-06,Sales,2026-03,West,Server,20,77976,"Atkins, Collins and Richardson",Stephanie Kerr
+1277,2026-04-21,Sales,2026-04,East,Server,4,48302,Maxwell and Sons,William Choi
+1278,2026-04-09,Sales,2026-04,South,Laptop,11,78965,Baker-Haley,Steven Martin
+1279,2026-04-25,Sales,2026-04,North,Server,12,116318,Young-Torres,Catherine Parker
+1280,2026-03-06,Sales,2026-03,South,Tablet,13,86808,Wells-Pollard,Michelle Arnold
+1281,2026-03-15,Sales,2026-03,West,Server,17,42618,Foster-Hall,Bonnie Rodriguez
+1282,2026-04-06,Sales,2026-04,North,Laptop,15,75884,Roberson Ltd,Dr. Kenneth Sims
+1283,2026-04-16,Sales,2026-04,East,Monitor,7,106865,Lee PLC,William Wilson
+1284,2026-05-13,Sales,2026-05,East,Phone,14,24563,"Armstrong, Mcdaniel and Mcdaniel",Kathryn Jensen
+1285,2026-05-07,Sales,2026-05,North,Monitor,7,75307,Kelly PLC,Steven Schwartz
+1286,2026-03-24,Sales,2026-03,North,Server,7,27917,"Morgan, Harper and Galloway",Michael Johnson
+1287,2026-04-20,Sales,2026-04,South,Phone,15,66763,Aguilar and Sons,Joanne Johnson
+1288,2026-05-05,Sales,2026-05,North,Monitor,17,78655,Gordon LLC,Darrell Gutierrez
+1289,2026-04-18,Sales,2026-04,North,Monitor,13,19831,Valentine Inc,Jose Berry
+1290,2026-04-07,Sales,2026-04,North,Tablet,20,45657,Wheeler and Sons,Nicholas Lopez
+1291,2026-04-18,Sales,2026-04,North,Phone,13,51789,"Boyd, Johnson and Woods",James Bowman
+1292,2026-03-24,Sales,2026-03,North,Server,1,76369,Jordan Group,Michael Clark
+1293,2026-04-27,Sales,2026-04,North,Monitor,12,74110,"Marshall, Krause and Oneill",Luke Garcia
+1294,2026-05-14,Sales,2026-05,South,Server,6,93408,Brown-Miller,Ray Werner
+1295,2026-04-27,Sales,2026-04,North,Server,1,14891,"Henderson, Ellis and Hernandez",David Allen
+1296,2026-04-20,Sales,2026-04,North,Server,18,44997,Woods Inc,Barbara Barry
+1297,2026-04-28,Sales,2026-04,South,Monitor,18,91468,"Harrell, Brown and Blackburn",Peggy Carson
+1298,2026-04-23,Sales,2026-04,South,Server,11,86897,Castro Inc,Heather Michael
+1299,2026-03-29,Sales,2026-03,East,Tablet,2,78897,"Carter, Sims and Ramirez",Stacey Johnson
+1300,2026-03-25,Sales,2026-03,South,Phone,18,101500,"Williamson, Castillo and Ellison",Sara Powers
+1301,2026-05-15,Sales,2026-05,East,Server,1,51037,Bennett Inc,Andrew Drake
+1302,2026-04-27,Sales,2026-04,North,Monitor,11,102590,"Walker, Miller and Burnett",Charles Arnold
+1303,2026-04-19,Sales,2026-04,North,Phone,9,55930,Rush-Weaver,Allen Branch
+1304,2026-05-06,Sales,2026-05,East,Server,14,18826,"Downs, Davila and Young",Kristopher Pittman
+1305,2026-04-12,Sales,2026-04,South,Laptop,10,97500,Smith Inc,Tara Elliott
+1306,2026-05-02,Sales,2026-05,East,Monitor,3,87384,Coleman Ltd,Diane Ross
+1307,2026-05-13,Sales,2026-05,West,Server,20,59951,Cabrera-Brown,Gerald Figueroa
+1308,2026-04-09,Sales,2026-04,North,Phone,11,34352,Lopez Inc,David Harrison
+1309,2026-04-16,Sales,2026-04,South,Monitor,11,106612,Lewis-Miller,Adrian Jones
+1310,2026-03-18,Sales,2026-03,North,Monitor,4,73331,Ortiz and Sons,Brent Daugherty
+1311,2026-04-22,Sales,2026-04,East,Tablet,1,44400,"Sanchez, Anderson and Bell",Natasha Williams MD
+1312,2026-05-15,Sales,2026-05,East,Server,3,98236,"Nicholson, Sullivan and Mckay",Susan Schmidt
+1313,2026-04-26,Sales,2026-04,East,Monitor,15,31253,Davis Ltd,Brenda Martinez
+1314,2026-05-07,Sales,2026-05,South,Monitor,20,108253,Garcia-Ross,Jill Gibbs
+1315,2026-04-09,Sales,2026-04,North,Phone,1,55002,"White, Kramer and Garcia",Laura Hardy
+1316,2026-03-03,Sales,2026-03,South,Phone,5,81160,"Barton, Buchanan and Long",Ronnie Hancock
+1317,2026-03-30,Sales,2026-03,North,Monitor,13,47558,Jones-Ryan,Scott Harrington
+1318,2026-04-06,Sales,2026-04,South,Server,17,41245,Garcia-Johnson,David Oneal
+1319,2026-04-01,Sales,2026-04,West,Monitor,13,20981,"Munoz, Lucas and Baker",Ronald Ford
+1320,2026-04-26,Sales,2026-04,North,Monitor,12,36893,Mcgee-Nichols,Christopher Medina
+1321,2026-04-10,Sales,2026-04,East,Phone,11,103278,Ramos-Acevedo,April Richards DVM
+1322,2026-05-16,Sales,2026-05,South,Monitor,18,42237,"Gonzalez, Lane and Gomez",Joshua Padilla
+1323,2026-03-18,Sales,2026-03,East,Laptop,12,97653,Roberts-Johnson,Matthew Cruz
+1324,2026-04-02,Sales,2026-04,South,Monitor,14,98074,Williams-Tanner,Lindsey Cruz
+1325,2026-03-07,Sales,2026-03,East,Tablet,18,26172,Blackwell Ltd,Kevin Jones
+1326,2026-03-29,Sales,2026-03,South,Server,11,13181,"Fritz, Torres and Wallace",Jessica White
+1327,2026-04-12,Sales,2026-04,North,Monitor,11,91569,"Smith, Williams and Boyd",Michael Brown
+1328,2026-05-19,Sales,2026-05,North,Monitor,8,25618,Alvarado-Maddox,Mr. William Webb PhD
+1329,2026-03-26,Sales,2026-03,West,Tablet,16,79103,Williamson-King,Aaron Smith
+1330,2026-05-14,Sales,2026-05,South,Server,13,12508,Phillips Ltd,Sean Shepherd
+1331,2026-03-04,Sales,2026-03,East,Laptop,1,105909,Carlson LLC,Katelyn Powell
+1332,2026-04-01,Sales,2026-04,West,Tablet,11,116522,Murillo-Martinez,Brian Zhang
+1333,2026-05-12,Sales,2026-05,South,Server,11,88067,"Henson, Jones and Ruiz",Aimee Phillips
+1334,2026-05-03,Sales,2026-05,North,Phone,13,106403,Smith Group,Christina Nolan
+1335,2026-03-02,Sales,2026-03,East,Monitor,18,32266,"Martinez, Moore and Woods",Joseph Gonzales
+1336,2026-04-28,Sales,2026-04,East,Tablet,7,57305,Ward PLC,Tanner Jones
+1337,2026-04-18,Sales,2026-04,South,Monitor,5,77173,"Higgins, Jones and Moore",Lisa Reeves
+1338,2026-05-24,Sales,2026-05,South,Monitor,4,78041,"King, Gonzales and Farrell",Mitchell Mendoza
+1339,2026-05-25,Sales,2026-05,North,Monitor,12,48937,"Herrera, West and Boyer",Annette Perez
+1340,2026-03-13,Sales,2026-03,West,Phone,9,28192,Munoz Inc,Jeremiah Fields
+1341,2026-04-19,Sales,2026-04,North,Phone,19,17034,Pena-Warner,Mike Day
+1342,2026-03-23,Sales,2026-03,South,Server,7,39718,"Jackson, Lee and Scott",Katherine Moreno
+1343,2026-05-24,Sales,2026-05,North,Server,8,17744,Edwards-Trevino,Alan Brown
+1344,2026-03-05,Sales,2026-03,East,Monitor,9,102536,Foster and Sons,Dr. Ashley Newton
+1345,2026-05-25,Sales,2026-05,South,Server,18,79196,Clayton-Simpson,Valerie Zimmerman
+1346,2026-04-15,Sales,2026-04,South,Server,19,116556,Daniels-Becker,Susan Russo
+1347,2026-02-26,Sales,2026-02,East,Server,9,51258,Duarte PLC,Megan Cooper
+1348,2026-03-18,Sales,2026-03,North,Server,3,43731,Lamb-Adkins,Ann Mcguire
+1349,2026-03-18,Sales,2026-03,South,Server,20,14128,Martin and Sons,Julie Holmes
+1350,2026-03-28,Sales,2026-03,North,Phone,13,65923,Mooney Inc,Danielle Campbell
+1351,2026-03-02,Sales,2026-03,South,Phone,6,107986,Morrison-Prince,Darryl Pierce DDS
+1352,2026-05-06,Sales,2026-05,West,Monitor,16,114630,Watson and Sons,Jeremy Glass
+1353,2026-03-28,Sales,2026-03,South,Laptop,12,87600,"Blair, Garcia and Booth",Charles Armstrong
+1354,2026-04-14,Sales,2026-04,West,Monitor,9,30494,Todd Inc,Elizabeth Ali
+1355,2026-03-02,Sales,2026-03,North,Server,12,10061,Logan Group,Benjamin Hale
+1356,2026-03-25,Sales,2026-03,East,Server,9,114563,"Baker, Clark and Gonzales",Jason Mccarty
+1357,2026-04-06,Sales,2026-04,South,Server,7,118782,"Lewis, Reed and King",Michael Moreno
+1358,2026-03-25,Sales,2026-03,North,Phone,13,18589,"Barry, Morales and Jimenez",Emily Martinez
+1359,2026-04-27,Sales,2026-04,West,Phone,12,59284,"Warner, Cooley and Thornton",Claire Adams
+1360,2026-03-08,Sales,2026-03,South,Phone,16,49740,"Brown, Gordon and Simpson",Cheryl Greene
+1361,2026-04-02,Sales,2026-04,North,Laptop,11,89720,Allen PLC,Lauren Estes
+1362,2026-03-27,Sales,2026-03,South,Monitor,10,34493,Butler-Lucero,Ashley Price
+1363,2026-05-05,Sales,2026-05,East,Server,4,62367,"Porter, Woods and Hunt",James Thompson
+1364,2026-03-01,Sales,2026-03,South,Server,8,97099,"Freeman, Ellison and Brady",Amy Johnson
+1365,2026-05-06,Sales,2026-05,South,Monitor,3,25098,Donovan LLC,Maria Smith
+1366,2026-05-26,Sales,2026-05,South,Phone,16,79682,Lee-Paul,Danielle Roman
+1367,2026-04-17,Sales,2026-04,South,Tablet,16,93498,"Hines, Parks and Kaufman",Lindsey Gardner
+1368,2026-03-03,Sales,2026-03,South,Phone,12,23067,"Harris, Andrade and Jackson",Andre Green
+1369,2026-04-30,Sales,2026-04,South,Phone,20,31544,Yoder-Hernandez,Jay Herrera
+1370,2026-02-27,Sales,2026-02,South,Monitor,1,83709,Anderson-Arroyo,Richard Williams
+1371,2026-03-01,Sales,2026-03,North,Monitor,7,47535,Morgan Inc,Cindy Moore
+1372,2026-03-01,Sales,2026-03,South,Monitor,1,27088,Johnson Group,Jesse Vega
+1373,2026-05-03,Sales,2026-05,South,Monitor,3,30390,"Kim, Fox and King",Joseph Sanders
+1374,2026-05-01,Sales,2026-05,South,Server,20,76520,Reynolds-Lane,Christina Ferguson
+1375,2026-04-26,Sales,2026-04,East,Phone,16,94563,Lane-Ball,Crystal Cameron
+1376,2026-05-08,Sales,2026-05,East,Tablet,17,113747,"Harmon, Tyler and Williams",Eric Olson
+1377,2026-03-14,Sales,2026-03,South,Monitor,20,111611,Watson-Morris,Jeffery Estrada
+1378,2026-04-13,Sales,2026-04,South,Monitor,3,34440,Dean Inc,Tyler Guerrero
+1379,2026-05-18,Sales,2026-05,South,Phone,19,108745,Schmidt Inc,Robert Shaw
+1380,2026-05-05,Sales,2026-05,South,Monitor,5,41603,Wells-Wilson,Christine Harris
+1381,2026-04-04,Sales,2026-04,West,Laptop,12,90127,Mitchell-Perry,David Clark
+1382,2026-04-07,Sales,2026-04,East,Monitor,5,22094,Parker Ltd,Jose Wallace
+1383,2026-05-27,Sales,2026-05,East,Server,19,42821,Smith-Horton,Timothy Young
+1384,2026-04-03,Sales,2026-04,East,Server,13,104391,Hernandez-Newman,Wendy Gay
+1385,2026-05-13,Sales,2026-05,North,Server,2,11771,Ortiz Ltd,Richard Pennington
+1386,2026-05-20,Sales,2026-05,South,Server,8,66923,Pena Ltd,Mrs. Stacey Frye
+1387,2026-02-28,Sales,2026-02,South,Tablet,5,119907,King-Owens,Jack Roberts
+1388,2026-04-05,Sales,2026-04,South,Tablet,2,92457,Watkins-Andrews,Allen Ferrell
+1389,2026-04-04,Sales,2026-04,West,Phone,15,85183,Walters-Taylor,Cynthia Price
+1390,2026-03-26,Sales,2026-03,East,Laptop,17,23562,Reilly Group,Maureen Chan
+1391,2026-05-10,Sales,2026-05,South,Tablet,11,95359,"Marquez, Mcgrath and Gonzalez",Jason Schmidt
+1392,2026-05-17,Sales,2026-05,South,Server,13,76577,"Mccullough, Wilson and Harper",Jesse Faulkner
+1393,2026-03-02,Sales,2026-03,South,Phone,7,27121,Adkins-Palmer,Darryl Mills
+1394,2026-03-13,Sales,2026-03,North,Monitor,11,12237,"Michael, Reyes and Cobb",Steven Riggs
+1395,2026-05-25,Sales,2026-05,West,Laptop,6,35660,Duke-Miller,William Gonzalez
+1396,2026-04-29,Sales,2026-04,West,Monitor,2,42639,Foley Ltd,Denise Harris
+1397,2026-04-22,Sales,2026-04,West,Tablet,6,70995,"Roberts, Barnes and Richards",Jane Smith DVM
+1398,2026-04-18,Sales,2026-04,North,Monitor,11,77196,Garcia and Sons,Glenn Escobar
+1399,2026-03-10,Sales,2026-03,West,Laptop,17,16146,Barrett Group,Tina Dominguez
+1400,2026-04-10,Sales,2026-04,South,Tablet,1,87395,Casey-Webb,David Roy
+1401,2026-03-22,Sales,2026-03,East,Monitor,7,99587,Estrada-Williams,Kelly Reese
+1402,2026-03-21,Sales,2026-03,East,Laptop,17,51652,Diaz LLC,Cristian Hancock
+1403,2026-03-05,Sales,2026-03,North,Laptop,6,56021,Foster-Glass,Brittany Christian
+1404,2026-03-16,Sales,2026-03,South,Tablet,11,44756,Miller PLC,Carl Murray
+1405,2026-05-13,Sales,2026-05,South,Monitor,9,114100,"Jones, Pham and Cross",Darryl Smith
+1406,2026-05-06,Sales,2026-05,East,Server,12,32746,Hicks-Kennedy,Brandon Hogan
+1407,2026-03-02,Sales,2026-03,South,Phone,11,92898,Fisher and Sons,Ashley Johnson
+1408,2026-05-17,Sales,2026-05,West,Tablet,11,84531,Parsons-King,Jessica Harrison
+1409,2026-05-24,Sales,2026-05,East,Tablet,9,110942,"Smith, Weber and Sullivan",Roberto King
+1410,2026-05-01,Sales,2026-05,East,Tablet,14,11467,"Mcbride, Luna and Smith",Joseph Ramsey
+1411,2026-04-11,Sales,2026-04,South,Server,14,103099,Smith-Owens,Robert Ward
+1412,2026-04-04,Sales,2026-04,West,Monitor,1,39423,York-Garcia,Matthew Rowland
+1413,2026-04-08,Sales,2026-04,South,Server,13,52261,Wall-Lewis,Jessica Brown
+1414,2026-03-14,Sales,2026-03,East,Server,10,20311,Reese and Sons,Bryan Hill
+1415,2026-03-22,Sales,2026-03,South,Monitor,4,48056,"Roberts, Mccullough and Harrington",John Sanders
+1416,2026-04-24,Sales,2026-04,North,Monitor,16,93124,Stewart PLC,Robert Huerta
+1417,2026-05-20,Sales,2026-05,East,Laptop,18,18328,"Johnston, Kirk and Hurst",Kristie Henderson
+1418,2026-03-08,Sales,2026-03,West,Laptop,14,106589,"Lee, Cummings and Johnson",Adam Allison
+1419,2026-05-23,Sales,2026-05,East,Server,6,111597,Price-Walker,Tom Martinez
+1420,2026-05-26,Sales,2026-05,West,Monitor,11,76357,Graham Inc,Victor Mcdonald
+1421,2026-04-20,Sales,2026-04,East,Monitor,17,33308,"Cline, Cameron and Garcia",Rachel Lee
+1422,2026-05-03,Sales,2026-05,West,Server,16,88908,Figueroa Inc,Raymond Bailey
+1423,2026-04-18,Sales,2026-04,West,Server,2,35142,Norris Ltd,Pamela Miller
+1424,2026-04-02,Sales,2026-04,West,Monitor,15,14232,"Goodman, Williamson and Griffith",Shelby May
+1425,2026-03-03,Sales,2026-03,East,Server,1,88652,"Gutierrez, Armstrong and Rodriguez",Ryan Newman
+1426,2026-04-28,Sales,2026-04,West,Server,19,21849,Copeland PLC,Cindy Reyes
+1427,2026-02-28,Sales,2026-02,West,Monitor,12,20514,Graham-Carlson,Mark Obrien
+1428,2026-03-16,Sales,2026-03,East,Server,3,29904,"Rollins, West and Perez",Wesley Clark
+1429,2026-05-26,Sales,2026-05,North,Phone,11,108795,Trujillo-Peters,Kimberly Khan
+1430,2026-05-04,Sales,2026-05,North,Tablet,4,23821,Simon-Gonzalez,Patrick Madden
+1431,2026-05-10,Sales,2026-05,North,Laptop,16,21499,Baker PLC,Michael Gillespie
+1432,2026-03-23,Sales,2026-03,North,Laptop,16,54420,Ferrell-Thompson,Alex Roberts
+1433,2026-05-17,Sales,2026-05,South,Monitor,2,77040,"Fritz, Bennett and Gill",Daniel Young MD
+1434,2026-03-18,Sales,2026-03,West,Tablet,20,118632,"Richardson, Bailey and Lewis",Dawn Wilson
+1435,2026-05-14,Sales,2026-05,North,Monitor,9,97576,"Taylor, Park and Torres",Janice Williams
+1436,2026-05-10,Sales,2026-05,North,Laptop,8,78998,Bonilla Ltd,Erica Miller
+1437,2026-03-31,Sales,2026-03,East,Laptop,1,53191,"Schroeder, Gray and Henderson",Allison Wilson
+1438,2026-05-14,Sales,2026-05,North,Laptop,10,109620,Williams-Taylor,Christopher Curtis
+1439,2026-04-01,Sales,2026-04,West,Laptop,10,61159,"Carter, Sweeney and Medina",Ashley Jefferson
+1440,2026-04-29,Sales,2026-04,South,Server,7,35799,Clements Inc,Joshua Johnson
+1441,2026-04-04,Sales,2026-04,North,Tablet,8,93783,Chang-Miller,William Francis
+1442,2026-04-03,Sales,2026-04,North,Laptop,10,43933,Chapman Ltd,Kathryn Palmer
+1443,2026-05-12,Sales,2026-05,North,Tablet,9,16725,Martinez-Sharp,Colleen Hurst
+1444,2026-05-27,Sales,2026-05,North,Laptop,19,87663,Jones-Webb,Charlotte Day
+1445,2026-04-12,Sales,2026-04,South,Server,12,48753,Evans Ltd,Lori Lopez
+1446,2026-03-28,Sales,2026-03,North,Monitor,2,13836,Cruz-Haynes,Ashley Nguyen
+1447,2026-04-10,Sales,2026-04,South,Server,17,55054,"Perry, Berger and Ho",Darryl Montgomery
+1448,2026-04-10,Sales,2026-04,West,Server,19,78140,"Reed, Williams and Smith",Brittany Garza
+1449,2026-04-02,Sales,2026-04,South,Phone,13,84800,Edwards-Suarez,Miranda Ross
+1450,2026-03-03,Sales,2026-03,West,Monitor,16,18335,"Kane, Mills and Waters",Karen Jacobson
+1451,2026-04-14,Sales,2026-04,East,Phone,6,84950,Townsend and Sons,Carmen Gibbs
+1452,2026-03-04,Sales,2026-03,North,Monitor,3,37634,Love-Davis,Deborah Robinson
+1453,2026-04-17,Sales,2026-04,South,Laptop,10,87773,Anderson-Graves,Elizabeth Flores
+1454,2026-04-07,Sales,2026-04,South,Tablet,9,92418,"Pierce, Huff and Smith",Nathan Palmer
+1455,2026-03-03,Sales,2026-03,East,Server,9,55788,Lawson-Davis,Carlos Austin
+1456,2026-05-26,Sales,2026-05,West,Tablet,11,24598,Owens Ltd,Susan Melton
+1457,2026-04-13,Sales,2026-04,West,Server,16,97524,"Robinson, Johns and Waters",Stefanie Cunningham
+1458,2026-03-04,Sales,2026-03,East,Tablet,7,30973,Moore-Schneider,Mrs. Amanda Taylor
+1459,2026-05-20,Sales,2026-05,South,Monitor,4,11940,Conner Group,Laura Fisher
+1460,2026-04-20,Sales,2026-04,South,Monitor,11,71938,Brown Inc,Linda Richmond
+1461,2026-03-30,Sales,2026-03,East,Server,8,82812,"Beck, Ramirez and Irwin",Leslie Pace
+1462,2026-04-07,Sales,2026-04,East,Laptop,12,32086,Roth Ltd,Melissa Herrera
+1463,2026-04-13,Sales,2026-04,West,Server,16,118806,Ali Group,Mrs. Heather Williams DDS
+1464,2026-04-13,Sales,2026-04,East,Laptop,4,82147,"Vega, Chang and Kerr",Timothy Gomez
+1465,2026-03-04,Sales,2026-03,South,Tablet,3,76716,Kent-Maldonado,Kathy Ibarra
+1466,2026-05-10,Sales,2026-05,North,Server,19,16535,Martinez-Summers,Jessica Franklin
+1467,2026-03-04,Sales,2026-03,South,Tablet,14,84472,Moss-Sandoval,Jennifer Tucker
+1468,2026-03-09,Sales,2026-03,North,Monitor,17,43278,"Smith, Garcia and Baker",David Frye
+1469,2026-04-10,Sales,2026-04,South,Phone,8,51335,Davenport Inc,Noah Jones
+1470,2026-04-17,Sales,2026-04,South,Tablet,1,55001,Black Inc,Eric King
+1471,2026-03-19,Sales,2026-03,South,Tablet,14,13507,"Smith, Mayer and Sellers",Cynthia Frazier
+1472,2026-05-12,Sales,2026-05,North,Laptop,2,86565,Kramer-Graham,Charles Reeves
+1473,2026-04-20,Sales,2026-04,West,Server,5,109595,Barry-Brown,Joshua Manning
+1474,2026-02-26,Sales,2026-02,East,Server,12,58332,Hall Inc,Krystal Hammond
+1475,2026-04-17,Sales,2026-04,North,Server,2,61809,Wilson PLC,Gabriel Garcia
+1476,2026-04-01,Sales,2026-04,North,Server,6,90392,Holt-Clark,Laura Baker
+1477,2026-03-29,Sales,2026-03,West,Server,12,66089,"Wilson, Beltran and Hall",Justin Rodriguez
+1478,2026-04-11,Sales,2026-04,South,Laptop,17,97598,Moore Inc,Stephanie Herrera
+1479,2026-03-31,Sales,2026-03,South,Phone,8,32278,Jimenez-Mora,Jennifer Harris
+1480,2026-05-27,Sales,2026-05,South,Server,11,26790,Riley Ltd,Dennis Duncan
+1481,2026-05-17,Sales,2026-05,South,Monitor,7,37048,Wright PLC,Rodney Ross
+1482,2026-04-25,Sales,2026-04,South,Phone,12,77914,Robertson-Watson,Chris Johnson
+1483,2026-03-15,Sales,2026-03,South,Tablet,17,100351,Phillips PLC,Joshua Meadows
+1484,2026-03-11,Sales,2026-03,South,Laptop,10,41039,Johns and Sons,Krista Lee
+1485,2026-03-26,Sales,2026-03,North,Tablet,9,79888,Hale Ltd,Ryan Case
+1486,2026-03-13,Sales,2026-03,East,Laptop,2,48548,"Wheeler, Williams and Hudson",Bill Davidson
+1487,2026-04-03,Sales,2026-04,West,Server,12,19306,"Dominguez, Contreras and Herring",Andrew Wright
+1488,2026-05-17,Sales,2026-05,North,Phone,2,62530,Davis-Lopez,Justin Sanchez
+1489,2026-04-29,Sales,2026-04,North,Monitor,5,31155,Wright-Fox,Natalie Cline
+1490,2026-04-06,Sales,2026-04,East,Tablet,14,70682,Gray Ltd,Raymond Williams
+1491,2026-03-27,Sales,2026-03,East,Server,10,26886,Chapman LLC,Ralph Riley
+1492,2026-03-18,Sales,2026-03,North,Tablet,1,25293,"Taylor, Brown and Knight",Samantha Allen
+1493,2026-05-20,Sales,2026-05,South,Phone,16,62948,Medina PLC,Brent Jimenez
+1494,2026-03-14,Sales,2026-03,North,Monitor,8,71655,Torres-Morrison,Joseph Romero
+1495,2026-03-28,Sales,2026-03,West,Tablet,5,88867,Smith LLC,Jason Owens
+1496,2026-03-25,Sales,2026-03,North,Monitor,9,82203,Reynolds-Hardin,Jaime Barker
+1497,2026-05-24,Sales,2026-05,South,Tablet,19,107136,Wright-Bell,Michael Bridges
+1498,2026-04-24,Sales,2026-04,West,Laptop,13,35459,Hall Group,Kyle Jimenez
+1499,2026-04-12,Sales,2026-04,West,Tablet,14,79350,Kennedy LLC,Scott Wells
+1500,2026-04-30,Sales,2026-04,South,Tablet,19,49060,"Rodriguez, Franklin and Robinson",Kevin Hickman
+1501,2026-05-04,Sales,2026-05,South,Phone,7,27811,"Ramos, Ritter and Blair",Patrick Lucas
+1502,2026-03-08,Sales,2026-03,West,Laptop,8,20049,Cruz Ltd,Robert Lambert
+1503,2026-04-22,Sales,2026-04,North,Phone,5,39596,Espinoza LLC,Kimberly Cox
+1504,2026-05-14,Sales,2026-05,North,Tablet,13,91628,Martin-Johnson,Dr. Todd Rocha III
+1505,2026-04-22,Sales,2026-04,East,Laptop,14,84200,"Walton, Thomas and Richard",Robert Nguyen
+1506,2026-05-07,Sales,2026-05,East,Tablet,17,51089,Mclean PLC,Lisa Salas
+1507,2026-05-20,Sales,2026-05,South,Monitor,6,24847,Allen Group,John Hood MD
+1508,2026-05-24,Sales,2026-05,North,Tablet,12,30300,"Williams, Gonzalez and Rivas",Anthony Jennings
+1509,2026-04-01,Sales,2026-04,East,Server,1,59820,"Young, Green and Guerra",Eugene Padilla
+1510,2026-04-28,Sales,2026-04,West,Monitor,16,72721,Ballard-Benson,Richard Phillips
+1511,2026-04-15,Sales,2026-04,East,Tablet,13,21833,"Lawrence, Stone and Bradshaw",Terry Walker
+1512,2026-05-02,Sales,2026-05,North,Server,8,20781,Moody-Chang,Andrea Aguilar
+1513,2026-04-18,Sales,2026-04,South,Server,9,98286,"Berg, Spencer and Robinson",Colton Brady
+1514,2026-04-08,Sales,2026-04,South,Phone,13,112669,"Horn, Wells and Greer",William Khan
+1515,2026-04-11,Sales,2026-04,North,Monitor,4,30586,Smith-Reeves,Amanda Patton
+1516,2026-05-05,Sales,2026-05,South,Server,8,47777,"Holland, Morgan and Chavez",Lisa Perez
+1517,2026-03-03,Sales,2026-03,South,Phone,12,34368,Williams-Lowe,Walter Hall
+1518,2026-05-27,Sales,2026-05,North,Laptop,9,48896,Ferguson-Peters,William Villarreal
+1519,2026-04-11,Sales,2026-04,South,Server,2,68765,"Davis, Parker and Velez",Annette Phillips
+1520,2026-03-24,Sales,2026-03,West,Phone,2,84758,Carey-Warren,Carol Duke
+1521,2026-04-20,Sales,2026-04,West,Tablet,7,27310,Holder-Farmer,Melissa Smith
+1522,2026-05-26,Sales,2026-05,South,Server,5,77532,Coleman-Lewis,Donna Hunter
+1523,2026-03-26,Sales,2026-03,West,Tablet,20,106749,Cohen-Hill,Shelly Burton DDS
+1524,2026-03-08,Sales,2026-03,North,Server,16,97828,Knight-Johnson,Robert Farrell
+1525,2026-03-30,Sales,2026-03,West,Monitor,16,119847,Haley-Smith,Jennifer Alvarado
+1526,2026-05-20,Sales,2026-05,South,Tablet,18,22804,"Fisher, Burns and Hughes",William Baker
+1527,2026-04-13,Sales,2026-04,North,Server,3,43916,"Ramsey, Carroll and Duncan",Isaac Sanchez
+1528,2026-04-01,Sales,2026-04,South,Server,8,45813,"Warren, Kennedy and Larson",Kevin Bartlett
+1529,2026-03-08,Sales,2026-03,East,Monitor,9,64647,Herring-Ramsey,Michael Woods
+1530,2026-03-31,Sales,2026-03,East,Laptop,16,74285,"Aguilar, Gray and Turner",Jessica Cline
+1531,2026-03-07,Sales,2026-03,North,Server,14,63928,Riley LLC,Julia Rodgers
+1532,2026-03-22,Sales,2026-03,East,Server,11,39771,"Conway, Escobar and Green",Karen Page
+1533,2026-04-27,Sales,2026-04,South,Monitor,4,51862,"Stone, Waters and Reed",Nicole Manning
+1534,2026-05-04,Sales,2026-05,North,Tablet,7,117320,Murray-Hunter,Jordan Burton
+1535,2026-03-09,Sales,2026-03,North,Phone,6,112071,Flores PLC,Brian Soto
+1536,2026-05-01,Sales,2026-05,North,Server,9,92659,Lewis-Mcintyre,Charles Medina
+1537,2026-03-17,Sales,2026-03,South,Server,5,62932,Barber Group,David Garcia
+1538,2026-05-26,Sales,2026-05,West,Phone,14,71134,Nunez-Pope,Annette Brown
+1539,2026-05-15,Sales,2026-05,East,Monitor,6,81001,"Robinson, Bates and Mercado",Randy Johnson
+1540,2026-04-17,Sales,2026-04,South,Monitor,6,66314,Duffy LLC,Samantha Melton
+1541,2026-03-24,Sales,2026-03,North,Tablet,3,39059,"Knight, Kelly and Martinez",Brandon Mitchell
+1542,2026-03-19,Sales,2026-03,North,Laptop,17,89036,Williams-Miller,Kari Carlson
+1543,2026-04-13,Sales,2026-04,North,Monitor,9,27132,Wells-Martinez,Jessica Leblanc
+1544,2026-04-19,Sales,2026-04,South,Laptop,4,64259,"Pittman, Torres and Jones",Bradley George
+1545,2026-05-09,Sales,2026-05,North,Phone,10,36422,Liu-Baldwin,Rick Scott
+1546,2026-04-16,Sales,2026-04,South,Server,12,15144,Ramos-Cox,Gregory Bennett
+1547,2026-03-25,Sales,2026-03,South,Server,1,86697,Green-Mcdowell,Nathan Luna
+1548,2026-04-02,Sales,2026-04,West,Tablet,8,77083,Martinez Ltd,Jeffrey Johnson DVM
+1549,2026-03-17,Sales,2026-03,North,Server,1,49422,Farmer Inc,Joe Martinez
+1550,2026-05-27,Sales,2026-05,South,Tablet,15,52648,Lee PLC,Patrick Shaffer
+1551,2026-04-20,Sales,2026-04,South,Tablet,10,79846,"Love, Stevens and Bailey",Monique Townsend
+1552,2026-05-05,Sales,2026-05,South,Laptop,18,59092,"Decker, Lozano and Moore",John Owens
+1553,2026-02-26,Sales,2026-02,North,Monitor,11,21808,Parsons Inc,Beth Scott
+1554,2026-03-30,Sales,2026-03,West,Phone,14,61216,"Bates, Harrell and Mclaughlin",Jack Parker
+1555,2026-03-14,Sales,2026-03,North,Server,2,75816,Cannon Ltd,Brianna Lewis
+1556,2026-03-17,Sales,2026-03,West,Laptop,12,27501,Marshall Ltd,Evelyn Turner
+1557,2026-05-17,Sales,2026-05,South,Laptop,3,113508,"Cooley, Harris and Jones",Margaret Bowers
+1558,2026-04-07,Sales,2026-04,North,Laptop,13,50125,Lewis LLC,Rachel Lopez
+1559,2026-03-29,Sales,2026-03,West,Server,20,83499,"Ochoa, Hudson and Stewart",Susan Olson
+1560,2026-04-20,Sales,2026-04,West,Laptop,3,30337,"Webb, Foley and Mcdaniel",Karina Pollard
+1561,2026-03-15,Sales,2026-03,North,Laptop,11,67979,Perry and Sons,Joshua Brown
+1562,2026-05-06,Sales,2026-05,North,Monitor,9,13573,"George, Thompson and Roy",David Johnson
+1563,2026-05-17,Sales,2026-05,East,Tablet,4,102469,Stone-Macias,Lindsay Jones
+1564,2026-05-25,Sales,2026-05,South,Phone,8,55561,Stewart and Sons,Holly Knapp
+1565,2026-05-10,Sales,2026-05,West,Monitor,16,40679,Sampson and Sons,Teresa Foster
+1566,2026-03-28,Sales,2026-03,East,Laptop,7,41259,"Sullivan, Fisher and Black",David Fisher
+1567,2026-05-22,Sales,2026-05,South,Phone,7,109032,Tran-Thornton,James Nelson
+1568,2026-03-04,Sales,2026-03,South,Server,17,114029,"Armstrong, Blevins and Hall",Andrew Norris
+1569,2026-04-18,Sales,2026-04,North,Laptop,6,115268,"Owens, Myers and Gonzales",Jesse Bell
+1570,2026-04-11,Sales,2026-04,South,Laptop,5,38492,Thompson and Sons,Alexander Clark
+1571,2026-05-12,Sales,2026-05,South,Phone,8,89986,Serrano-Dominguez,Carol Jones
+1572,2026-04-16,Sales,2026-04,West,Tablet,5,12235,Crawford and Sons,Meghan Jordan
+1573,2026-03-13,Sales,2026-03,East,Server,14,95851,"Hanson, Phillips and Scott",Peter Hobbs
+1574,2026-04-08,Sales,2026-04,North,Monitor,8,99285,"Jennings, Coleman and Chambers",Brandon Reyes
+1575,2026-04-19,Sales,2026-04,West,Tablet,16,37904,"Simon, Smith and Jones",Kim Cook
+1576,2026-05-02,Sales,2026-05,East,Phone,3,60926,Smith-Hudson,Nicole Oneill
+1577,2026-05-09,Sales,2026-05,South,Monitor,15,110485,"Shepard, Adams and Smith",William Petty
+1578,2026-03-06,Sales,2026-03,South,Phone,11,46362,Ortiz PLC,David Adams
+1579,2026-05-17,Sales,2026-05,South,Tablet,10,94092,Macdonald-Anderson,Kevin Smith
+1580,2026-04-03,Sales,2026-04,West,Monitor,17,89442,Adams-Sweeney,Mark Decker
+1581,2026-05-14,Sales,2026-05,North,Laptop,17,49491,Jenkins-Sanders,Lucas Frye
+1582,2026-05-19,Sales,2026-05,North,Laptop,20,94143,Jordan-Johns,Lisa Garner
+1583,2026-03-02,Sales,2026-03,East,Laptop,20,100198,Watson Ltd,Christine Miller
+1584,2026-03-25,Sales,2026-03,West,Server,12,75055,Brown-Johnson,Donna Henry
+1585,2026-03-14,Sales,2026-03,North,Server,8,104252,"Bell, Stewart and Brooks",Daryl Wise
+1586,2026-04-14,Sales,2026-04,East,Monitor,1,82075,Arnold LLC,Cheryl Garcia
+1587,2026-04-21,Sales,2026-04,East,Tablet,12,20345,Valdez and Sons,Antonio Johnson
+1588,2026-05-11,Sales,2026-05,West,Monitor,13,96766,"Sellers, May and Arnold",Richard Norris
+1589,2026-04-24,Sales,2026-04,South,Monitor,3,119067,Valdez LLC,Patrick Young
+1590,2026-05-24,Sales,2026-05,West,Laptop,11,75510,"Vaughn, Brewer and Gibson",Sarah Morales
+1591,2026-04-10,Sales,2026-04,South,Tablet,6,56120,Pena Group,Jason Wagner
+1592,2026-05-21,Sales,2026-05,East,Laptop,1,72337,"Garcia, Robinson and Campbell",Angelica Moore
+1593,2026-04-20,Sales,2026-04,South,Phone,2,10802,Woodward Ltd,Lori Christensen
+1594,2026-03-08,Sales,2026-03,South,Laptop,12,111791,Irwin LLC,Peter Miller
+1595,2026-03-15,Sales,2026-03,South,Phone,16,25052,House-Morgan,Todd Stuart
+1596,2026-05-12,Sales,2026-05,South,Laptop,17,98194,Thomas Group,Jessica Jenkins
+1597,2026-03-16,Sales,2026-03,East,Phone,2,22375,Cross-Hoffman,Timothy Vaughan
+1598,2026-03-01,Sales,2026-03,South,Laptop,15,72031,Moses PLC,Laura Jones
+1599,2026-05-24,Sales,2026-05,South,Laptop,11,112009,"Grant, Branch and Maldonado",Diane Hanson
+1600,2026-05-23,Sales,2026-05,East,Laptop,5,102235,Kim-Walton,Kristen Griffin
+1601,2026-03-12,Sales,2026-03,North,Laptop,4,99473,Davis-Rodriguez,Craig Jimenez
+1602,2026-04-30,Sales,2026-04,East,Tablet,17,52999,Allen-Cruz,Eric Davis
+1603,2026-05-04,Sales,2026-05,North,Laptop,10,84163,Simpson PLC,Robert Russell
+1604,2026-04-19,Sales,2026-04,South,Tablet,14,98985,Arnold LLC,Russell Anderson
+1605,2026-03-03,Sales,2026-03,North,Tablet,15,84152,Coleman Group,Daniel Leonard
+1606,2026-04-07,Sales,2026-04,West,Laptop,12,97675,Cochran-Leonard,Catherine Wallace
+1607,2026-03-05,Sales,2026-03,North,Laptop,9,28045,Perry-Mcmillan,Marcus Gilmore
+1608,2026-03-23,Sales,2026-03,North,Phone,2,23916,Mccoy Group,Amy Brown
+1609,2026-04-26,Sales,2026-04,West,Tablet,9,104723,Hale PLC,Cheryl Gonzalez
+1610,2026-04-26,Sales,2026-04,East,Server,16,66226,"Stokes, Ross and Hughes",Patricia Gonzalez
+1611,2026-03-15,Sales,2026-03,South,Phone,3,70984,"Nixon, Salas and Willis",Lynn Williams
+1612,2026-02-26,Sales,2026-02,West,Server,17,87201,Bird-Smith,Brett Davis
+1613,2026-03-12,Sales,2026-03,South,Tablet,2,15400,"Harrison, Woodward and Warner",Erika Morgan
+1614,2026-03-05,Sales,2026-03,West,Phone,3,44258,Alvarado Group,Mary Mckee
+1615,2026-03-05,Sales,2026-03,West,Laptop,14,80878,Faulkner-Andrews,Dennis Frye
+1616,2026-03-05,Sales,2026-03,South,Monitor,12,14491,Taylor Ltd,Howard Holland
+1617,2026-05-14,Sales,2026-05,West,Phone,17,69373,Garza-Turner,Thomas Wilkins
+1618,2026-03-31,Sales,2026-03,East,Phone,20,69375,Sims-Collins,Amber Cantrell
+1619,2026-04-16,Sales,2026-04,North,Tablet,9,113756,Larson Ltd,Sylvia Anderson
+1620,2026-03-18,Sales,2026-03,West,Laptop,16,116605,"Scott, Bell and Mcpherson",Leah Garcia
+1621,2026-05-19,Sales,2026-05,East,Server,8,41775,"Parker, Lucas and Chaney",Linda Turner
+1622,2026-03-14,Sales,2026-03,West,Server,4,61224,Smith-Weiss,Veronica Copeland
+1623,2026-04-20,Sales,2026-04,South,Tablet,9,33668,"Baker, Yoder and Lowery",Courtney Jones
+1624,2026-04-19,Sales,2026-04,North,Laptop,5,10480,Holt-Rodriguez,Lori Patterson
+1625,2026-05-19,Sales,2026-05,North,Server,2,86345,Mayer-Castro,David Lawrence
+1626,2026-05-14,Sales,2026-05,West,Phone,20,105400,"Thomas, Wilson and Taylor",Michele Roach
+1627,2026-05-23,Sales,2026-05,South,Laptop,4,117454,"Vazquez, Wall and George",Erika Villanueva
+1628,2026-04-30,Sales,2026-04,West,Phone,19,93571,"Mckenzie, Golden and Garcia",Sue Lowe
+1629,2026-04-23,Sales,2026-04,North,Tablet,2,91942,Perez and Sons,Stephanie Patel
+1630,2026-05-23,Sales,2026-05,East,Tablet,3,117325,Guerrero Inc,Tanya Kennedy
+1631,2026-03-08,Sales,2026-03,South,Tablet,15,115499,Page and Sons,Michael Richards
+1632,2026-02-27,Sales,2026-02,South,Laptop,14,107185,Stokes PLC,Brooke Fernandez
+1633,2026-05-17,Sales,2026-05,North,Server,1,51495,"Martinez, White and Aguilar",Stephanie Walker
+1634,2026-04-20,Sales,2026-04,North,Tablet,6,82246,Gibson PLC,Erica Evans
+1635,2026-05-19,Sales,2026-05,East,Tablet,19,35433,Grant PLC,Miss Melanie Saunders
+1636,2026-03-01,Sales,2026-03,East,Phone,17,105093,Richardson Inc,Gina Bradford
+1637,2026-04-18,Sales,2026-04,West,Phone,3,64961,Green Inc,James Simpson
+1638,2026-04-21,Sales,2026-04,East,Phone,6,66135,"Johns, Woods and Butler",David Anderson
+1639,2026-04-03,Sales,2026-04,West,Monitor,10,42200,"Cannon, Miller and Garcia",Kevin Carr
+1640,2026-03-03,Sales,2026-03,North,Tablet,7,42386,"Price, Barrett and Rhodes",Ashley Martinez
+1641,2026-04-25,Sales,2026-04,West,Monitor,14,92903,"Hoover, Lopez and Donovan",Angela Arnold
+1642,2026-05-07,Sales,2026-05,East,Server,10,50014,Robinson Inc,John Harper
+1643,2026-04-24,Sales,2026-04,West,Tablet,2,94263,Wade-Howe,Chloe Henderson
+1644,2026-03-23,Sales,2026-03,East,Laptop,7,45201,Graham-Allen,John Villanueva
+1645,2026-04-11,Sales,2026-04,South,Monitor,12,70875,Marshall-Davis,Kimberly Martin
+1646,2026-03-21,Sales,2026-03,South,Laptop,20,98798,Thomas and Sons,Mary Berg
+1647,2026-05-04,Sales,2026-05,East,Monitor,16,47321,Ramsey-Mullins,Arthur Hughes
+1648,2026-05-18,Sales,2026-05,North,Monitor,6,79082,Bennett-Watson,Joseph Jimenez
+1649,2026-03-15,Sales,2026-03,South,Laptop,14,56328,"Myers, Cooke and Smith",Anthony Herring
+1650,2026-05-25,Sales,2026-05,East,Server,17,84223,Walsh-Duran,Emily Hall
+1651,2026-05-15,Sales,2026-05,North,Laptop,3,87632,Griffith-Perez,Sara Mcdonald
+1652,2026-05-07,Sales,2026-05,West,Tablet,3,118647,Lee Inc,Linda Reid
+1653,2026-05-22,Sales,2026-05,West,Laptop,7,116607,Thomas-Barnes,Christopher Wagner
+1654,2026-04-03,Sales,2026-04,East,Laptop,11,83074,Mills LLC,Crystal Mercado
+1655,2026-03-15,Sales,2026-03,North,Tablet,9,10484,Santana Inc,Darren Davis
+1656,2026-03-12,Sales,2026-03,North,Monitor,15,28777,Bradley-Johnson,Alexandra Kemp
+1657,2026-05-08,Sales,2026-05,East,Monitor,18,113352,"Kim, Madden and Hughes",Douglas Donovan
+1658,2026-04-27,Sales,2026-04,South,Monitor,16,45047,"Lane, Brown and Maxwell",Terry Miller
+1659,2026-03-28,Sales,2026-03,East,Phone,18,33124,"Baker, Miller and Martinez",Jennifer Russell
+1660,2026-03-28,Sales,2026-03,East,Phone,10,117411,Juarez LLC,Lance Jordan
+1661,2026-03-17,Sales,2026-03,West,Tablet,19,92536,"Lindsey, Carroll and Cook",David Yang
+1662,2026-03-21,Sales,2026-03,North,Server,19,50156,"Yoder, Santos and Thompson",Brian Carr
+1663,2026-04-27,Sales,2026-04,South,Laptop,16,21589,Pearson-Maldonado,Kristi Hill
+1664,2026-05-10,Sales,2026-05,East,Server,9,14235,"Taylor, Brown and Preston",Tyler Hughes
+1665,2026-05-20,Sales,2026-05,West,Laptop,1,89301,"Davis, Davis and Johns",Alexandria Cross
+1666,2026-03-01,Sales,2026-03,East,Tablet,11,33265,"White, Chandler and Fleming",Kaitlin Delgado
+1667,2026-04-05,Sales,2026-04,South,Laptop,20,97795,Perry-Nunez,Danny Shelton
+1668,2026-03-03,Sales,2026-03,South,Monitor,13,56017,"Alvarez, Daniels and Russo",Michaela Roberts
+1669,2026-02-27,Sales,2026-02,East,Server,7,101575,"Mcdonald, Hart and Vance",Chelsea Moore
+1670,2026-04-22,Sales,2026-04,North,Phone,2,92659,"Wilcox, Johnson and Taylor",Timothy Campbell
+1671,2026-03-19,Sales,2026-03,North,Tablet,18,61408,"Hill, Castillo and Becker",Michelle Stephens
+1672,2026-03-06,Sales,2026-03,South,Monitor,20,30389,Gonzalez Ltd,Kyle Hawkins
+1673,2026-04-14,Sales,2026-04,South,Server,20,117884,"Wade, Wagner and Lewis",Jason Andrews
+1674,2026-03-14,Sales,2026-03,North,Monitor,15,109366,Gonzalez-Krause,Keith Bailey
+1675,2026-05-15,Sales,2026-05,East,Tablet,8,44143,"Snyder, Lewis and Myers",Ryan Barrett
+1676,2026-05-15,Sales,2026-05,West,Phone,16,21948,"Hill, Lewis and Beltran",Maria Benton
+1677,2026-03-04,Sales,2026-03,North,Server,6,114374,Martinez Inc,Mike Davenport
+1678,2026-04-22,Sales,2026-04,West,Laptop,13,72412,Peterson-Perez,Paul Wilson Jr.
+1679,2026-03-21,Sales,2026-03,East,Laptop,6,69497,"Dickson, Hernandez and Cardenas",Nicole Bennett
+1680,2026-05-18,Sales,2026-05,East,Monitor,20,103104,"Vazquez, Douglas and Norman",Taylor Ponce
+1681,2026-05-21,Sales,2026-05,East,Server,3,40745,Montoya-Aguilar,Crystal Doyle
+1682,2026-04-14,Sales,2026-04,North,Server,19,27456,"Miranda, Rocha and Aguilar",Erica Lucas
+1683,2026-04-16,Sales,2026-04,South,Server,18,16312,Olson LLC,Wendy Phillips
+1684,2026-05-06,Sales,2026-05,South,Tablet,9,97249,Newman Group,Angela Morgan
+1685,2026-03-12,Sales,2026-03,West,Laptop,10,75411,Sanchez-Phelps,Bridget Landry
+1686,2026-04-18,Sales,2026-04,West,Tablet,9,96700,Burton-Houston,Luis Martinez
+1687,2026-04-07,Sales,2026-04,East,Laptop,5,86891,Martinez and Sons,Jason Doyle II
+1688,2026-03-16,Sales,2026-03,South,Monitor,18,96815,Bryan Ltd,Justin Lowe
+1689,2026-03-06,Sales,2026-03,North,Laptop,14,65213,Mason-Wright,Antonio Thomas MD
+1690,2026-03-06,Sales,2026-03,North,Phone,16,58778,Bell-Mitchell,Janice Small
+1691,2026-04-10,Sales,2026-04,North,Monitor,12,84976,Gibson PLC,Alicia Donovan
+1692,2026-03-05,Sales,2026-03,North,Server,2,106787,Porter-Thompson,James Ramsey
+1693,2026-03-14,Sales,2026-03,South,Tablet,8,85834,Roberts-Cox,James Harris
+1694,2026-05-25,Sales,2026-05,South,Monitor,3,93271,"Cisneros, Boyd and Evans",Matthew Mendoza
+1695,2026-05-09,Sales,2026-05,West,Monitor,1,17329,Garrett-Casey,Anita Lucas
+1696,2026-05-12,Sales,2026-05,East,Monitor,8,30440,"Miller, Allen and Moore",Susan Dunn
+1697,2026-04-18,Sales,2026-04,South,Server,20,26808,"Parrish, Cox and Miller",Michael Adams
+1698,2026-05-09,Sales,2026-05,West,Monitor,13,106491,"James, Lewis and Johnson",Michael Adams
+1699,2026-04-03,Sales,2026-04,North,Phone,8,118380,"Williams, Williams and Lopez",Jon Sims
+1700,2026-05-04,Sales,2026-05,West,Laptop,13,46584,"Pitts, Jones and Shaw",Deanna Rivera
+1701,2026-04-04,Sales,2026-04,North,Tablet,12,114651,"Stevens, Sawyer and Odonnell",Ernest Ross
+1702,2026-02-28,Sales,2026-02,South,Laptop,2,43157,Ortega Group,Melissa Dixon
+1703,2026-03-20,Sales,2026-03,North,Laptop,2,20440,Dawson-Bray,Zachary Davis
+1704,2026-03-11,Sales,2026-03,North,Laptop,14,63656,"Campbell, Abbott and Mckay",Joshua Sloan
+1705,2026-03-14,Sales,2026-03,South,Tablet,19,60756,Guzman and Sons,Lawrence Callahan
+1706,2026-03-17,Sales,2026-03,South,Monitor,10,109754,Richardson and Sons,Ryan Parrish
+1707,2026-03-23,Sales,2026-03,North,Laptop,2,44637,"Foster, Wiggins and Webb",Barbara Jimenez
+1708,2026-04-24,Sales,2026-04,East,Tablet,11,31711,Castillo Ltd,Haley Pearson
+1709,2026-03-19,Sales,2026-03,North,Tablet,2,109688,Nash-Reeves,Diana Payne
+1710,2026-03-04,Sales,2026-03,North,Phone,11,111555,Brooks LLC,Matthew Joseph
+1711,2026-03-27,Sales,2026-03,North,Tablet,5,77105,Jones-Williamson,Alan Moreno
+1712,2026-03-09,Sales,2026-03,West,Phone,19,16063,"Durham, Richardson and Tapia",Nicole Butler
+1713,2026-05-25,Sales,2026-05,West,Tablet,20,103701,Taylor-Molina,Michael Williams
+1714,2026-05-24,Sales,2026-05,South,Phone,18,19349,Pena PLC,Melissa Castillo
+1715,2026-05-09,Sales,2026-05,West,Tablet,7,92964,"Diaz, Reed and Zimmerman",Tyler Graham
+1716,2026-03-07,Sales,2026-03,East,Tablet,12,47302,Davis Inc,Michael Serrano
+1717,2026-04-10,Sales,2026-04,West,Server,13,10570,"Bradley, Parks and Eaton",Tracey Carter
+1718,2026-04-01,Sales,2026-04,North,Phone,1,64168,Howe Ltd,Mario Allen
+1719,2026-04-15,Sales,2026-04,East,Laptop,18,19072,Stewart and Sons,Robert Mcdonald
+1720,2026-04-02,Sales,2026-04,North,Tablet,12,33633,"Sims, Gutierrez and Collins",Anthony Walker
+1721,2026-04-24,Sales,2026-04,West,Tablet,2,49101,"Williams, Decker and Phillips",Debra Brown
+1722,2026-05-02,Sales,2026-05,North,Phone,6,10026,Larson-Chandler,David Richardson
+1723,2026-05-03,Sales,2026-05,East,Tablet,15,109064,Jennings-Marquez,Tammy Livingston
+1724,2026-04-09,Sales,2026-04,North,Phone,13,114818,"Gibson, Diaz and Anderson",Vanessa Sexton
+1725,2026-05-09,Sales,2026-05,South,Server,9,30751,Ford-Rogers,Jordan Gordon
+1726,2026-04-22,Sales,2026-04,North,Tablet,6,86195,Williams-Braun,Elaine Estrada
+1727,2026-05-20,Sales,2026-05,West,Laptop,10,116694,Harrington LLC,Brendan Holloway
+1728,2026-03-15,Sales,2026-03,East,Monitor,18,88490,Lee PLC,Amanda Farrell
+1729,2026-03-17,Sales,2026-03,West,Server,7,29935,"Maldonado, Harris and Huerta",Samantha Bird
+1730,2026-05-18,Sales,2026-05,West,Monitor,4,27806,"Williams, Spencer and Campbell",Omar Franco
+1731,2026-04-12,Sales,2026-04,West,Phone,8,110916,"Park, Jackson and Smith",Erin Grant
+1732,2026-04-01,Sales,2026-04,North,Laptop,12,15348,Patrick Ltd,Katherine Hernandez MD
+1733,2026-04-24,Sales,2026-04,East,Server,13,64256,Berry Inc,Brian Simpson
+1734,2026-04-16,Sales,2026-04,North,Server,7,90093,"Martin, Aguilar and Oneal",Nicole Wright
+1735,2026-04-07,Sales,2026-04,North,Monitor,11,50580,Morris and Sons,Joe Young
+1736,2026-05-21,Sales,2026-05,South,Tablet,7,73956,Baker-Burgess,Sherry Pena
+1737,2026-03-27,Sales,2026-03,South,Tablet,19,116098,"Liu, Wells and Fisher",Kyle Oneill
+1738,2026-04-14,Sales,2026-04,East,Server,20,102132,Roberts-Ramos,Joseph Elliott
+1739,2026-03-15,Sales,2026-03,East,Laptop,2,119379,"Williams, Figueroa and Thompson",Jerry Lee
+1740,2026-03-19,Sales,2026-03,East,Laptop,11,47017,Reyes-Downs,Joan Pollard
+1741,2026-03-13,Sales,2026-03,North,Laptop,4,104430,"Chavez, Blanchard and Stephens",John Acosta
+1742,2026-04-17,Sales,2026-04,North,Laptop,7,102640,Chambers Group,Lisa Davis
+1743,2026-03-18,Sales,2026-03,East,Monitor,12,119190,"Torres, Ferguson and Clay",Kyle Horn
+1744,2026-03-12,Sales,2026-03,South,Tablet,4,11037,"Higgins, Patterson and Pennington",Kelly Brandt
+1745,2026-04-03,Sales,2026-04,East,Server,17,14085,Mccarthy Ltd,Daniel Smith
+1746,2026-05-09,Sales,2026-05,West,Monitor,10,45085,"West, Perez and Patterson",Cole Kaufman
+1747,2026-04-13,Sales,2026-04,West,Server,2,88245,"Williams, Phillips and Cochran",Richard Mejia
+1748,2026-04-29,Sales,2026-04,South,Laptop,12,34807,Maldonado Ltd,Kristen Peters
+1749,2026-03-24,Sales,2026-03,South,Phone,14,15899,"Vaughn, Richardson and Wilson",Teresa Howell
+1750,2026-03-28,Sales,2026-03,North,Monitor,2,83143,Murray PLC,Tara Galvan
+1751,2026-04-21,Sales,2026-04,North,Tablet,3,84904,Stuart PLC,David Gordon
+1752,2026-05-27,Sales,2026-05,East,Phone,1,39878,"Ware, Hayes and Marshall",Michelle Turner
+1753,2026-04-28,Sales,2026-04,West,Monitor,5,13462,"Young, Key and Snyder",Natalie Murphy
+1754,2026-03-30,Sales,2026-03,North,Phone,20,28394,"Hardy, Matthews and Haynes",Jill Boyd
+1755,2026-03-01,Sales,2026-03,South,Laptop,13,31258,"Lee, Caldwell and Peterson",Amber Bradley
+1756,2026-04-20,Sales,2026-04,East,Monitor,3,57208,Moore-Martinez,Bryan Ware
+1757,2026-04-30,Sales,2026-04,West,Monitor,12,21962,Rivera Ltd,Justin Gray
+1758,2026-03-23,Sales,2026-03,West,Monitor,10,97005,Lee Inc,Peter Garcia
+1759,2026-03-14,Sales,2026-03,North,Tablet,4,73461,Perez-Cole,Sarah Thomas
+1760,2026-05-10,Sales,2026-05,East,Tablet,9,20507,Calderon-Johnson,Evan Murray
+1761,2026-05-02,Sales,2026-05,South,Phone,15,18139,"Mckinney, Everett and Hill",Stephanie Miller
+1762,2026-05-02,Sales,2026-05,West,Phone,4,75736,Young-Lane,Daniel Miller
+1763,2026-03-07,Sales,2026-03,South,Server,16,98232,Bell-Mcguire,Peter Lindsey
+1764,2026-05-20,Sales,2026-05,East,Tablet,7,69713,Higgins PLC,Thomas Neal
+1765,2026-04-11,Sales,2026-04,West,Laptop,9,62594,Duffy-Bartlett,Priscilla George
+1766,2026-04-15,Sales,2026-04,East,Laptop,8,45521,"Sanchez, Williams and Flores",Katherine Williams
+1767,2026-03-07,Sales,2026-03,West,Phone,14,10365,"Carson, Adams and Lyons",Peter Montes Jr.
+1768,2026-03-21,Sales,2026-03,West,Phone,10,59044,"Mendez, Li and Hill",David York
+1769,2026-05-10,Sales,2026-05,West,Laptop,20,33475,Ruiz Group,Lisa Jimenez
+1770,2026-03-20,Sales,2026-03,South,Server,3,62560,"Flynn, Jennings and Smith",Lawrence Bond
+1771,2026-03-08,Sales,2026-03,North,Tablet,8,85984,Williams-Wilson,Sean Montes
+1772,2026-05-09,Sales,2026-05,South,Laptop,1,46869,Howell Inc,Maria Davidson
+1773,2026-04-21,Sales,2026-04,North,Tablet,10,16721,Moore and Sons,Hannah Solis
+1774,2026-03-28,Sales,2026-03,West,Server,14,50619,Stephens Ltd,Courtney Estrada
+1775,2026-04-23,Sales,2026-04,North,Tablet,18,116448,Ramos-Johnson,Todd Goodman
+1776,2026-04-23,Sales,2026-04,East,Phone,2,27967,"Duran, Sparks and Howard",Justin Anderson
+1777,2026-03-01,Sales,2026-03,South,Monitor,9,116696,Richards-Price,Allen Luna
+1778,2026-02-26,Sales,2026-02,East,Laptop,19,88481,Meyers and Sons,Alyssa Todd
+1779,2026-05-11,Sales,2026-05,South,Tablet,19,79498,"Bailey, Smith and Mitchell",Courtney Huber
+1780,2026-04-30,Sales,2026-04,North,Tablet,9,46446,Mcdonald Inc,Francisco Wilson
+1781,2026-04-20,Sales,2026-04,North,Tablet,13,46800,Andrews Ltd,James Doyle
+1782,2026-03-26,Sales,2026-03,South,Laptop,8,41096,Lara-Osborne,Jason Mills
+1783,2026-04-24,Sales,2026-04,East,Monitor,3,119754,Smith-Wilson,Melissa Gray
+1784,2026-05-05,Sales,2026-05,South,Monitor,16,108092,"Galloway, Wong and Ramirez",Brittney Hill
+1785,2026-03-29,Sales,2026-03,West,Tablet,8,109641,"Conley, Le and Herrera",Charles Moore
+1786,2026-03-28,Sales,2026-03,West,Tablet,4,83669,Peters-Harding,Thomas Brewer
+1787,2026-03-23,Sales,2026-03,West,Server,9,77748,"Tucker, Haney and Smith",Daisy Mercado
+1788,2026-03-17,Sales,2026-03,North,Phone,5,62828,"Davis, Phillips and Wilson",Christopher Smith
+1789,2026-04-30,Sales,2026-04,South,Phone,14,114154,"Oliver, Garcia and Smith",Bryan Walker
+1790,2026-05-14,Sales,2026-05,North,Server,19,38021,"Williams, Moore and Sawyer",Jason Crawford
+1791,2026-05-04,Sales,2026-05,North,Phone,12,56071,Schaefer and Sons,Kimberly Murphy
+1792,2026-04-09,Sales,2026-04,East,Tablet,13,13316,Stephens and Sons,Mary Wolfe
+1793,2026-03-23,Sales,2026-03,South,Server,13,23070,Alvarez Inc,Christine Kim
+1794,2026-05-06,Sales,2026-05,South,Laptop,7,98621,Gardner Ltd,Patricia Adams
+1795,2026-05-07,Sales,2026-05,East,Phone,7,106734,"Hawkins, Snyder and Miller",Michele Robinson
+1796,2026-02-27,Sales,2026-02,North,Phone,4,38251,Herrera-Knight,Amy Burke
+1797,2026-05-06,Sales,2026-05,West,Laptop,20,70420,Campbell Group,Nancy Mcmahon
+1798,2026-04-25,Sales,2026-04,South,Phone,4,103392,Jones Inc,Michelle Rollins
+1799,2026-04-13,Sales,2026-04,West,Laptop,14,57248,"Nelson, Hughes and Trujillo",Crystal Mejia
+1800,2026-04-22,Sales,2026-04,North,Laptop,17,58887,Williams-Walter,Kenneth Bautista
+1801,2026-02-26,Sales,2026-02,North,Phone,7,35445,Wright-Jones,Charles Holloway
+1802,2026-03-14,Sales,2026-03,West,Server,5,118647,"Wang, Roy and Jones",Lisa Solis
+1803,2026-04-21,Sales,2026-04,West,Server,7,63018,"Olson, Cantu and Williams",Steven Hughes
+1804,2026-04-09,Sales,2026-04,South,Server,2,73723,"Curtis, Joyce and Williams",James Walls
+1805,2026-05-16,Sales,2026-05,South,Monitor,8,109998,Phillips LLC,Amanda Nelson
+1806,2026-03-18,Sales,2026-03,West,Tablet,20,19420,Harrison-Ford,Peter Sparks
+1807,2026-05-23,Sales,2026-05,North,Phone,9,113494,"Hines, English and Marsh",Shawn Smith
+1808,2026-04-05,Sales,2026-04,East,Monitor,8,67856,Sanchez Group,Michele Berg
+1809,2026-04-06,Sales,2026-04,East,Phone,6,78652,Gonzalez and Sons,Vincent Carrillo
+1810,2026-05-20,Sales,2026-05,South,Server,11,87660,Stephenson LLC,Michelle Horn
+1811,2026-05-23,Sales,2026-05,South,Monitor,7,111466,"Taylor, Bowman and Walker",Robert Rice
+1812,2026-04-30,Sales,2026-04,East,Laptop,6,113600,"Navarro, Thomas and West",Juan Vazquez
+1813,2026-03-31,Sales,2026-03,West,Monitor,7,15677,Bradshaw PLC,Diane Matthews
+1814,2026-05-05,Sales,2026-05,West,Tablet,16,18843,Wilson-Weaver,Rachael Wolfe
+1815,2026-04-22,Sales,2026-04,North,Monitor,12,49636,"Wilson, Carroll and Johnson",Abigail Gaines
+1816,2026-05-25,Sales,2026-05,East,Server,3,84079,"Russell, Massey and Brown",Michelle Young
+1817,2026-03-05,Sales,2026-03,South,Monitor,15,52796,"Davidson, Anderson and Salinas",Gloria Lopez
+1818,2026-02-26,Sales,2026-02,East,Server,9,39394,"Perry, Robinson and Carroll",Stephanie Bates
+1819,2026-04-05,Sales,2026-04,East,Phone,5,110977,"Campbell, Black and Allen",Christopher Jones
+1820,2026-03-19,Sales,2026-03,West,Server,20,82189,Brady and Sons,Jane James DDS
+1821,2026-03-13,Sales,2026-03,West,Phone,18,105109,"Robinson, Ortiz and Adams",Robert Ortiz
+1822,2026-05-26,Sales,2026-05,North,Phone,4,32075,Lee PLC,Tracey King
+1823,2026-04-10,Sales,2026-04,East,Server,15,102383,Ross-Hutchinson,Adam Cummings
+1824,2026-04-01,Sales,2026-04,East,Monitor,1,11101,Fletcher-Reynolds,Patrick Simon
+1825,2026-04-22,Sales,2026-04,North,Laptop,5,33921,"West, Moore and Allen",Christopher Snow
+1826,2026-04-22,Sales,2026-04,East,Monitor,2,116806,Caldwell-Ward,Tracy Whitehead
+1827,2026-05-06,Sales,2026-05,South,Monitor,1,14466,Torres LLC,Katherine Morales
+1828,2026-05-05,Sales,2026-05,South,Monitor,17,26232,"Barrett, Barrera and Harper",Jason Gilmore
+1829,2026-04-26,Sales,2026-04,East,Tablet,1,111196,"Smith, Flynn and Goodwin",Jean Hull
+1830,2026-04-15,Sales,2026-04,East,Laptop,10,77266,Baird PLC,Heather Chapman
+1831,2026-03-26,Sales,2026-03,East,Tablet,16,107566,"Gibbs, Obrien and Hurst",Tammy Ross
+1832,2026-03-06,Sales,2026-03,North,Monitor,3,68458,Gill LLC,Fernando Young
+1833,2026-03-14,Sales,2026-03,South,Monitor,3,95185,Berry-Zimmerman,Mary Brown
+1834,2026-04-01,Sales,2026-04,South,Laptop,17,25767,"Logan, Herrera and Conley",Anthony Lee
+1835,2026-03-12,Sales,2026-03,North,Server,1,93058,Choi LLC,Jason Holmes
+1836,2026-05-19,Sales,2026-05,West,Laptop,19,88230,Brown Ltd,Deanna Ward DDS
+1837,2026-04-19,Sales,2026-04,West,Laptop,1,86320,"Moore, Gordon and Patterson",Jesse Washington
+1838,2026-04-07,Sales,2026-04,South,Laptop,19,42215,Clark-Forbes,Lisa Steele
+1839,2026-04-04,Sales,2026-04,North,Tablet,4,110533,Johnson Ltd,Douglas Sexton
+1840,2026-05-16,Sales,2026-05,South,Phone,11,15695,Kennedy-Smith,Nicholas George
+1841,2026-05-18,Sales,2026-05,North,Phone,10,38148,Anderson PLC,Ana Jones
+1842,2026-05-20,Sales,2026-05,North,Laptop,4,39218,"Lester, Nguyen and Smith",John Warner
+1843,2026-02-27,Sales,2026-02,South,Tablet,12,38817,"Stone, Rodriguez and Mccall",Mitchell Chandler
+1844,2026-04-29,Sales,2026-04,West,Tablet,4,94477,Fleming-Green,Jonathan Evans
+1845,2026-04-17,Sales,2026-04,South,Monitor,7,99776,Brooks-Murray,Jessica Strickland
+1846,2026-02-26,Sales,2026-02,West,Server,16,95339,Walton Inc,Jennifer Hamilton
+1847,2026-04-02,Sales,2026-04,West,Monitor,19,12494,"Matthews, Miller and Robertson",Derek Mills
+1848,2026-03-05,Sales,2026-03,West,Server,7,37648,Allen Group,Kaitlyn Williams
+1849,2026-04-18,Sales,2026-04,East,Server,16,36366,Anderson-Palmer,Valerie Hansen
+1850,2026-04-30,Sales,2026-04,East,Server,3,33406,"Cruz, Green and Garcia",Christopher Hudson
+1851,2026-05-03,Sales,2026-05,West,Server,6,104765,Hughes Inc,Dorothy Johnson
+1852,2026-03-31,Sales,2026-03,East,Server,20,52402,"Todd, Nunez and Johnson",Dan Stevens
+1853,2026-03-13,Sales,2026-03,East,Monitor,10,84107,Clark LLC,Michele Kirby
+1854,2026-03-26,Sales,2026-03,North,Phone,1,106303,"Price, Boyd and Morris",Kenneth Allison
+1855,2026-03-05,Sales,2026-03,North,Monitor,13,67325,Jackson and Sons,Amanda Fisher
+1856,2026-05-26,Sales,2026-05,North,Laptop,10,37545,White-Cunningham,Justin Snyder
+1857,2026-04-08,Sales,2026-04,West,Tablet,4,36398,Archer LLC,Rachel Mercado
+1858,2026-05-01,Sales,2026-05,North,Monitor,5,87097,Serrano Ltd,Joseph Dixon
+1859,2026-03-30,Sales,2026-03,South,Laptop,12,41004,Vega Ltd,Sabrina King
+1860,2026-03-31,Sales,2026-03,South,Tablet,9,24957,"Gonzales, Rose and Shaw",Justin Hayes
+1861,2026-03-15,Sales,2026-03,East,Monitor,12,62189,Baldwin Ltd,Helen Mills
+1862,2026-05-26,Sales,2026-05,South,Tablet,14,67729,"Allen, Christian and Johnson",Mr. Richard Morgan
+1863,2026-03-27,Sales,2026-03,South,Tablet,1,72522,Blackburn PLC,Bonnie Reed
+1864,2026-04-29,Sales,2026-04,North,Tablet,2,43046,"Contreras, French and Jones",Laura Austin
+1865,2026-05-13,Sales,2026-05,West,Tablet,3,34209,Mccormick LLC,Victoria Adams
+1866,2026-04-25,Sales,2026-04,West,Phone,13,12346,Bowers Group,Jessica Hernandez
+1867,2026-03-27,Sales,2026-03,South,Phone,17,69996,Newman-Jones,John Benson Jr.
+1868,2026-05-07,Sales,2026-05,South,Tablet,3,103575,"Mckee, Williams and Clayton",Manuel Hays
+1869,2026-05-13,Sales,2026-05,West,Server,8,18351,"Lee, Miller and Rocha",Matthew Moreno
+1870,2026-04-12,Sales,2026-04,West,Tablet,4,115873,Robbins Ltd,Matthew Gentry
+1871,2026-04-30,Sales,2026-04,East,Phone,7,14396,Perry-Gilbert,Dominique Nixon
+1872,2026-05-22,Sales,2026-05,North,Laptop,14,35307,Yang-Gutierrez,George Mullins
+1873,2026-05-04,Sales,2026-05,West,Laptop,17,95084,Powell and Sons,Brian Moreno
+1874,2026-03-07,Sales,2026-03,West,Tablet,11,12148,Fleming-Wells,Hannah Gonzalez
+1875,2026-05-20,Sales,2026-05,West,Server,20,84918,Lamb-Santiago,Joe Ramos
+1876,2026-04-27,Sales,2026-04,North,Tablet,14,38329,Salazar-Cunningham,Charles Hawkins
+1877,2026-03-30,Sales,2026-03,West,Server,16,91787,"Thompson, Clark and Andrews",Anita Humphrey
+1878,2026-03-11,Sales,2026-03,East,Monitor,16,38451,Rodriguez LLC,Maria Cruz
+1879,2026-05-13,Sales,2026-05,South,Tablet,13,98238,Fleming Ltd,Paul Cole
+1880,2026-04-21,Sales,2026-04,South,Monitor,14,31434,"Moore, Andrews and Lewis",Robert Bailey
+1881,2026-03-06,Sales,2026-03,North,Server,16,67603,"Duke, Gregory and Bishop",Brandon Werner
+1882,2026-04-14,Sales,2026-04,North,Laptop,15,62229,Hernandez and Sons,Donna Morris
+1883,2026-05-03,Sales,2026-05,East,Phone,5,43285,"Juarez, Carson and Edwards",Olivia Green
+1884,2026-05-25,Sales,2026-05,West,Server,8,49291,Murphy and Sons,Terry Duffy
+1885,2026-03-31,Sales,2026-03,East,Phone,17,83749,Petersen Inc,Donald Higgins
+1886,2026-04-20,Sales,2026-04,East,Laptop,13,21472,"Guerrero, Edwards and Kim",Elijah Allen
+1887,2026-04-05,Sales,2026-04,South,Tablet,2,46309,Yates-Crawford,Elizabeth Kennedy
+1888,2026-05-11,Sales,2026-05,East,Laptop,15,41465,Good-Strong,Ryan Mercado
+1889,2026-03-05,Sales,2026-03,West,Phone,16,98740,Chen-Ray,Logan Golden
+1890,2026-04-12,Sales,2026-04,North,Tablet,17,64107,Williams-Molina,Bradley Flores
+1891,2026-04-23,Sales,2026-04,North,Tablet,14,12816,"Pitts, Anderson and Collins",Brett Werner
+1892,2026-03-05,Sales,2026-03,East,Server,7,39413,"Atkinson, Hill and Johnson",Lydia Knight
+1893,2026-03-28,Sales,2026-03,South,Monitor,3,113104,Kerr-Collins,Fernando Cherry
+1894,2026-03-20,Sales,2026-03,East,Laptop,4,77679,Anderson LLC,Brandon Donaldson
+1895,2026-04-11,Sales,2026-04,East,Phone,13,91136,"White, Tate and Davis",Sandra Schmidt
+1896,2026-04-15,Sales,2026-04,East,Phone,3,96650,Velazquez-Patterson,Meghan Brown
+1897,2026-03-25,Sales,2026-03,South,Monitor,1,65777,Collins and Sons,Christopher Estrada
+1898,2026-05-26,Sales,2026-05,North,Tablet,6,103838,Ortiz-Huang,Ana Reynolds
+1899,2026-04-13,Sales,2026-04,North,Laptop,18,89704,Mullins Ltd,Amanda Archer
+1900,2026-03-21,Sales,2026-03,North,Laptop,20,99884,Davis-Walker,Gary Galloway
+1901,2026-05-14,Sales,2026-05,East,Phone,3,107582,Johnson-Johnson,Steven Stone
+1902,2026-03-07,Sales,2026-03,North,Server,8,39756,"Munoz, Nelson and Simmons",Eric Warren
+1903,2026-03-29,Sales,2026-03,South,Laptop,20,96154,"Kim, Jones and Lee",Gregory Barrera
+1904,2026-04-20,Sales,2026-04,West,Tablet,4,78718,Page-Lopez,Larry Williams
+1905,2026-03-31,Sales,2026-03,North,Laptop,2,43080,Serrano-Wallace,Elizabeth Kim
+1906,2026-04-19,Sales,2026-04,West,Monitor,5,27224,Collins LLC,Becky Herman
+1907,2026-05-19,Sales,2026-05,South,Laptop,3,49254,Johnson and Sons,Deborah Johnson
+1908,2026-05-15,Sales,2026-05,North,Monitor,7,20839,Santiago Ltd,Donald Jones
+1909,2026-03-21,Sales,2026-03,West,Monitor,13,92732,Johnson-Barnett,Melanie Salinas
+1910,2026-05-26,Sales,2026-05,North,Server,18,112968,Waters Ltd,Heather Mercado
+1911,2026-04-02,Sales,2026-04,North,Server,11,76168,Martinez Inc,Stephanie Olson
+1912,2026-04-05,Sales,2026-04,East,Laptop,1,77084,Thompson PLC,Jacqueline Cunningham
+1913,2026-03-25,Sales,2026-03,North,Laptop,5,53145,"Cervantes, Butler and Watson",Debra Hatfield PhD
+1914,2026-04-03,Sales,2026-04,West,Monitor,12,74089,"Charles, Anderson and Porter",Kerri Reese
+1915,2026-04-07,Sales,2026-04,North,Server,13,94925,"Griffin, Miller and Moore",Miguel Bradford
+1916,2026-04-30,Sales,2026-04,East,Monitor,18,117689,Marshall Group,Melissa Hall
+1917,2026-05-05,Sales,2026-05,South,Monitor,5,17387,Wheeler-Sullivan,Brandon Wilson
+1918,2026-04-23,Sales,2026-04,East,Monitor,10,78967,"Kelly, Schroeder and Lynch",Brian Matthews
+1919,2026-04-08,Sales,2026-04,East,Tablet,19,47665,Dawson-Clark,Nancy Marshall
+1920,2026-04-10,Sales,2026-04,West,Server,20,25273,Smith-Compton,Tamara Choi
+1921,2026-04-17,Sales,2026-04,West,Monitor,8,116301,"Campbell, Grant and Fernandez",Sandra Myers
+1922,2026-03-26,Sales,2026-03,East,Phone,13,87418,Brooks LLC,Donald King
+1923,2026-03-25,Sales,2026-03,West,Tablet,7,47479,Thompson-Larsen,Jimmy Campbell
+1924,2026-03-10,Sales,2026-03,East,Phone,15,24085,Johnson Inc,Amy Hill
+1925,2026-04-08,Sales,2026-04,East,Monitor,15,56968,Lee-Cantu,Amy Frey
+1926,2026-03-12,Sales,2026-03,South,Server,20,46201,Martin-Robertson,Todd Cummings
+1927,2026-03-09,Sales,2026-03,West,Phone,3,93124,Hogan and Sons,Mark Jensen
+1928,2026-05-14,Sales,2026-05,East,Tablet,8,20584,"Duran, Wilson and Reeves",Dr. Bridget Gay MD
+1929,2026-03-11,Sales,2026-03,East,Phone,7,97546,Bridges-Hall,Joshua Hodges
+1930,2026-04-02,Sales,2026-04,North,Phone,20,117053,"Lawrence, Mahoney and Gonzalez",Kelly Robertson
+1931,2026-03-07,Sales,2026-03,East,Tablet,3,49555,Davis-Blake,Andrea Martin
+1932,2026-03-26,Sales,2026-03,West,Monitor,20,32981,Kerr-Jefferson,Sharon Newton
+1933,2026-04-27,Sales,2026-04,North,Tablet,13,84554,"Acosta, Crawford and Martin",Elizabeth Chang
+1934,2026-05-08,Sales,2026-05,East,Server,4,64334,"Hays, Hill and Kelly",Travis Norman
+1935,2026-03-26,Sales,2026-03,East,Monitor,8,15921,"Fields, Adams and Anderson",Michael Adams
+1936,2026-05-01,Sales,2026-05,North,Phone,13,112150,"George, Pena and Carrillo",Robert Patterson
+1937,2026-03-10,Sales,2026-03,East,Laptop,8,53971,Richmond and Sons,Nathan Reynolds
+1938,2026-04-22,Sales,2026-04,West,Laptop,6,33113,Frederick LLC,Sara Myers
+1939,2026-05-20,Sales,2026-05,East,Laptop,18,88365,Coleman Group,Arthur Ayala
+1940,2026-05-23,Sales,2026-05,East,Server,17,80826,"Mason, Campbell and Lewis",Allen Castro
+1941,2026-03-05,Sales,2026-03,South,Monitor,19,104425,Holland Inc,Alan Jacobs
+1942,2026-05-25,Sales,2026-05,South,Server,12,11307,Miller-Munoz,Jessica Barker
+1943,2026-05-13,Sales,2026-05,East,Laptop,5,26494,Wade-Carter,Albert Hanson
+1944,2026-03-20,Sales,2026-03,South,Server,14,36725,Dickerson-Weaver,Jennifer Weber
+1945,2026-03-09,Sales,2026-03,North,Monitor,19,109790,Webb-Wolfe,Amber Robinson
+1946,2026-03-21,Sales,2026-03,East,Laptop,7,79703,Brown-Cabrera,Spencer Hamilton DDS
+1947,2026-03-17,Sales,2026-03,West,Laptop,18,93881,"Ray, Steele and Brown",Cindy Garza
+1948,2026-04-24,Sales,2026-04,South,Monitor,15,58412,"Blevins, Morrison and Contreras",Kelly Roberts
+1949,2026-05-17,Sales,2026-05,North,Server,3,82894,Ford PLC,Debbie Miles
+1950,2026-05-13,Sales,2026-05,West,Tablet,16,28090,Gilbert PLC,Michele Collier
+1951,2026-03-06,Sales,2026-03,East,Laptop,4,75846,Hutchinson Group,Jesse Perez
+1952,2026-05-21,Sales,2026-05,West,Laptop,16,58318,"Garcia, Hawkins and Cline",Christine Stanton
+1953,2026-03-16,Sales,2026-03,North,Server,7,83896,"Coleman, Patterson and Green",Beth Hall
+1954,2026-04-26,Sales,2026-04,North,Server,6,27353,"Cooper, Hooper and Washington",Alexander Johnson II
+1955,2026-03-31,Sales,2026-03,North,Tablet,8,16242,Ware PLC,Zachary Anderson
+1956,2026-05-05,Sales,2026-05,East,Server,6,82960,Rivera-Haley,Eric Collins
+1957,2026-05-19,Sales,2026-05,North,Phone,9,66964,Steele-Hernandez,Carol Price
+1958,2026-03-02,Sales,2026-03,West,Server,7,111430,"Dixon, Riggs and Nelson",Daniel Lewis
+1959,2026-05-20,Sales,2026-05,West,Tablet,14,57370,"Williams, Castillo and Fields",Taylor Morales
+1960,2026-04-13,Sales,2026-04,West,Laptop,8,42312,"Bennett, Davis and Johnson",Michael Mitchell
+1961,2026-04-08,Sales,2026-04,East,Laptop,18,53706,"Rose, Zavala and Shaffer",Tiffany Greer
+1962,2026-03-03,Sales,2026-03,East,Phone,7,41380,Wilson Group,Marilyn Hess
+1963,2026-03-11,Sales,2026-03,North,Server,13,21303,"Horn, Ayala and Brown",Mark Gonzalez
+1964,2026-05-27,Sales,2026-05,East,Server,7,88013,Bruce Ltd,Dana Terry
+1965,2026-04-20,Sales,2026-04,East,Monitor,5,110187,"Campbell, Frey and Ortega",Thomas Sharp
+1966,2026-02-27,Sales,2026-02,North,Monitor,11,30012,"Scott, Ross and Glover",Dawn Mayo
+1967,2026-03-11,Sales,2026-03,East,Laptop,3,14093,Norton-Bauer,Adam Benson
+1968,2026-04-16,Sales,2026-04,East,Tablet,18,60145,Anthony-Miles,Allen Owen
+1969,2026-04-16,Sales,2026-04,West,Phone,6,33987,Brooks-Anderson,Mrs. Cassandra Gomez
+1970,2026-05-14,Sales,2026-05,North,Laptop,19,61357,Martin Group,Matthew Olson
+1971,2026-05-20,Sales,2026-05,West,Phone,6,75536,Conner-Hughes,Kathryn Krause
+1972,2026-03-01,Sales,2026-03,South,Phone,3,39528,Pratt Group,Amber Carr
+1973,2026-05-06,Sales,2026-05,East,Laptop,1,94422,Park PLC,William Mcclure
+1974,2026-03-04,Sales,2026-03,East,Monitor,17,79866,"Huerta, Garcia and Erickson",Anthony Hayes
+1975,2026-03-06,Sales,2026-03,East,Monitor,19,68582,Thompson-Johnson,Patrick Arnold
+1976,2026-02-26,Sales,2026-02,North,Monitor,8,30292,Hernandez and Sons,Mark Wall
+1977,2026-05-08,Sales,2026-05,East,Tablet,15,96616,Russell PLC,Julia Berg
+1978,2026-04-01,Sales,2026-04,East,Phone,8,17674,Singh-Beard,Michael Marsh
+1979,2026-04-30,Sales,2026-04,North,Laptop,20,23334,Ray-Flores,Zachary Anderson
+1980,2026-05-04,Sales,2026-05,South,Monitor,5,118229,"Blair, Hurley and Jordan",Kimberly Brown
+1981,2026-04-02,Sales,2026-04,East,Laptop,12,108683,Payne PLC,David Allen
+1982,2026-04-03,Sales,2026-04,East,Server,7,45913,Burgess Group,Christina Willis
+1983,2026-03-07,Sales,2026-03,East,Monitor,2,93795,"Collins, Richmond and Hammond",Sarah Adams
+1984,2026-05-22,Sales,2026-05,South,Laptop,3,46295,Ford Ltd,Teresa Reed
+1985,2026-04-14,Sales,2026-04,East,Server,16,41702,Nielsen Ltd,Mallory Smith
+1986,2026-04-24,Sales,2026-04,West,Phone,19,28692,Shah LLC,Charles Molina
+1987,2026-05-06,Sales,2026-05,South,Tablet,18,99842,Torres-Gilbert,Albert Johnson
+1988,2026-04-01,Sales,2026-04,East,Server,3,117462,Murray-Peters,Tami Hall
+1989,2026-05-13,Sales,2026-05,South,Laptop,8,99480,"Harrison, Smith and Wagner",James Rose
+1990,2026-05-23,Sales,2026-05,East,Tablet,1,59712,"Jones, Gregory and Pratt",Joshua Jordan
+1991,2026-03-26,Sales,2026-03,North,Server,5,114815,Mitchell and Sons,Kevin Chapman
+1992,2026-03-14,Sales,2026-03,South,Server,2,12903,"Smith, Alexander and Jones",Theresa Gilbert
+1993,2026-04-28,Sales,2026-04,North,Monitor,9,26146,Hamilton-Keith,Renee Mckay
+1994,2026-03-31,Sales,2026-03,East,Server,11,94917,Espinoza LLC,Brittany Holloway
+1995,2026-04-06,Sales,2026-04,South,Monitor,15,105718,White Inc,Miss Marissa Jimenez
+1996,2026-04-17,Sales,2026-04,North,Monitor,3,113103,"Smith, Mcclain and Ferguson",Ryan Nash
+1997,2026-03-13,Sales,2026-03,East,Server,9,49830,"Hancock, Crawford and Rosales",Timothy Hamilton
+1998,2026-05-09,Sales,2026-05,North,Laptop,19,87658,Obrien-Harris,Ryan Brown
+1999,2026-05-12,Sales,2026-05,East,Server,18,77794,"Shea, Allen and Fields",Michael Gutierrez
+2000,2026-04-20,Sales,2026-04,East,Laptop,17,23114,Erickson PLC,Alexander Johnson
+2001,2026-04-17,Sales,2026-04,West,Monitor,10,98618,Petersen and Sons,James Gallegos
+2002,2026-03-04,Sales,2026-03,South,Tablet,1,99004,Wang Group,Bradley Holt
+2003,2026-04-08,Sales,2026-04,South,Server,11,98380,Avila-Rowe,Emma Krueger
+2004,2026-04-08,Sales,2026-04,West,Monitor,15,52127,Eaton-Torres,Cesar Finley
+2005,2026-04-20,Sales,2026-04,North,Server,17,75397,"Bradley, Rice and Welch",Lauren Stevenson
+2006,2026-05-26,Sales,2026-05,West,Monitor,5,15915,"Mendoza, Goodwin and Jordan",Sandra Ballard
+2007,2026-05-19,Sales,2026-05,West,Server,14,46902,Robertson-Pitts,Shane Jones
+2008,2026-04-16,Sales,2026-04,East,Tablet,14,25752,"Hall, Mendez and Stewart",Janet Hill
+2009,2026-05-08,Sales,2026-05,North,Laptop,14,96758,"Young, Allen and Nash",Donna Anderson
+2010,2026-05-16,Sales,2026-05,South,Phone,6,55599,Keith-Mcmahon,Karen Harrison
+2011,2026-05-08,Sales,2026-05,East,Laptop,12,106078,"Sanchez, Ortega and Fowler",Bradley Taylor
+2012,2026-03-25,Sales,2026-03,West,Phone,1,56898,"Powell, Clay and Mckinney",Nicole Wagner
+2013,2026-04-20,Sales,2026-04,North,Monitor,17,60991,Smith and Sons,Christina Mccann
+2014,2026-03-28,Sales,2026-03,North,Laptop,5,67717,Williams LLC,Dorothy West
+2015,2026-04-09,Sales,2026-04,West,Tablet,18,19499,Alexander-James,Carlos Stephenson
+2016,2026-04-04,Sales,2026-04,East,Server,16,107809,"Gonzalez, Pierce and Scott",David Mack
+2017,2026-04-01,Sales,2026-04,South,Tablet,17,16664,Barnes Group,Angela Jacobs
+2018,2026-05-14,Sales,2026-05,North,Laptop,1,43894,Yoder-Gonzales,Stacey Harris
+2019,2026-03-06,Sales,2026-03,East,Phone,8,90545,Graham-Monroe,Elizabeth Hall
+2020,2026-03-13,Sales,2026-03,South,Phone,17,50534,"Brooks, Flores and Stanley",Brandon Costa
+2021,2026-02-26,Sales,2026-02,West,Server,19,108061,"Snyder, Weaver and Casey",Jonathon Thomas
+2022,2026-02-26,Sales,2026-02,East,Phone,13,47982,Maddox Group,Cheryl Padilla
+2023,2026-03-01,Sales,2026-03,East,Monitor,16,24328,"Mata, Greene and Carpenter",Michele Ware
+2024,2026-03-25,Sales,2026-03,South,Server,14,23563,"Pierce, Blair and Henderson",Taylor Hall
+2025,2026-03-12,Sales,2026-03,East,Tablet,18,52134,Huff-Wheeler,Jacqueline Harmon
+2026,2026-04-23,Sales,2026-04,West,Tablet,3,21653,Carroll-Heath,Patricia Francis
+2027,2026-03-22,Sales,2026-03,North,Laptop,16,111324,Cox-Jones,Rodney Contreras
+2028,2026-03-25,Sales,2026-03,North,Server,4,89901,Hall-Luna,Scott Williams
+2029,2026-04-08,Sales,2026-04,North,Monitor,11,58339,Kirk Inc,Michelle Wood
+2030,2026-04-24,Sales,2026-04,North,Monitor,17,50257,Harvey PLC,Deborah Moore
+2031,2026-04-06,Sales,2026-04,South,Laptop,15,48373,Day-Davis,John Brown

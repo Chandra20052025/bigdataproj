@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Analytics Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #080c12; --surface: #0e1520; --surface2: #141d2b;
+      --border: rgba(99,155,255,0.12); --accent: #3b82f6; --accent2: #60a5fa;
+      --green: #22c55e; --red: #f87171; --text: #e2e8f0; --muted: #64748b;
+      --mono: 'IBM Plex Mono', monospace; --sans: 'Syne', sans-serif;
+    }
+    body { font-family: var(--sans); background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; }
+    .sidebar { width: 200px; flex-shrink: 0; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; padding: 20px 14px; gap: 4px; }
+    .logo { font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent2); margin-bottom: 20px; padding: 0 4px; }
+    .nav-item { display: flex; align-items: center; gap: 9px; padding: 9px 10px; border-radius: 8px; border: none; background: transparent; color: var(--muted); font-family: var(--sans); font-size: 13px; cursor: pointer; width: 100%; text-align: left; transition: all 0.15s; }
+    .nav-item:hover { background: var(--surface2); color: var(--text); }
+    .nav-item.active { background: rgba(59,130,246,0.12); color: var(--accent2); }
+    .sidebar-spacer { flex: 1; }
+    .live-badge { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; color: var(--green); padding: 8px 10px; }
+    .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    .main { flex: 1; overflow-y: auto; padding: 24px 28px; display: flex; flex-direction: column; gap: 18px; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; }
+    .topbar h1 { font-size: 22px; font-weight: 700; color: var(--text); }
+    .status-pill { font-family: var(--mono); font-size: 11px; padding: 5px 14px; border-radius: 99px; border: 1px solid var(--border); color: var(--muted); transition: all 0.3s; }
+    .status-pill.profit { color: var(--green); border-color: rgba(34,197,94,0.3); background: rgba(34,197,94,0.06); }
+    .status-pill.loss { color: var(--red); border-color: rgba(248,113,113,0.3); background: rgba(248,113,113,0.06); }
+    .filter-bar { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .filter-bar label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+    .filter-bar input[type="date"], .filter-bar select { background: var(--surface2); border: 1px solid var(--border); border-radius: 7px; color: var(--text); font-family: var(--mono); font-size: 12px; padding: 6px 10px; cursor: pointer; outline: none; }
+    .filter-bar input[type="date"]:focus, .filter-bar select:focus { border-color: var(--accent); }
+    .preset-btns { display: flex; gap: 6px; }
+    .preset-btn { background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; color: var(--muted); font-family: var(--mono); font-size: 11px; padding: 5px 10px; cursor: pointer; transition: all 0.15s; }
+    .preset-btn:hover { border-color: var(--accent); color: var(--accent2); }
+    .preset-btn.active { background: rgba(59,130,246,0.12); border-color: var(--accent); color: var(--accent2); }
+    .apply-btn { margin-left: auto; background: var(--accent); border: none; border-radius: 7px; color: #fff; font-family: var(--sans); font-size: 13px; font-weight: 600; padding: 7px 18px; cursor: pointer; transition: opacity 0.15s; }
+    .apply-btn:hover { opacity: 0.85; }
+    .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .metric-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+    .metric-card .m-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    .metric-card .m-value { font-family: var(--mono); font-size: 26px; font-weight: 500; color: var(--text); line-height: 1; }
+    .metric-card .m-value.green { color: var(--green); }
+    .metric-card .m-value.red { color: var(--red); }
+    .metric-card .m-sub { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 6px; }
+    .charts-row { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 14px; }
+    .section-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+    .section-title { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+    .chart-wrap { position: relative; width: 100%; height: 200px; }
+    canvas { max-height: 200px !important; }
+    .ai-card { background: var(--surface); border: 1px solid rgba(99,155,255,0.2); border-radius: 12px; padding: 18px 20px; }
+    .ai-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .ai-badge { font-family: var(--mono); font-size: 10px; background: rgba(59,130,246,0.15); color: var(--accent2); border: 1px solid rgba(59,130,246,0.25); border-radius: 4px; padding: 2px 8px; }
+    .ai-insight-text { font-size: 14px; line-height: 1.7; color: var(--text); min-height: 40px; }
+    .ai-insight-text.loading { color: var(--muted); font-style: italic; }
+    .qa-row { display: flex; gap: 10px; margin-top: 14px; border-top: 1px solid var(--border); padding-top: 14px; }
+    .qa-input { flex: 1; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-family: var(--sans); font-size: 13px; padding: 9px 14px; outline: none; transition: border-color 0.15s; }
+    .qa-input::placeholder { color: var(--muted); }
+    .qa-input:focus { border-color: var(--accent); }
+    .qa-send { background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.3); border-radius: 8px; color: var(--accent2); font-family: var(--sans); font-size: 13px; font-weight: 600; padding: 9px 18px; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .qa-send:hover { background: rgba(59,130,246,0.25); }
+    .qa-answer { margin-top: 12px; padding: 12px 14px; background: var(--surface2); border-radius: 8px; font-size: 13px; line-height: 1.7; color: var(--text); display: none; }
+    .qa-answer.visible { display: block; }
+    .qa-answer .qa-q { font-family: var(--mono); font-size: 11px; color: var(--accent2); margin-bottom: 6px; }
+    .period-table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12px; }
+    th { text-align: left; padding: 7px 10px; color: var(--muted); border-bottom: 1px solid var(--border); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+    td { padding: 7px 10px; border-bottom: 1px solid rgba(99,155,255,0.05); color: var(--text); }
+    tr:hover td { background: var(--surface2); }
+    td.positive { color: var(--green); }
+    td.negative { color: var(--red); }
+    .err-bar { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--red); display: none; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 99px; }
+  </style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="logo">⬡ Analytics</div>
+  <button class="nav-item active" onclick="loadAll()">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+    Refresh
+  </button>
+  <button class="nav-item" onclick="loadAll()">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+    Overview
+  </button>
+  <button class="nav-item" onclick="document.getElementById('qa-input').focus()">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+    Ask AI
+  </button>
+  <div class="sidebar-spacer"></div>
+  <div class="live-badge"><span class="live-dot"></span> LIVE</div>
+  <div style="font-family:var(--mono);font-size:10px;color:var(--muted);padding:0 10px 6px" id="last-updated">—</div>
+</nav>
+
+<div class="main">
+  <div class="topbar">
+    <h1>Financial Dashboard</h1>
+    <div class="status-pill" id="status-pill">Loading...</div>
+  </div>
+
+  <div class="err-bar" id="err-bar"></div>
+
+  <div class="filter-bar">
+    <label>From</label>
+    <input type="date" id="start-date" />
+    <label>To</label>
+    <input type="date" id="end-date" />
+    <label>Group by</label>
+    <select id="group-by">
+      <option value="day">Day</option>
+      <option value="week">Week</option>
+      <option value="month">Month</option>
+    </select>
+    <div class="preset-btns">
+      <button class="preset-btn" onclick="applyPreset(7,this)">7D</button>
+      <button class="preset-btn" onclick="applyPreset(30,this)">30D</button>
+      <button class="preset-btn" onclick="applyPreset(90,this)">90D</button>
+      <button class="preset-btn" onclick="clearDates(this)">All</button>
+    </div>
+    <button class="apply-btn" onclick="loadAll()">Apply</button>
+  </div>
+
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="m-label">Total Income</div>
+      <div class="m-value" id="v-income">—</div>
+      <div class="m-sub" id="v-income-sub"></div>
+    </div>
+    <div class="metric-card">
+      <div class="m-label">Total Expenses</div>
+      <div class="m-value" id="v-expense">—</div>
+      <div class="m-sub" id="v-expense-sub"></div>
+    </div>
+    <div class="metric-card">
+      <div class="m-label">Net Profit / Loss</div>
+      <div class="m-value" id="v-profit">—</div>
+      <div class="m-sub" id="v-status-sub"></div>
+    </div>
+  </div>
+
+  <div class="ai-card">
+    <div class="ai-header">
+      <div class="section-title" style="margin:0">AI Insight</div>
+      <div class="ai-badge">Groq~ AI</div>
+    </div>
+    <div class="ai-insight-text loading" id="ai-text">Waiting for data...</div>
+    <div class="qa-row">
+      <input type="text" class="qa-input" id="qa-input" placeholder="Ask about expenses… e.g. Which day had highest costs?" />
+      <button class="qa-send" onclick="askAI()">Ask →</button>
+    </div>
+    <div class="qa-answer" id="qa-answer">
+      <div class="qa-q" id="qa-question"></div>
+      <div id="qa-text"></div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="section-card">
+      <div class="section-title">Expense vs Income Over Time</div>
+      <div class="chart-wrap">
+        <canvas id="timeline-chart"></canvas>
+      </div>
+    </div>
+    <div class="section-card">
+      <div class="section-title">Department Breakdown</div>
+      <div class="chart-wrap">
+        <canvas id="dept-chart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-title">Period Expense Detail</div>
+    <div class="period-table-wrap">
+      <table>
+        <thead>
+          <tr><th>Period</th><th>Income</th><th>Expenses</th><th>Net</th></tr>
+        </thead>
+        <tbody id="period-tbody">
+          <tr><td colspan="4" style="color:var(--muted);text-align:center;padding:20px">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+const BASE = "http://127.0.0.1:8000";
+let timelineChart = null, deptChart = null;
+
+function fmt(n, compact=true) {
+  if (n == null || isNaN(n)) return "—";
+  const abs = Math.abs(n);
+  let s;
+  if (compact) {
+    if (abs >= 1e6) s = (abs/1e6).toFixed(2)+"M";
+    else if (abs >= 1e3) s = (abs/1e3).toFixed(1)+"K";
+    else s = abs.toFixed(0);
+  } else {
+    s = abs.toLocaleString("en-US");
+  }
+  return (n < 0 ? "-$" : "$") + s;
+}
+
+function todayStr() { return new Date().toISOString().split("T")[0]; }
+function daysAgo(n) { const d = new Date(); d.setDate(d.getDate()-n); return d.toISOString().split("T")[0]; }
+
+function applyPreset(days, btn) {
+  document.querySelectorAll(".preset-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  document.getElementById("start-date").value = daysAgo(days);
+  document.getElementById("end-date").value = todayStr();
+  loadAll();
+}
+function clearDates(btn) {
+  document.querySelectorAll(".preset-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  document.getElementById("start-date").value = "";
+  document.getElementById("end-date").value = "";
+  loadAll();
+}
+function getDateParams() {
+  const s = document.getElementById("start-date").value;
+  const e = document.getElementById("end-date").value;
+  const g = document.getElementById("group-by").value;
+  const p = new URLSearchParams();
+  if (s) p.set("start_date", s);
+  if (e) p.set("end_date", e);
+  p.set("group_by", g);
+  return p;
+}
+
+function showErr(msg) { const el = document.getElementById("err-bar"); el.textContent = "⚠ "+msg; el.style.display="block"; }
+function clearErr() { document.getElementById("err-bar").style.display="none"; }
+
+async function apiFetch(path) {
+  const url = `${BASE}${path}?${getDateParams().toString()}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${path} → ${res.status}`);
+  return res.json();
+}
+
+function renderSummary(data) {
+  document.getElementById("v-income").textContent = fmt(data.total_income);
+  document.getElementById("v-expense").textContent = fmt(data.total_expenses);
+  const pl = data.profit_loss;
+  const profEl = document.getElementById("v-profit");
+  profEl.textContent = fmt(pl);
+  profEl.className = "m-value " + (pl >= 0 ? "green" : "red");
+  document.getElementById("v-income-sub").textContent = "Revenue earned";
+  document.getElementById("v-expense-sub").textContent = `HR: ${fmt(data.hr_cost)}  Fin: ${fmt(data.finance_cost)}  Prod: ${fmt(data.production_cost)}`;
+  document.getElementById("v-status-sub").textContent = data.status;
+  const pill = document.getElementById("status-pill");
+  pill.textContent = pl >= 0 ? "↑ PROFIT" : "↓ LOSS";
+  pill.className = "status-pill " + (pl >= 0 ? "profit" : "loss");
+}
+
+function renderTimeline(periods) {
+  if (timelineChart) { timelineChart.destroy(); timelineChart = null; }
+  timelineChart = new Chart(document.getElementById("timeline-chart"), {
+    type: "line",
+    data: {
+      labels: periods.map(p => p.period),
+      datasets: [
+        { label: "Income", data: periods.map(p => p.total_income), borderColor: "#22c55e", backgroundColor: "rgba(34,197,94,0.1)", fill: true, tension: 0.3, pointRadius: 3, borderWidth: 2 },
+        { label: "Expenses", data: periods.map(p => p.total_expense), borderColor: "#f87171", backgroundColor: "rgba(248,113,113,0.08)", fill: true, tension: 0.3, pointRadius: 3, borderWidth: 2, borderDash: [5,3] }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: true, labels: { color: "#64748b", boxWidth: 12, font: { size: 11 } } }, tooltip: { callbacks: { label: c => fmt(c.parsed.y, false) } } },
+      scales: {
+        x: { ticks: { color: "#475569", font: { size: 10 }, maxTicksLimit: 12 }, grid: { color: "rgba(99,155,255,0.05)" }, border: { color: "transparent" } },
+        y: { ticks: { color: "#475569", font: { size: 10 }, callback: v => fmt(v) }, grid: { color: "rgba(99,155,255,0.05)" }, border: { color: "transparent" } }
+      }
+    }
+  });
+}
+
+function renderDept(depts) {
+  if (deptChart) { deptChart.destroy(); deptChart = null; }
+  deptChart = new Chart(document.getElementById("dept-chart"), {
+    type: "bar",
+    data: {
+      labels: depts.map(d => d.department),
+      datasets: [{ label: "Net", data: depts.map(d => d.value), backgroundColor: depts.map(d => d.value >= 0 ? "#22c55e" : "#f87171"), borderRadius: 5, borderSkipped: false }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => fmt(c.parsed.y, false) } } },
+      scales: {
+        x: { ticks: { color: "#475569", font: { size: 11 } }, grid: { color: "rgba(99,155,255,0.05)" }, border: { color: "transparent" } },
+        y: { ticks: { color: "#475569", font: { size: 10 }, callback: v => fmt(v) }, grid: { color: "rgba(99,155,255,0.05)" }, border: { color: "transparent" } }
+      }
+    }
+  });
+}
+
+function renderTable(periods) {
+  const tbody = document.getElementById("period-tbody");
+  if (!periods.length) {
+    tbody.innerHTML = `<tr><td colspan="4" style="color:var(--muted);text-align:center;padding:20px">No data for selected period</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = periods.slice().reverse().map(p => `
+    <tr>
+      <td>${p.period}</td>
+      <td class="positive">${fmt(p.total_income, false)}</td>
+      <td class="negative">${fmt(p.total_expense, false)}</td>
+      <td class="${p.net >= 0 ? 'positive' : 'negative'}">${fmt(p.net, false)}</td>
+    </tr>`).join("");
+}
+
+async function loadAIInsight() {
+  const aiEl = document.getElementById("ai-text");
+  aiEl.className = "ai-insight-text loading";
+  aiEl.textContent = "Groq is analyzing your data...";
+  try {
+    const data = await (await fetch(`${BASE}/api/ai-summary?${getDateParams()}`)).json();
+    aiEl.className = "ai-insight-text";
+    aiEl.textContent = data.ai_insight || "No insight generated.";
+  } catch (e) {
+    aiEl.className = "ai-insight-text loading";
+    aiEl.textContent = "AI insight unavailable — check backend.";
+  }
+}
+
+async function askAI() {
+  const input = document.getElementById("qa-input");
+  const question = input.value.trim();
+  if (!question) return;
+  const answerBox = document.getElementById("qa-answer");
+  const qEl = document.getElementById("qa-question");
+  const tEl = document.getElementById("qa-text");
+  answerBox.className = "qa-answer visible";
+  qEl.textContent = "Q: " + question;
+  tEl.textContent = "Thinking...";
+  try {
+    const params = getDateParams();
+    params.set("question", question);
+    const data = await (await fetch(`${BASE}/api/ai-period-analysis?${params}`)).json();
+    tEl.textContent = data.answer || "No answer returned.";
+  } catch (e) {
+    tEl.textContent = "Could not get AI answer — backend may be offline.";
+  }
+}
+
+document.getElementById("qa-input").addEventListener("keydown", e => { if (e.key === "Enter") askAI(); });
+
+async function loadAll() {
+  clearErr();
+  try {
+    const [summary, depts, periods] = await Promise.all([
+      apiFetch("/api/summary"),
+      apiFetch("/api/department-breakdown"),
+      apiFetch("/api/expenses-by-period"),
+    ]);
+    renderSummary(summary);
+    renderTimeline(periods);
+    renderDept(depts);
+    renderTable(periods);
+    document.getElementById("last-updated").textContent = new Date().toLocaleTimeString();
+     
+  } catch (err) {
+    showErr(`Backend unreachable at ${BASE}. Run: python -m uvicorn main:app --host 127.0.0.1 --port 8000 (${err.message})`);
+    document.getElementById("status-pill").textContent = "Offline";
+    document.getElementById("status-pill").className = "status-pill loss";
+  }
+}
+
+loadAll();
+
+let refreshInterval = setInterval(loadAll, 60000);
+const qaInput = document.getElementById("qa-input");
+qaInput.addEventListener("focus", () => clearInterval(refreshInterval));
+qaInput.addEventListener("blur", () => { refreshInterval = setInterval(loadAll, 60000); });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
