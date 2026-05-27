@@ -1,125 +1,33 @@
- PySpark Financial Analytics Dashboard
+## Live Financial Analytics Dashboard
 
-A full-stack big data analytics application that processes multi-departmental financial data using Apache Spark and visualizes insights through an interactive web dashboard.
+Real-time business analytics dashboard with AI-powered insights.
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![PySpark](https://img.shields.io/badge/PySpark-4.1.1-orange)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.128.0-green)
+### Stack
+- FastAPI — REST API backend
+- DuckDB — in-memory SQL analytics on live CSV/JSON data
+- Groq API (LLaMA 3.3 70B) — AI insights and natural language Q&A
+- Chart.js — interactive charts
+- Faker — realistic data generation
 
- Features
+### Features
+- Live data generation every 5 seconds
+- Date range filtering (day/week/month)
+- Department performance breakdown
+- AI business insight on every refresh
+- Ask questions about your data in plain English
 
--   Real-time profit/loss calculation across multiple departments
--   Interactive data visualizations (Bar charts, Pie charts)
--   Auto-refresh functionality (60-second intervals)
--   Multi-format data ingestion (CSV, JSON)
--   Department-wise performance tracking (Sales, HR, Finance, Production)
--   PDF export functionality
--   Fast REST API with sub-second response times
+### Run
+Terminal 1: python generate.py
+Terminal 2: GROQ_API_KEY=your-key uvicorn main:app --host 127.0.0.1 --port 8000
+Terminal 3: python -m http.server 3000
 
-   Tech Stack
+Open: http://localhost:3000/dashboard.html
 
- Backend: 
-- Apache Spark (PySpark 4.1.1)
-- FastAPI 0.128.0
-- Python 3.10
-- Uvicorn 0.40.0
-
- Frontend: 
-- HTML5, CSS3, JavaScript (ES6+)
-- Chart.js
-
-   Project Structure
-
-bigdataproj/
-├── api/
-│   └── main.py                    # FastAPI REST API
-├── data/
-│   ├── sales.csv                  # Sales data
-│   ├── hr.csv                     # HR data
-│   ├── finance.csv                # Finance data
-│   └── production.json            # Production data
-├── utils/
-│   └── spark_analytics.py         # PySpark analytics
-├── spark_jobs/
-│   ├── phase1_ingestion.py        # Data ingestion
-│   ├── phase2_cleaning.py         # Data cleaning
-│   └── phase3_file_processing.py  # Data processing
-├── combined_dashboard.html         # Web dashboard
-├── requirements.txt                # Dependencies
-└── README.md                       # Documentation
-```
-
-   Installation & Setup
-
-  Prerequisites
-- Python 3.10+
-- pip
-
-  Steps
-
-1.  Clone the repository 
-  
-git clone https://github.com/YOUR_USERNAME/pyspark-financial-dashboard.git
-cd pyspark-financial-dashboard
- 
-2.  Install dependencies 
- 
-pip install -r requirements.txt
- 
-
-3. Run the API server 
- 
-python api/main.py
- 
-
-4. Open the dashboard 
-- Double-click `combined_dashboard.html`
-- Or visit: http://localhost:8000/docs for API documentation
- 
-
- Usage Example
- 
-import requests
-
-response = requests.get('http://localhost:8000/api/summary')
-data = response.json()
-
-print(f"Total Income: ${data['total_income']}")
-print(f"Profit/Loss: ${data['profit_loss']}")
- 
-
-Sample Output: 
- 
-{
-  "total_income": 310000.0,
-  "total_expenses": 48000.0,
-  "profit_loss": 262000.0,
-  "status": "Profit"
-}
-  System Architecture
- 
-Data Files (CSV/JSON)
-        ↓
-Apache Spark (ETL Pipeline)
-        ↓
-FastAPI (REST API - Port 8000)
-        ↓
-Web Dashboard (Charts & Visualization)
- 
-
-Key Results
-
-- Processes 100+ financial transactions
-- Real-time profit/loss calculation
-- Tracks 4 departments simultaneously
-- Auto-refresh every 60 seconds
-- Interactive charts with Chart.js
-
-  Contributing
+Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
 
-  License
+ License
 
 MIT License - see [LICENSE](LICENSE) file for details
 
@@ -128,7 +36,4 @@ MIT License - see [LICENSE](LICENSE) file for details
 Chandra K
 - GitHub: [@Chandra20052025(https://github.com/Chandra20052025)
 - LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-
-
-
 ⭐ If you found this helpful, please star this repository!
