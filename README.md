@@ -35,5 +35,5 @@ MIT License - see [LICENSE](LICENSE) file for details
  
 Chandra K
 - GitHub: [@Chandra20052025(https://github.com/Chandra20052025)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- LinkedIn: https://www.linkedin.com/in/chandra-k-68b867315/
 ⭐ If you found this helpful, please star this repository!
